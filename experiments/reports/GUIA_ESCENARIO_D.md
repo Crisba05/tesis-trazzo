@@ -84,7 +84,7 @@ Luego lo arreglas y, si quieres, repites solo esa tanda.
   9990000062).
 - **Módulo por USB con captura serial**, que aquí sí puedes mantener: no hay cortes de energía.
   ```bash
-  cd E:\Carpetas\Escritorio\TRAZZO\tesis\analisis\scripts\scenarios_capture && node serial_capture.mjs --port COM4 --scn D
+  cd tesis\analisis\scripts\scenarios_capture && node serial_capture.mjs --port COM4 --scn D
   ```
 - **Un cronómetro** para marcar el inicio y el fin de cada tanda.
 

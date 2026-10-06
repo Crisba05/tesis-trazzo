@@ -43,7 +43,7 @@ capturaron bytes corruptos. Su `.json` de resumen tiene `total_events: 0`, que e
 ## Cómo releer cualquiera de ellos
 
 ```bash
-cd E:\Carpetas\Escritorio\TRAZZO\tesis\analisis\logs && node -e "require('fs').readFileSync(process.argv[1],'utf8').trim().split('\n').forEach(l=>{try{const r=JSON.parse(l);console.log(r.iso.slice(11,19),r.line)}catch(e){}})" scenario_D_serial_2026-09-27-09-35-46.ndjson
+cd tesis\analisis\logs && node -e "require('fs').readFileSync(process.argv[1],'utf8').trim().split('\n').forEach(l=>{try{const r=JSON.parse(l);console.log(r.iso.slice(11,19),r.line)}catch(e){}})" scenario_D_serial_2026-09-27-09-35-46.ndjson
 ```
 
 Cambia el nombre del archivo al final. Para filtrar, añade `| grep "\[sync\]"` o el prefijo que

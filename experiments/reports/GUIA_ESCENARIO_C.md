@@ -31,7 +31,7 @@ misma flash que la cola, así que un corte puede caer en una escritura del log e
 cola. `offline_log::verify()` solo lee, no repara nada.
 
 ```bash
-cd E:\Carpetas\Escritorio\TRAZZO\modulo_iot && pio run -e esp32-dev -t upload --upload-port COM4
+cd modulo_iot && pio run -e esp32-dev -t upload --upload-port COM4
 ```
 
 ### 1.1 Prueba de humo — OBLIGATORIA antes de la campaña
@@ -40,7 +40,7 @@ El log interno está **compilado pero nunca ejecutado en hardware**. No arranque
 esto (si falla, corres 13 cortes y te quedas sin evidencia):
 
 ```bash
-cd E:\Carpetas\Escritorio\TRAZZO\tesis\analisis\scripts\scenarios_capture && node dump_device_log.mjs --port COM4 --scn TEST
+cd tesis\analisis\scripts\scenarios_capture && node dump_device_log.mjs --port COM4 --scn TEST
 ```
 
 Debe imprimir la tabla `boots` con tu arranque y la columna `pend_al_arrancar`. Luego escanea
@@ -51,7 +51,7 @@ perder la ventana del corte.
 Con la prueba OK, limpia el log para que el archivo contenga solo la campaña:
 
 ```bash
-cd E:\Carpetas\Escritorio\TRAZZO\tesis\analisis\scripts\scenarios_capture && node dump_device_log.mjs --port COM4 --scn TEST --clear
+cd tesis\analisis\scripts\scenarios_capture && node dump_device_log.mjs --port COM4 --scn TEST --clear
 ```
 
 ---
@@ -129,7 +129,7 @@ código en vuelo, y qué dijo el arranque siguiente.
 ## 5. Cierre y descarga
 
 ```bash
-cd E:\Carpetas\Escritorio\TRAZZO\tesis\analisis\scripts\scenarios_capture && node dump_device_log.mjs --port COM4 --scn C
+cd tesis\analisis\scripts\scenarios_capture && node dump_device_log.mjs --port COM4 --scn C
 ```
 
 Genera en `logs/`: `device_log_C_*.log` (crudo de la flash), `.ndjson` (con tiempos
