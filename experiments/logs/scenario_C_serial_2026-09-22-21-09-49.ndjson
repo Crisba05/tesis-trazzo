@@ -1,0 +1,20 @@
+{"t":1790111396162,"iso":"2026-09-22T21:09:56.162Z","line":"[ntp] syncing..."}
+{"t":1790111399174,"iso":"2026-09-22T21:09:59.174Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111404173,"iso":"2026-09-22T21:10:04.173Z","line":"[TRAZZO][WARN] NTP not synced �� deferring cache pull"}
+{"t":1790111404178,"iso":"2026-09-22T21:10:04.178Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790111404187,"iso":"2026-09-22T21:10:04.187Z","line":"[prov] credentials loaded — device=IOT-E6B3F57E backend=https://api.example.org"}
+{"t":1790111404191,"iso":"2026-09-22T21:10:04.191Z","line":"[TRAZZO] provisioned"}
+{"t":1790111404577,"iso":"2026-09-22T21:10:04.577Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790111404625,"iso":"2026-09-22T21:10:04.625Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790111404625,"iso":"2026-09-22T21:10:04.625Z","line":""}
+{"t":1790111404636,"iso":"2026-09-22T21:10:04.636Z","line":"──────���────────────────────��──────────���───"}
+{"t":1790111404642,"iso":"2026-09-22T21:10:04.642Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790111404654,"iso":"2026-09-22T21:10:04.654Z","line":"──────��──────────���────────────────────��───"}
+{"t":1790111404693,"iso":"2026-09-22T21:10:04.693Z","line":"[tasks] all 6 tasks started"}
+{"t":1790111406645,"iso":"2026-09-22T21:10:06.645Z","line":"[ntp] syncing..."}
+{"t":1790111409651,"iso":"2026-09-22T21:10:09.651Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111416649,"iso":"2026-09-22T21:10:16.649Z","line":"[ntp] syncing..."}
+{"t":1790111419587,"iso":"2026-09-22T21:10:19.587Z","line":"[scanner] frame: '9990000022' (10 bytes)"}
+{"t":1790111419587,"iso":"2026-09-22T21:10:19.587Z","line":"[scan] code=9990000022"}
+{"t":1790111419595,"iso":"2026-09-22T21:10:19.595Z","line":"[scan] lookup code=9990000022 found=1 cacheSize=297"}
+{"t":1790111419657,"iso":"2026-09-22T21:10:19.657Z","line":"[ntp] sync failed, will retry in 10s"}

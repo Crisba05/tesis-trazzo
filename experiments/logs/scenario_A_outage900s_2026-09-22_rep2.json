@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "scenario": "A",
+    "target_outage_s": 900,
+    "rep": 2,
+    "date": "2026-09-22",
+    "reconstructed_from": ["scenario_A_serial_2026-09-22-20-23-02.ndjson"],
+    "note": "Duracion real (903.5s) es la mas cercana al objetivo nominal (900s) de toda la campana. Descartado un intento previo fallido (scenario_A_serial_2026-09-22-20-22-42.ndjson, 1.88MB de ruido de puerto — probablemente dos procesos abriendo COM4 a la vez)."
+  },
+  "timeline": {
+    "online_scans": ["9990000059", "9990000063", "9990000061", "9990000053", "9990000055"],
+    "first_upload_failure": "2026-09-22T20:23:51.506Z",
+    "offline_scans": ["9990000057", "9990000050", "9990000051", "..."],
+    "max_backoff_observed_ms": 285795,
+    "wifi_final_down": "2026-09-22T20:38:39.560Z",
+    "wifi_final_up": "2026-09-22T20:38:52.595Z",
+    "sync_pending_seen": "2026-09-22T20:38:52.605Z",
+    "sync_batch_http_200": "2026-09-22T20:38:55.016Z",
+    "sync_ok": "2026-09-22T20:38:55.040Z"
+  },
+  "metrics": {
+    "degraded_period_s": 903.5,
+    "generated_online": 5,
+    "generated_offline": 5,
+    "max_queue_depth": 5,
+    "recovered": 5,
+    "lost": 0,
+    "watchdog_reset": false
+  },
+  "anomalies": []
+}

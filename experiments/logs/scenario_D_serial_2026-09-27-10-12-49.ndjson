@@ -1,0 +1,57 @@
+{"t":1790503970240,"iso":"2026-09-27T10:12:50.240Z","line":"[wifi] connected — IP=192.168.18.241 RSSI=-45"}
+{"t":1790503970382,"iso":"2026-09-27T10:12:50.382Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.241"}
+{"t":1790503974060,"iso":"2026-09-27T10:12:54.060Z","line":"[ntp] syncing..."}
+{"t":1790503974066,"iso":"2026-09-27T10:12:54.066Z","line":"[ntp] synced: 2026-09-27 05:12:54 (Lima)"}
+{"t":1790503974314,"iso":"2026-09-27T10:12:54.314Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790503974369,"iso":"2026-09-27T10:12:54.369Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790503974416,"iso":"2026-09-27T10:12:54.416Z","line":"[prov] credentials loaded — device=IOT-5343DD30 backend=https://api.example.org"}
+{"t":1790503974422,"iso":"2026-09-27T10:12:54.422Z","line":"[TRAZZO] provisioned"}
+{"t":1790503974480,"iso":"2026-09-27T10:12:54.480Z","line":"\u001b[0;31m[ 10412][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790503974868,"iso":"2026-09-27T10:12:54.868Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790503974958,"iso":"2026-09-27T10:12:54.958Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790503975014,"iso":"2026-09-27T10:12:55.014Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790503975063,"iso":"2026-09-27T10:12:55.063Z","line":""}
+{"t":1790503975075,"iso":"2026-09-27T10:12:55.075Z","line":"────────────────────��──────────���──────────"}
+{"t":1790503975128,"iso":"2026-09-27T10:12:55.128Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790503975198,"iso":"2026-09-27T10:12:55.198Z","line":"──────────��──────────���────────────────────"}
+{"t":1790503975240,"iso":"2026-09-27T10:12:55.240Z","line":"[tasks] all 6 tasks started"}
+{"t":1790503976016,"iso":"2026-09-27T10:12:56.016Z","line":"\u001b[0;31m[ 11949][E][vfs_api.cpp:105] open(): /littlefs/offline/sent.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790503994520,"iso":"2026-09-27T10:13:14.520Z","line":"[sync] 146 records pending"}
+{"t":1790503994571,"iso":"2026-09-27T10:13:14.571Z","line":"\u001b[0;31m[ 30503][E][vfs_api.cpp:105] open(): /littlefs/offline/sent.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790503994668,"iso":"2026-09-27T10:13:14.668Z","line":"[sync] sending 25 of 146 record(s), body=5386 B, heap=127268"}
+{"t":1790503998016,"iso":"2026-09-27T10:13:18.016Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (8705 bytes)"}
+{"t":1790503998062,"iso":"2026-09-27T10:13:18.062Z","line":"[sync] batch sync OK — 25 accepted"}
+{"t":1790503999131,"iso":"2026-09-27T10:13:19.131Z","line":"[sync] 121 record(s) still queued — next chunk shortly"}
+{"t":1790504011161,"iso":"2026-09-27T10:13:31.161Z","line":"[sync] 121 records pending"}
+{"t":1790504011395,"iso":"2026-09-27T10:13:31.395Z","line":"[sync] sending 25 of 121 record(s), body=5386 B, heap=126344"}
+{"t":1790504014822,"iso":"2026-09-27T10:13:34.822Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (8705 bytes)"}
+{"t":1790504014875,"iso":"2026-09-27T10:13:34.875Z","line":"[sync] batch sync OK — 25 accepted"}
+{"t":1790504015978,"iso":"2026-09-27T10:13:35.978Z","line":"[sync] 96 record(s) still queued — next chunk shortly"}
+{"t":1790504026688,"iso":"2026-09-27T10:13:46.688Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790504026693,"iso":"2026-09-27T10:13:46.693Z","line":"[hb] heartbeat OK"}
+{"t":1790504028633,"iso":"2026-09-27T10:13:48.633Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (84 bytes)"}
+{"t":1790504028642,"iso":"2026-09-27T10:13:48.642Z","line":"[kpis] E=189 L=0 SR=108 (total=297)"}
+{"t":1790504029142,"iso":"2026-09-27T10:13:49.142Z","line":"[sync] 96 records pending"}
+{"t":1790504029517,"iso":"2026-09-27T10:13:49.517Z","line":"[sync] sending 25 of 96 record(s), body=5334 B, heap=125568"}
+{"t":1790504032530,"iso":"2026-09-27T10:13:52.530Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (8635 bytes)"}
+{"t":1790504032602,"iso":"2026-09-27T10:13:52.602Z","line":"[sync] batch sync OK — 25 accepted"}
+{"t":1790504033968,"iso":"2026-09-27T10:13:53.968Z","line":"[sync] 71 record(s) still queued — next chunk shortly"}
+{"t":1790504046014,"iso":"2026-09-27T10:14:06.014Z","line":"[sync] 71 records pending"}
+{"t":1790504046531,"iso":"2026-09-27T10:14:06.531Z","line":"[sync] sending 25 of 71 record(s), body=5282 B, heap=125348"}
+{"t":1790504049742,"iso":"2026-09-27T10:14:09.742Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (8565 bytes)"}
+{"t":1790504049792,"iso":"2026-09-27T10:14:09.792Z","line":"[sync] batch sync OK — 25 accepted"}
+{"t":1790504051136,"iso":"2026-09-27T10:14:11.136Z","line":"[sync] 46 record(s) still queued — next chunk shortly"}
+{"t":1790504063166,"iso":"2026-09-27T10:14:23.166Z","line":"[sync] 46 records pending"}
+{"t":1790504063726,"iso":"2026-09-27T10:14:23.726Z","line":"[sync] sending 25 of 46 record(s), body=5282 B, heap=125116"}
+{"t":1790504066939,"iso":"2026-09-27T10:14:26.939Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (8565 bytes)"}
+{"t":1790504066995,"iso":"2026-09-27T10:14:26.995Z","line":"[sync] batch sync OK — 25 accepted"}
+{"t":1790504068303,"iso":"2026-09-27T10:14:28.303Z","line":"[sync] 21 record(s) still queued — next chunk shortly"}
+{"t":1790504080351,"iso":"2026-09-27T10:14:40.351Z","line":"[sync] 21 records pending"}
+{"t":1790504080971,"iso":"2026-09-27T10:14:40.971Z","line":"[sync] sending 21 of 21 record(s), body=4526 B, heap=125148"}
+{"t":1790504084010,"iso":"2026-09-27T10:14:44.010Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (7321 bytes)"}
+{"t":1790504084071,"iso":"2026-09-27T10:14:44.071Z","line":"[sync] batch sync OK — 21 accepted"}
+{"t":1790504085066,"iso":"2026-09-27T10:14:45.066Z","line":"[offline] log cleared"}
+{"t":1790504089246,"iso":"2026-09-27T10:14:49.246Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790504089251,"iso":"2026-09-27T10:14:49.251Z","line":"[hb] heartbeat OK"}
+{"t":1790504091207,"iso":"2026-09-27T10:14:51.207Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790504091214,"iso":"2026-09-27T10:14:51.214Z","line":"[kpis] E=280 L=0 SR=17 (total=297)"}

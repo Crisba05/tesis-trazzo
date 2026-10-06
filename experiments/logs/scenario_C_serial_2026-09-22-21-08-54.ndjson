@@ -1,0 +1,23 @@
+{"t":1790111340607,"iso":"2026-09-22T21:09:00.607Z","line":"[ntp] syncing..."}
+{"t":1790111343619,"iso":"2026-09-22T21:09:03.619Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111348617,"iso":"2026-09-22T21:09:08.617Z","line":"[TRAZZO][WARN] NTP not synced �� deferring cache pull"}
+{"t":1790111348623,"iso":"2026-09-22T21:09:08.623Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790111348631,"iso":"2026-09-22T21:09:08.631Z","line":"[prov] credentials loaded — device=IOT-E6B3F57E backend=https://api.example.org"}
+{"t":1790111348636,"iso":"2026-09-22T21:09:08.636Z","line":"[TRAZZO] provisioned"}
+{"t":1790111349021,"iso":"2026-09-22T21:09:09.021Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790111349069,"iso":"2026-09-22T21:09:09.069Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790111349069,"iso":"2026-09-22T21:09:09.069Z","line":""}
+{"t":1790111349080,"iso":"2026-09-22T21:09:09.080Z","line":"──────���────────────────────��──────────���───"}
+{"t":1790111349086,"iso":"2026-09-22T21:09:09.086Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790111349097,"iso":"2026-09-22T21:09:09.097Z","line":"──────��──────────���────────────────────��───"}
+{"t":1790111349101,"iso":"2026-09-22T21:09:09.101Z","line":"[tasks] all 6 tasks started"}
+{"t":1790111351089,"iso":"2026-09-22T21:09:11.089Z","line":"[ntp] syncing..."}
+{"t":1790111354100,"iso":"2026-09-22T21:09:14.100Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111361098,"iso":"2026-09-22T21:09:21.098Z","line":"[ntp] syncing..."}
+{"t":1790111364110,"iso":"2026-09-22T21:09:24.110Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111371108,"iso":"2026-09-22T21:09:31.108Z","line":"[ntp] syncing..."}
+{"t":1790111374116,"iso":"2026-09-22T21:09:34.116Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111379932,"iso":"2026-09-22T21:09:39.932Z","line":"[scanner] frame: '9990000014' (10 bytes)"}
+{"t":1790111379932,"iso":"2026-09-22T21:09:39.932Z","line":"[scan] code=9990000014"}
+{"t":1790111379940,"iso":"2026-09-22T21:09:39.940Z","line":"[scan] lookup code=9990000014 found=1 cacheSize=297"}
+{"t":1790111381114,"iso":"2026-09-22T21:09:41.114Z","line":"[ntp] syncing..."}

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "scenario": "B",
+    "rep": 1,
+    "date": "2026-09-22",
+    "reconstructed_from": [
+      "scenario_B_serial_2026-09-22-20-41-44.ndjson",
+      "scenario_B_serial_2026-09-22-20-44-51.ndjson"
+    ],
+    "note": "El reinicio fisico entro accidentalmente en modo DOWNLOAD_BOOT (boton BOOT/GPIO0 en vez de EN/RST) y quedo 'waiting for download' 3 veces seguidas antes de arrancar normal. Prueba mas dura que un reset limpio: la cola sobrevivio integra pese a los 3 ciclos de bootloader atascado."
+  },
+  "timeline": {
+    "offline_scans_before_reset": 10,
+    "stuck_in_download_mode": [
+      "2026-09-22T20:43:48.267Z",
+      "2026-09-22T20:44:20.637Z",
+      "2026-09-22T20:44:25.597Z"
+    ],
+    "normal_boot_recovered": "2026-09-22T20:44:55.902Z",
+    "cache_reloaded": "2026-09-22T20:45:05.124Z (297 records, intacto)",
+    "wifi_reconnect": "2026-09-22T20:45:19.219Z",
+    "sync_pending_seen": "2026-09-22T20:45:29.226Z (pending=10 — TODOS sobrevivieron)",
+    "sync_batch_http_200": "2026-09-22T20:45:31.831Z",
+    "sync_ok": "2026-09-22T20:45:31.854Z"
+  },
+  "metrics": {
+    "generated_offline_before_reset": 10,
+    "pending_after_reboot": 10,
+    "recovered": 10,
+    "lost": 0
+  },
+  "anomalies": [
+    {
+      "when": "2026-09-22T20:43:48Z",
+      "desc": "3 ciclos de arranque atascados en DOWNLOAD_BOOT (boton BOOT presionado en vez de EN/RST). Firmware/LittleFS no se vieron afectados; una vez arranco normal, todo el pending.ndjson estaba intacto.",
+      "impact": "ninguno en los datos — solo demoro el reinicio ~1min extra"
+    }
+  ]
+}

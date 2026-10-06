@@ -1,0 +1,738 @@
+{
+  "meta": {
+    "tool": "serial_capture",
+    "scenario": "A",
+    "port": "COM4",
+    "baud": 115200,
+    "generatedAt": "2026-09-22T19:28:55.711Z",
+    "note": "Timestamps = host clock (ms). outages[] derivado de WIFI_DOWN→WIFI_UP→SYNC_OK."
+  },
+  "summary": {
+    "total_events": 82,
+    "boots": 0,
+    "resets": [],
+    "lfs_failures": 0,
+    "offline_drops": 0,
+    "lookups_not_found": [
+      {
+        "code": "9990000062",
+        "cacheSize": 297,
+        "at": "2026-09-22T19:18:44.062Z"
+      },
+      {
+        "code": "9990000062",
+        "cacheSize": 297,
+        "at": "2026-09-22T19:25:52.849Z"
+      },
+      {
+        "code": "9990000058",
+        "cacheSize": 297,
+        "at": "2026-09-22T19:26:01.729Z"
+      }
+    ],
+    "outages": [
+      {
+        "outage_start": "2026-09-22T19:20:45.885Z",
+        "outage_s": 2.5,
+        "sync_latency_s": 5.99,
+        "offline_appended": 0,
+        "max_queue_depth": 0,
+        "drops": 0
+      },
+      {
+        "outage_start": "2026-09-22T19:26:31.751Z",
+        "outage_s": 13,
+        "sync_latency_s": 8.31,
+        "offline_appended": 0,
+        "max_queue_depth": 0,
+        "drops": 0
+      }
+    ]
+  },
+  "events": [
+    {
+      "t": 1790104724062,
+      "iso": "2026-09-22T19:18:44.062Z",
+      "type": "LOOKUP_NOT_FOUND",
+      "code": "9990000062",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000062 found=0 cacheSize=297"
+    },
+    {
+      "t": 1790104726356,
+      "iso": "2026-09-22T19:18:46.356Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 275,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (275 bytes)"
+    },
+    {
+      "t": 1790104732401,
+      "iso": "2026-09-22T19:18:52.401Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790104734957,
+      "iso": "2026-09-22T19:18:54.957Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790104737864,
+      "iso": "2026-09-22T19:18:57.864Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000055",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000055 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104739982,
+      "iso": "2026-09-22T19:18:59.982Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 339,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"
+    },
+    {
+      "t": 1790104743005,
+      "iso": "2026-09-22T19:19:03.005Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000057",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000057 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104744994,
+      "iso": "2026-09-22T19:19:04.994Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 339,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"
+    },
+    {
+      "t": 1790104748126,
+      "iso": "2026-09-22T19:19:08.126Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000059",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000059 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104750119,
+      "iso": "2026-09-22T19:19:10.119Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 339,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"
+    },
+    {
+      "t": 1790104753986,
+      "iso": "2026-09-22T19:19:13.986Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000063",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000063 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104756161,
+      "iso": "2026-09-22T19:19:16.161Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 339,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"
+    },
+    {
+      "t": 1790104778547,
+      "iso": "2026-09-22T19:19:38.547Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000061",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000061 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104782808,
+      "iso": "2026-09-22T19:19:42.808Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca8f-3a8e-7d07-92f4-b301f10e5ddc",
+      "pending": 1,
+      "raw": "[offline] appended scanId=01a0ca8f-3a8e-7d07-92f4-b301f10e5ddc pending=1"
+    },
+    {
+      "t": 1790104782964,
+      "iso": "2026-09-22T19:19:42.964Z",
+      "type": "SYNC_PENDING",
+      "pending": 1,
+      "raw": "[sync] 1 records pending"
+    },
+    {
+      "t": 1790104785779,
+      "iso": "2026-09-22T19:19:45.779Z",
+      "type": "WIFI_DOWN",
+      "raw": "[wifi] disconnected"
+    },
+    {
+      "t": 1790104786801,
+      "iso": "2026-09-22T19:19:46.801Z",
+      "type": "WIFI_UP",
+      "ip": "192.168.18.100",
+      "rssi": -35,
+      "raw": "[wifi] connected — IP=192.168.18.100 RSSI=-35"
+    },
+    {
+      "t": 1790104786808,
+      "iso": "2026-09-22T19:19:46.808Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 14:19:47 (Lima)"
+    },
+    {
+      "t": 1790104789632,
+      "iso": "2026-09-22T19:19:49.632Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000050",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000050 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104793858,
+      "iso": "2026-09-22T19:19:53.858Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca8f-65db-7e0d-b50f-17385423fa9b",
+      "pending": 2,
+      "raw": "[offline] appended scanId=01a0ca8f-65db-7e0d-b50f-17385423fa9b pending=2"
+    },
+    {
+      "t": 1790104794070,
+      "iso": "2026-09-22T19:19:54.070Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000052",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000052 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104798093,
+      "iso": "2026-09-22T19:19:58.093Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000053",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000053 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104798310,
+      "iso": "2026-09-22T19:19:58.310Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca8f-7734-78ff-a955-d78e0bb8a668",
+      "pending": 3,
+      "raw": "[offline] appended scanId=01a0ca8f-7734-78ff-a955-d78e0bb8a668 pending=3"
+    },
+    {
+      "t": 1790104801894,
+      "iso": "2026-09-22T19:20:01.894Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000051",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000051 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790104802388,
+      "iso": "2026-09-22T19:20:02.388Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca8f-86e9-7918-a154-97e8c5119c38",
+      "pending": 4,
+      "raw": "[offline] appended scanId=01a0ca8f-86e9-7918-a154-97e8c5119c38 pending=4"
+    },
+    {
+      "t": 1790104806464,
+      "iso": "2026-09-22T19:20:06.464Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca8f-95c1-7b9d-b1a8-3d589577989b",
+      "pending": 5,
+      "raw": "[offline] appended scanId=01a0ca8f-95c1-7b9d-b1a8-3d589577989b pending=5"
+    },
+    {
+      "t": 1790104845885,
+      "iso": "2026-09-22T19:20:45.885Z",
+      "type": "WIFI_DOWN",
+      "raw": "[wifi] disconnected"
+    },
+    {
+      "t": 1790104848407,
+      "iso": "2026-09-22T19:20:48.407Z",
+      "type": "WIFI_UP",
+      "ip": "192.168.18.247",
+      "rssi": -39,
+      "raw": "[wifi] connected — IP=192.168.18.247 RSSI=-39"
+    },
+    {
+      "t": 1790104848414,
+      "iso": "2026-09-22T19:20:48.414Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 14:20:49 (Lima)"
+    },
+    {
+      "t": 1790104851408,
+      "iso": "2026-09-22T19:20:51.408Z",
+      "type": "SYNC_PENDING",
+      "pending": 5,
+      "raw": "[sync] 5 records pending"
+    },
+    {
+      "t": 1790104854377,
+      "iso": "2026-09-22T19:20:54.377Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan/batch",
+      "status": 200,
+      "bytes": 1727,
+      "raw": "[http] POST /api/iot-attendance/scan/batch -> 200 (1727 bytes)"
+    },
+    {
+      "t": 1790104854393,
+      "iso": "2026-09-22T19:20:54.393Z",
+      "type": "OFFLINE_CLEARED",
+      "raw": "[offline] log cleared"
+    },
+    {
+      "t": 1790104854400,
+      "iso": "2026-09-22T19:20:54.400Z",
+      "type": "SYNC_OK",
+      "raw": "[sync] batch sync OK — log cleared"
+    },
+    {
+      "t": 1790104858760,
+      "iso": "2026-09-22T19:20:58.760Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790104860610,
+      "iso": "2026-09-22T19:21:00.610Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790104921122,
+      "iso": "2026-09-22T19:22:01.122Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790104922867,
+      "iso": "2026-09-22T19:22:02.867Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790104983229,
+      "iso": "2026-09-22T19:23:03.229Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790104985026,
+      "iso": "2026-09-22T19:23:05.026Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790105046363,
+      "iso": "2026-09-22T19:24:06.363Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790105048921,
+      "iso": "2026-09-22T19:24:08.921Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790105072281,
+      "iso": "2026-09-22T19:24:32.281Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000051",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000051 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105075042,
+      "iso": "2026-09-22T19:24:35.042Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790105083901,
+      "iso": "2026-09-22T19:24:43.901Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000053",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000053 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105086096,
+      "iso": "2026-09-22T19:24:46.096Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790105088741,
+      "iso": "2026-09-22T19:24:48.741Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000052",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000052 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105091013,
+      "iso": "2026-09-22T19:24:51.013Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790105093843,
+      "iso": "2026-09-22T19:24:53.843Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000050",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000050 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105096030,
+      "iso": "2026-09-22T19:24:56.030Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790105097904,
+      "iso": "2026-09-22T19:24:57.904Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000061",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000061 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105100127,
+      "iso": "2026-09-22T19:25:00.127Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790105109130,
+      "iso": "2026-09-22T19:25:09.130Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790105111077,
+      "iso": "2026-09-22T19:25:11.077Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790105133404,
+      "iso": "2026-09-22T19:25:33.404Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000063",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000063 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105136845,
+      "iso": "2026-09-22T19:25:36.845Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca94-a494-72fe-9bb6-c176d56c9a9f",
+      "pending": 1,
+      "raw": "[offline] appended scanId=01a0ca94-a494-72fe-9bb6-c176d56c9a9f pending=1"
+    },
+    {
+      "t": 1790105137082,
+      "iso": "2026-09-22T19:25:37.082Z",
+      "type": "WIFI_DOWN",
+      "raw": "[wifi] disconnected"
+    },
+    {
+      "t": 1790105138602,
+      "iso": "2026-09-22T19:25:38.602Z",
+      "type": "WIFI_UP",
+      "ip": "192.168.18.101",
+      "rssi": -44,
+      "raw": "[wifi] connected — IP=192.168.18.101 RSSI=-44"
+    },
+    {
+      "t": 1790105138608,
+      "iso": "2026-09-22T19:25:38.608Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 14:25:39 (Lima)"
+    },
+    {
+      "t": 1790105138612,
+      "iso": "2026-09-22T19:25:38.612Z",
+      "type": "SYNC_PENDING",
+      "pending": 1,
+      "raw": "[sync] 1 records pending"
+    },
+    {
+      "t": 1790105141427,
+      "iso": "2026-09-22T19:25:41.427Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000059",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000059 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105144827,
+      "iso": "2026-09-22T19:25:44.827Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000057",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000057 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105145656,
+      "iso": "2026-09-22T19:25:45.656Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca94-c3ea-716c-bcf5-5067a650b029",
+      "pending": 2,
+      "raw": "[offline] appended scanId=01a0ca94-c3ea-716c-bcf5-5067a650b029 pending=2"
+    },
+    {
+      "t": 1790105149388,
+      "iso": "2026-09-22T19:25:49.388Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000055",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000055 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105149739,
+      "iso": "2026-09-22T19:25:49.739Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca94-d132-7d64-a20d-196afaf6ad8e",
+      "pending": 3,
+      "raw": "[offline] appended scanId=01a0ca94-d132-7d64-a20d-196afaf6ad8e pending=3"
+    },
+    {
+      "t": 1790105152849,
+      "iso": "2026-09-22T19:25:52.849Z",
+      "type": "LOOKUP_NOT_FOUND",
+      "code": "9990000062",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000062 found=0 cacheSize=297"
+    },
+    {
+      "t": 1790105153820,
+      "iso": "2026-09-22T19:25:53.820Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca94-e303-7b09-8af7-980df1996f35",
+      "pending": 4,
+      "raw": "[offline] appended scanId=01a0ca94-e303-7b09-8af7-980df1996f35 pending=4"
+    },
+    {
+      "t": 1790105157904,
+      "iso": "2026-09-22T19:25:57.904Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca94-f0ec-7b18-aca1-4faa34555e2f",
+      "pending": 5,
+      "raw": "[offline] appended scanId=01a0ca94-f0ec-7b18-aca1-4faa34555e2f pending=5"
+    },
+    {
+      "t": 1790105161729,
+      "iso": "2026-09-22T19:26:01.729Z",
+      "type": "LOOKUP_NOT_FOUND",
+      "code": "9990000058",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000058 found=0 cacheSize=297"
+    },
+    {
+      "t": 1790105166072,
+      "iso": "2026-09-22T19:26:06.072Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca95-139b-7b55-9a78-14c4a8392858",
+      "pending": 6,
+      "raw": "[offline] appended scanId=01a0ca95-139b-7b55-9a78-14c4a8392858 pending=6"
+    },
+    {
+      "t": 1790105168290,
+      "iso": "2026-09-22T19:26:08.290Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000060",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000060 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790105172567,
+      "iso": "2026-09-22T19:26:12.567Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0ca95-2cd9-7b77-95a9-c0dac7dc50d9",
+      "pending": 7,
+      "raw": "[offline] appended scanId=01a0ca95-2cd9-7b77-95a9-c0dac7dc50d9 pending=7"
+    },
+    {
+      "t": 1790105191751,
+      "iso": "2026-09-22T19:26:31.751Z",
+      "type": "WIFI_DOWN",
+      "raw": "[wifi] disconnected"
+    },
+    {
+      "t": 1790105204788,
+      "iso": "2026-09-22T19:26:44.788Z",
+      "type": "WIFI_UP",
+      "ip": "192.168.18.247",
+      "rssi": -43,
+      "raw": "[wifi] connected — IP=192.168.18.247 RSSI=-43"
+    },
+    {
+      "t": 1790105204795,
+      "iso": "2026-09-22T19:26:44.795Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 14:26:45 (Lima)"
+    },
+    {
+      "t": 1790105210790,
+      "iso": "2026-09-22T19:26:50.790Z",
+      "type": "SYNC_PENDING",
+      "pending": 7,
+      "raw": "[sync] 7 records pending"
+    },
+    {
+      "t": 1790105213085,
+      "iso": "2026-09-22T19:26:53.085Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan/batch",
+      "status": 200,
+      "bytes": 2309,
+      "raw": "[http] POST /api/iot-attendance/scan/batch -> 200 (2309 bytes)"
+    },
+    {
+      "t": 1790105213096,
+      "iso": "2026-09-22T19:26:53.096Z",
+      "type": "OFFLINE_CLEARED",
+      "raw": "[offline] log cleared"
+    },
+    {
+      "t": 1790105213102,
+      "iso": "2026-09-22T19:26:53.102Z",
+      "type": "SYNC_OK",
+      "raw": "[sync] batch sync OK — log cleared"
+    },
+    {
+      "t": 1790105235499,
+      "iso": "2026-09-22T19:27:15.499Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790105237967,
+      "iso": "2026-09-22T19:27:17.967Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 83,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"
+    },
+    {
+      "t": 1790105297855,
+      "iso": "2026-09-22T19:28:17.855Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790105299595,
+      "iso": "2026-09-22T19:28:19.595Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 83,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "scenario": "A",
+    "target_outage_s": 300,
+    "rep": 2,
+    "date": "2026-09-22",
+    "reconstructed_from": ["scenario_A_serial_2026-09-22-19-40-52.ndjson"],
+    "note": "Un blip aislado a las 19:41:47 (1 evento offline, recuperado en 5s) precedio al corte principal; no se cuenta como parte de esta corrida. Durante el corte principal se disparo el refresh de cache automatico (30min) y fallo una pagina por DNS caido -> confirmo en campo el fix de student_cache.cpp (revert a snapshot bueno en LittleFS en vez de dejar el indice corrupto)."
+  },
+  "timeline": {
+    "isolated_blip_before": { "offline": 1, "recovered_s": 5, "at": "2026-09-22T19:41:47.291Z" },
+    "online_scans": ["9990000057", "9990000051", "9990000053", "9990000052", "9990000050"],
+    "first_upload_failure": "2026-09-22T19:42:57.514Z",
+    "offline_scans": ["9990000061", "9990000063", "9990000059", "9990000060", "9990000055"],
+    "cache_refresh_failure_recovered": {
+      "at": "2026-09-22T19:48:03.246Z",
+      "desc": "[cache:students] aborted due to page error — reverting to last known-good cache -> loaded 297 records (MsgPack). Confirma en campo el fix aplicado a pullFromBackend()."
+    },
+    "wifi_final_up": "2026-09-22T19:48:16.805Z",
+    "sync_pending_seen": "2026-09-22T19:48:46.306Z",
+    "sync_batch_http_200": "2026-09-22T19:48:48.732Z",
+    "sync_ok": "2026-09-22T19:48:48.751Z"
+  },
+  "metrics": {
+    "degraded_period_s": 351.2,
+    "generated_online": 5,
+    "generated_offline": 5,
+    "max_queue_depth": 5,
+    "recovered": 5,
+    "lost": 0,
+    "watchdog_reset": false,
+    "cache_corruption_prevented": true
+  },
+  "anomalies": [
+    {
+      "when": "2026-09-22T19:41:47Z",
+      "desc": "SSL - Memory allocation failed transitorio, autorrecuperado en 5s (mismo patron que en corridas previas).",
+      "impact": "ninguno"
+    }
+  ]
+}

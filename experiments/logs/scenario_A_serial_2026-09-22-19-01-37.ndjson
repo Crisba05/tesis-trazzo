@@ -1,0 +1,7 @@
+{"t":1790103707449,"iso":"2026-09-22T19:01:47.449Z","line":"\u001b[0;33m[261168][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790103707600,"iso":"2026-09-22T19:01:47.600Z","line":"[wifi] disconnected"}
+{"t":1790103707603,"iso":"2026-09-22T19:01:47.603Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790103707614,"iso":"2026-09-22T19:01:47.614Z","line":"\u001b[0;33m[261333][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790103717621,"iso":"2026-09-22T19:01:57.621Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790103717629,"iso":"2026-09-22T19:01:57.629Z","line":"\u001b[0;33m[271349][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790103720637,"iso":"2026-09-22T19:02:00.637Z","line":"[wifi] connected — IP=192.168.18.247 RSSI=-46"}

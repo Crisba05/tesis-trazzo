@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Logger de escenarios — nodo ESP32 + GM65</title>
+<style>
+  :root{--bg:#0f172a;--panel:#1e293b;--ink:#e2e8f0;--muted:#94a3b8;--line:#334155;
+        --ok:#22c55e;--bad:#ef4444;--warn:#f59e0b;--accent:#3b82f6;--net:#8b5cf6;--pwr:#f97316;}
+  @media (prefers-color-scheme:light){:root{--bg:#f1f5f9;--panel:#fff;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif;padding:18px}
+  h1{font-size:19px;margin:0 0 4px} .sub{color:var(--muted);margin:0 0 14px;font-size:13px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:1050px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+  label{display:block;font-size:12px;color:var(--muted);margin:8px 0 3px;text-transform:uppercase;letter-spacing:.04em}
+  input,select{width:100%;padding:8px 10px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;font-size:14px}
+  .row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1;min-width:90px}
+  button{cursor:pointer;border:none;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:600;color:#fff}
+  .b-scan{background:var(--accent)}.b-net-off{background:var(--net)}.b-net-on{background:var(--ok)}
+  .b-reboot{background:#0ea5e9}.b-pwr{background:var(--pwr)}.b-sync{background:var(--ok)}
+  .b-start{background:#10b981}.b-stop{background:#475569}.b-undo{background:#64748b}
+  .b-export{background:var(--ok)}.b-clear{background:var(--bad)}
+  button:disabled{opacity:.35;cursor:not-allowed}
+  #banner{margin-top:10px;border-radius:10px;padding:12px;text-align:center;font-size:16px;font-weight:700;background:var(--bg);border:1px solid var(--line)}
+  .counters{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .cnt{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 12px;text-align:center;min-width:74px}
+  .cnt b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
+  .cnt.ok b{color:var(--ok)}.cnt.bad b{color:var(--bad)}.cnt.warn b{color:var(--warn)}.cnt.net b{color:var(--net)}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+  th,td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+  th{color:var(--muted);font-size:11px;text-transform:uppercase}
+  .tablewrap{max-height:260px;overflow:auto;border:1px solid var(--line);border-radius:10px;margin-top:8px}
+  .hint{font-size:12px;color:var(--muted);margin-top:6px} .full{grid-column:1/-1}
+  .pill{display:inline-block;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12px;margin:2px 4px 0 0}
+  .ph-online{color:var(--ok)}.ph-offline{color:var(--warn)}.ph-post{color:var(--accent)}
+  .ev-net{color:var(--net);font-weight:700}.ev-pwr{color:var(--pwr);font-weight:700}.ev-reboot{color:#0ea5e9;font-weight:700}
+  .warnbox{background:rgba(245,158,11,.15);border:1px solid var(--warn);color:var(--warn);border-radius:8px;padding:8px;margin-top:8px;font-size:12.5px;display:none}
+  fieldset{border:1px solid var(--line);border-radius:10px;margin-top:10px;padding:8px 12px 12px}
+  legend{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;padding:0 6px}
+</style>
+</head>
+<body>
+  <h1>Logger de escenarios — <b>nodo ESP32 + GM65</b></h1>
+  <p class="sub">Registra corridas de los Escenarios A–D con sellos de tiempo. Calcula
+  <b>sync-latency</b> y <b>eventos perdidos</b> solo. Usa credenciales sintéticas y el tenant de pruebas.
+  Los datos se guardan en este navegador. Guía: <code>report/GUIA_ESCENARIOS.md</code>.</p>
+
+  <div class="grid">
+    <!-- ============ CONFIG + CORRIDA ============ -->
+    <div class="card">
+      <div class="row">
+        <div><label>Escenario</label>
+          <select id="scn">
+            <option value="A">A · Cortes de red (60/300/900 s)</option>
+            <option value="B">B · Reinicio ESP32 offline</option>
+            <option value="C">C · Corte de energía en escritura</option>
+            <option value="D">D · Ráfaga (50/100/250)</option>
+          </select></div>
+        <div><label>Firmware</label><input id="fw" value="2.0.0-dev"/></div>
+      </div>
+      <div class="row">
+        <div id="wrapDur"><label>Duración objetivo (s)</label>
+          <select id="dur"><option>60</option><option>300</option><option>900</option></select></div>
+        <div id="wrapBurst" style="display:none"><label>Tamaño de tanda</label>
+          <select id="burst"><option>50</option><option>100</option><option>250</option></select></div>
+        <div><label>Nota corrida</label><input id="note" placeholder="rep 1 / anomalía…"/></div>
+      </div>
+
+      <div class="row" style="margin-top:12px">
+        <button class="b-start" id="startBtn">▶ Iniciar corrida</button>
+        <button class="b-stop"  id="stopBtn" disabled>⏹ Cerrar corrida</button>
+      </div>
+
+      <fieldset>
+        <legend>Eventos de la corrida</legend>
+        <div class="row">
+          <button class="b-scan"    id="scanOkBtn"  disabled>📷 Escaneo</button>
+          <button class="b-undo"    id="undoBtn"    disabled>↶ Deshacer</button>
+        </div>
+        <div class="row" style="margin-top:8px">
+          <button class="b-net-off" id="netOffBtn" disabled>📶✗ Corte de red</button>
+          <button class="b-net-on"  id="netOnBtn"  disabled>📶✓ Reconexión</button>
+          <button class="b-sync"    id="syncBtn"   disabled>✅ Sync completo</button>
+        </div>
+        <div class="row" style="margin-top:8px">
+          <button class="b-reboot"  id="rebootBtn" disabled>🔁 Reinicio (B)</button>
+          <button class="b-pwr"     id="pwrBtn"    disabled>⚡ Corte energía (C)</button>
+        </div>
+        <div id="scanCode" style="margin-top:8px">
+          <label>Código escaneado (opcional, para detectar duplicados &lt;30 s)</label>
+          <input id="code" placeholder="TEST-QR-001…"/>
+        </div>
+        <div class="warnbox" id="dupWarn">⚠ Código repetido dentro de 30 s: el dedup lo descartará. Usa uno distinto.</div>
+      </fieldset>
+
+      <div id="banner">Configura y presiona <b>Iniciar corrida</b></div>
+    </div>
+
+    <!-- ============ CIERRE + PROGRESO ============ -->
+    <div class="card">
+      <b>Estado en vivo</b>
+      <div class="counters">
+        <div class="cnt ok"><b id="cOnline">0</b>online</div>
+        <div class="cnt warn"><b id="cOffline">0</b>offline</div>
+        <div class="cnt"><b id="cPost">0</b>post-sync</div>
+        <div class="cnt net"><b id="cSync">—</b>sync s</div>
+      </div>
+      <div class="hint">Fase actual: <span class="pill" id="phaseView">—</span>
+        Red: <span class="pill" id="netView">conectada</span></div>
+
+      <fieldset>
+        <legend>Al cerrar la corrida — verifica en backend</legend>
+        <div class="row">
+          <div><label>Recuperados (offline que llegaron)</label><input id="recovered" type="number" min="0" placeholder="p.ej. 5"/></div>
+          <div id="wrapPending"><label>Pendientes tras reinicio (B)</label><input id="pending" type="number" min="0" placeholder="B/C"/></div>
+        </div>
+        <div class="row" id="wrapLfs" style="display:none">
+          <div><label>Montaje LittleFS al reiniciar (C)</label>
+            <select id="lfs"><option value="">—</option><option>OK</option><option>error</option><option>truncado</option></select></div>
+          <div><label>Offset del corte (s)</label><input id="offset" placeholder="0 / 0.5 / 1"/></div>
+        </div>
+        <div class="hint" id="lostView">Perdidos = generados offline − recuperados → <b>—</b></div>
+      </fieldset>
+
+      <div class="row" style="margin-top:12px">
+        <button class="b-export" id="exportJsonBtn">⬇ Exportar JSON</button>
+        <button class="b-export" id="exportCsvBtn">⬇ Exportar CSV</button>
+        <button class="b-clear"  id="clearBtn">🗑 Borrar todo</button>
+      </div>
+      <div class="hint">Nombra: <code>scenario_<span id="fnHint">A</span>_&lt;detalle&gt;_YYYY-MM-DD</code>.
+        Recuerda guardar también el <b>log serial</b> aparte.</div>
+    </div>
+
+    <!-- ============ CORRIDAS CERRADAS ============ -->
+    <div class="card full">
+      <b>Corridas cerradas (<span id="runCount">0</span>)</b>
+      <div class="tablewrap"><table id="runTbl"><thead><tr>
+        <th>#</th><th>scn</th><th>fw</th><th>obj</th><th>online</th><th>offline</th><th>recup.</th>
+        <th>perdidos</th><th>sync s</th><th>LittleFS</th><th>nota</th><th>inicio</th>
+      </tr></thead><tbody></tbody></table></div>
+    </div>
+
+    <!-- ============ EVENTOS DE LA CORRIDA ACTUAL ============ -->
+    <div class="card full">
+      <b>Eventos de la corrida en curso (<span id="evCount">0</span>)</b>
+      <div class="tablewrap"><table id="evTbl"><thead><tr>
+        <th>#</th><th>tipo</th><th>fase</th><th>código</th><th>hora</th><th>t+ (s)</th>
+      </tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const RUNS_KEY='esp32_scn_runs_v1', CUR_KEY='esp32_scn_cur_v1';
+let runs=load(RUNS_KEY,[]), cur=load(CUR_KEY,null);
+
+function load(k,def){try{const v=localStorage.getItem(k);return v?JSON.parse(v):def;}catch(e){return def;}}
+function saveRuns(){try{localStorage.setItem(RUNS_KEY,JSON.stringify(runs));}catch(e){}}
+function saveCur(){try{cur?localStorage.setItem(CUR_KEY,JSON.stringify(cur)):localStorage.removeItem(CUR_KEY);}catch(e){}}
+const now=()=>Date.now();
+const hhmmss=ts=>new Date(ts).toLocaleTimeString();
+const esc=s=>(s+'').replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+function scnAdapt(){
+  const s=$('scn').value;
+  $('wrapDur').style.display   = (s==='D')?'none':'';
+  $('wrapBurst').style.display = (s==='D')?'':'none';
+  $('wrapLfs').style.display   = (s==='C')?'':'none';
+  $('wrapPending').style.display=(s==='B'||s==='C')?'':'none';
+  $('fnHint').textContent=s;
+}
+$('scn').addEventListener('change',scnAdapt);
+
+function setControls(active){
+  ['scanOkBtn','undoBtn','netOffBtn','netOnBtn','syncBtn','rebootBtn','pwrBtn'].forEach(id=>$(id).disabled=!active);
+  $('startBtn').disabled=active; $('stopBtn').disabled=!active;
+  if(active){
+    const s=cur.scn;
+    $('rebootBtn').disabled=(s!=='B');
+    $('pwrBtn').disabled=(s!=='C');
+  }
+}
+function phase(){ if(!cur)return'—'; if(cur.tSync)return'post'; if(cur.tNetOff&&!cur.tNetOn)return'offline';
+  return cur.tNetOn?'post':'online'; }
+
+function startRun(){
+  const s=$('scn').value;
+  cur={scn:s,fw:$('fw').value.trim(),target:(s==='D')?$('burst').value:$('dur').value,
+       note:$('note').value.trim(),tStart:now(),tNetOff:null,tNetOn:null,tSync:null,
+       events:[],recentCodes:[]};
+  saveCur();setControls(true);render();banner('ok','Corrida iniciada · fase online');
+}
+function stopRun(){
+  if(!cur)return;
+  const gOff=cur.events.filter(e=>e.type==='scan'&&e.phase==='offline').length;
+  const rec=parseInt($('recovered').value,10);
+  const lost=(!isNaN(rec))?Math.max(0,gOff-rec):null;
+  const rec2={
+    n:runs.length+1, scn:cur.scn, fw:cur.fw, target:cur.target, note:cur.note,
+    started:new Date(cur.tStart).toISOString(),
+    generated_online:cur.events.filter(e=>e.type==='scan'&&e.phase==='online').length,
+    generated_offline:gOff,
+    generated_post:cur.events.filter(e=>e.type==='scan'&&e.phase==='post').length,
+    recovered:isNaN(rec)?null:rec,
+    lost:lost,
+    pending_after_reboot:$('pending').value?parseInt($('pending').value,10):null,
+    littlefs_mount:$('lfs').value||null,
+    power_cut_offset_s:$('offset').value.trim()||null,
+    sync_latency_s:(cur.tNetOn&&cur.tSync)?+((cur.tSync-cur.tNetOn)/1000).toFixed(2):null,
+    outage_actual_s:(cur.tNetOff&&cur.tNetOn)?+((cur.tNetOn-cur.tNetOff)/1000).toFixed(1):null,
+    events:cur.events.map(e=>({type:e.type,phase:e.phase,code:e.code||null,
+      t_iso:new Date(e.t).toISOString(),t_rel_s:+((e.t-cur.tStart)/1000).toFixed(2)}))
+  };
+  runs.push(rec2);saveRuns();
+  cur=null;saveCur();
+  ['recovered','pending','offset'].forEach(id=>$(id).value='');$('lfs').value='';$('note').value='';
+  setControls(false);render();banner('','Corrida cerrada y guardada');
+}
+function addEvent(type,extra){
+  if(!cur)return;
+  const code=(type==='scan')?$('code').value.trim():'';
+  if(type==='scan'&&code){
+    const rc=cur.recentCodes.filter(x=>now()-x.t<30000);
+    if(rc.some(x=>x.code===code)){$('dupWarn').style.display='block';}
+    else{$('dupWarn').style.display='none';}
+    cur.recentCodes=rc.concat([{code,t:now()}]);
+    $('code').value='';
+  }
+  cur.events.push(Object.assign({type,phase:phase(),code,t:now()},extra||{}));
+  saveCur();render();
+}
+function mark(field,cls,txt){ if(!cur)return; cur[field]=now(); saveCur();
+  cur.events.push({type:field,phase:phase(),code:'',t:now()}); saveCur();render();banner(cls,txt); }
+
+function banner(cls,txt){$('banner').className='';$('banner').innerHTML=txt;
+  if(cls==='ok')$('banner').style.color='var(--ok)';else if(cls==='bad')$('banner').style.color='var(--bad)';
+  else $('banner').style.color='';}
+
+function render(){
+  // live counters
+  const ev=cur?cur.events:[];
+  $('cOnline').textContent =ev.filter(e=>e.type==='scan'&&e.phase==='online').length;
+  $('cOffline').textContent=ev.filter(e=>e.type==='scan'&&e.phase==='offline').length;
+  $('cPost').textContent   =ev.filter(e=>e.type==='scan'&&e.phase==='post').length;
+  $('cSync').textContent   =(cur&&cur.tNetOn&&cur.tSync)?((cur.tSync-cur.tNetOn)/1000).toFixed(1):'—';
+  $('phaseView').textContent=phase();
+  $('netView').textContent=(cur&&cur.tNetOff&&!cur.tNetOn)?'CORTADA':'conectada';
+  // lost preview
+  const gOff=ev.filter(e=>e.type==='scan'&&e.phase==='offline').length;
+  const rec=parseInt($('recovered').value,10);
+  $('lostView').innerHTML='Perdidos = generados offline ('+gOff+') − recuperados → <b>'+
+    (isNaN(rec)?'—':Math.max(0,gOff-rec))+'</b>';
+  // events table
+  const etb=$('evTbl').querySelector('tbody');etb.innerHTML='';
+  ev.slice().reverse().slice(0,150).forEach((e,i)=>{
+    const cls=e.type==='scan'?('ph-'+e.phase):(e.type==='tNetOff'||e.type==='tNetOn'?'ev-net':e.type==='pwr'||e.type==='tPwr'?'ev-pwr':'ev-reboot');
+    const tr=document.createElement('tr');
+    tr.innerHTML='<td>'+(ev.length-i)+'</td><td class="'+cls+'">'+esc(label(e.type))+'</td><td class="ph-'+e.phase+'">'+e.phase+'</td>'+
+      '<td>'+esc(e.code||'')+'</td><td>'+hhmmss(e.t)+'</td><td>'+((e.t-(cur?cur.tStart:e.t))/1000).toFixed(2)+'</td>';
+    etb.appendChild(tr);
+  });
+  $('evCount').textContent=ev.length;
+  // runs table
+  const rtb=$('runTbl').querySelector('tbody');rtb.innerHTML='';
+  runs.slice().reverse().forEach(r=>{
+    const tr=document.createElement('tr');
+    const lost=(r.lost===null||r.lost===undefined)?'—':(r.lost===0?'<b style="color:var(--ok)">0</b>':'<b style="color:var(--bad)">'+r.lost+'</b>');
+    tr.innerHTML='<td>'+r.n+'</td><td>'+r.scn+'</td><td>'+esc(r.fw)+'</td><td>'+esc(r.target)+'</td>'+
+      '<td>'+r.generated_online+'</td><td>'+r.generated_offline+'</td><td>'+(r.recovered??'—')+'</td>'+
+      '<td>'+lost+'</td><td>'+(r.sync_latency_s??'—')+'</td><td>'+(r.littlefs_mount||'—')+'</td>'+
+      '<td>'+esc(r.note||'')+'</td><td>'+hhmmss(new Date(r.started).getTime())+'</td>';
+    rtb.appendChild(tr);
+  });
+  $('runCount').textContent=runs.length;
+}
+function label(t){return {scan:'📷 escaneo',tNetOff:'📶✗ corte red',tNetOn:'📶✓ reconexión',
+  tSync:'✅ sync',tReboot:'🔁 reinicio',tPwr:'⚡ corte energía'}[t]||t;}
+
+// wire buttons
+$('startBtn').addEventListener('click',startRun);
+$('stopBtn').addEventListener('click',()=>{if(confirm('¿Cerrar y guardar la corrida?'))stopRun();});
+$('scanOkBtn').addEventListener('click',()=>{addEvent('scan');banner('ok','Escaneo registrado ('+phase()+')');});
+$('undoBtn').addEventListener('click',()=>{if(cur&&cur.events.length){cur.events.pop();saveCur();render();}});
+$('netOffBtn').addEventListener('click',()=>mark('tNetOff','bad','📶✗ Red cortada — genera escaneos offline'));
+$('netOnBtn').addEventListener('click',()=>mark('tNetOn','ok','📶✓ Reconexión — espera el sync'));
+$('syncBtn').addEventListener('click',()=>mark('tSync','ok','✅ Sync completo — cuenta recuperados y cierra'));
+$('rebootBtn').addEventListener('click',()=>mark('tReboot','bad','🔁 Reinicio marcado — revisa el serial de arranque'));
+$('pwrBtn').addEventListener('click',()=>mark('tPwr','bad','⚡ Corte de energía marcado — anota offset y montaje LittleFS'));
+$('recovered').addEventListener('input',render);
+$('clearBtn').addEventListener('click',()=>{if(confirm('¿Borrar TODAS las corridas y la corrida en curso?')){runs=[];cur=null;saveRuns();saveCur();render();setControls(false);}});
+
+function download(name,text,type){const b=new Blob([text],{type});const a=document.createElement('a');
+  a.href=URL.createObjectURL(b);a.download=name;a.click();}
+$('exportJsonBtn').addEventListener('click',()=>{
+  const out={meta:{tool:'logger_escenarios',generatedAt:new Date().toISOString(),
+    convention:'scenario_<A|B|C|D>_<detalle>_YYYY-MM-DD.json',
+    note:'Credenciales sintéticas, tenant de pruebas. sync_latency_s = tSync - tNetOn.'},
+    runs:runs};
+  download('scenarios_export.json',JSON.stringify(out,null,2),'application/json');
+});
+$('exportCsvBtn').addEventListener('click',()=>{
+  const head='run,scn,fw,target,generated_online,generated_offline,generated_post,recovered,lost,pending_after_reboot,littlefs_mount,power_cut_offset_s,outage_actual_s,sync_latency_s,note,started';
+  const lines=runs.map(r=>[r.n,r.scn,r.fw,r.target,r.generated_online,r.generated_offline,r.generated_post,
+    r.recovered??'',r.lost??'',r.pending_after_reboot??'',r.littlefs_mount||'',r.power_cut_offset_s||'',
+    r.outage_actual_s??'',r.sync_latency_s??'',(r.note||'').replace(/,/g,';'),r.started].join(','));
+  download('scenarios_export.csv',[head,...lines].join('\n'),'text/csv');
+});
+
+// init
+scnAdapt();
+if(cur){setControls(true);banner('','Corrida en curso restaurada');}else{setControls(false);}
+render();
+</script>
+</body>
+</html>

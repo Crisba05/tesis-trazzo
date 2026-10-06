@@ -1,0 +1,97 @@
+{"t":1790103456354,"iso":"2026-09-22T18:57:36.354Z","line":"[ntp] syncing..."}
+{"t":1790103459370,"iso":"2026-09-22T18:57:39.370Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790103466366,"iso":"2026-09-22T18:57:46.366Z","line":"[ntp] syncing..."}
+{"t":1790103466372,"iso":"2026-09-22T18:57:46.372Z","line":"[ntp] synced: 2026-09-22 13:57:47 (Lima)"}
+{"t":1790103466570,"iso":"2026-09-22T18:57:46.570Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790103466575,"iso":"2026-09-22T18:57:46.575Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790103466587,"iso":"2026-09-22T18:57:46.587Z","line":"[prov] credentials loaded — device=IOT-E6B3F57E backend=https://api.example.org"}
+{"t":1790103466587,"iso":"2026-09-22T18:57:46.587Z","line":"[TRAZZO] provisioned"}
+{"t":1790103466998,"iso":"2026-09-22T18:57:46.998Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790103467061,"iso":"2026-09-22T18:57:47.061Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790103467067,"iso":"2026-09-22T18:57:47.067Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790103467067,"iso":"2026-09-22T18:57:47.067Z","line":""}
+{"t":1790103467078,"iso":"2026-09-22T18:57:47.078Z","line":"────────────────��──────────���──────────────"}
+{"t":1790103467083,"iso":"2026-09-22T18:57:47.083Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790103467095,"iso":"2026-09-22T18:57:47.095Z","line":"──────���────────────────────��──────────���───"}
+{"t":1790103467099,"iso":"2026-09-22T18:57:47.099Z","line":"[tasks] all 6 tasks started"}
+{"t":1790103467111,"iso":"2026-09-22T18:57:47.111Z","line":"\u001b[0;31m[ 20825][E][vfs_api.cpp:105] open(): /littlefs/offline/pending.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790103467122,"iso":"2026-09-22T18:57:47.122Z","line":"\u001b[0;31m[ 20827][E][vfs_api.cpp:105] open(): /littlefs/offline/pending.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790103509087,"iso":"2026-09-22T18:58:29.087Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790103509092,"iso":"2026-09-22T18:58:29.092Z","line":"[hb] heartbeat OK"}
+{"t":1790103511038,"iso":"2026-09-22T18:58:31.038Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790103511045,"iso":"2026-09-22T18:58:31.045Z","line":"[kpis] E=0 L=11 SR=286 (total=297)"}
+{"t":1790103517774,"iso":"2026-09-22T18:58:37.774Z","line":"[scanner] frame: '9990000014' (10 bytes)"}
+{"t":1790103517774,"iso":"2026-09-22T18:58:37.774Z","line":"[scan] code=9990000014"}
+{"t":1790103518674,"iso":"2026-09-22T18:58:38.674Z","line":"[scanner] frame: '9990000014' (10 bytes)"}
+{"t":1790103518674,"iso":"2026-09-22T18:58:38.674Z","line":"[scan] code=9990000014"}
+{"t":1790103518681,"iso":"2026-09-22T18:58:38.681Z","line":"[scan] duplicate — ignored"}
+{"t":1790103519744,"iso":"2026-09-22T18:58:39.744Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790103519752,"iso":"2026-09-22T18:58:39.752Z","line":"[upl] OK 01a0ca7b-fdd5-7965-b7bd-b830e8a2a5b4 in 1812ms"}
+{"t":1790103519814,"iso":"2026-09-22T18:58:39.814Z","line":"[scanner] frame: '9990000014' (10 bytes)"}
+{"t":1790103519814,"iso":"2026-09-22T18:58:39.814Z","line":"[scan] code=9990000014"}
+{"t":1790103519820,"iso":"2026-09-22T18:58:39.820Z","line":"[scan] duplicate — ignored"}
+{"t":1790103520975,"iso":"2026-09-22T18:58:40.975Z","line":"[scanner] frame: '9990000016' (10 bytes)"}
+{"t":1790103520975,"iso":"2026-09-22T18:58:40.975Z","line":"[scan] code=9990000016"}
+{"t":1790103523021,"iso":"2026-09-22T18:58:43.021Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790103523029,"iso":"2026-09-22T18:58:43.029Z","line":"[upl] OK 01a0ca7c-0a56-7468-b043-be573f9965d9 in 1887ms"}
+{"t":1790103525335,"iso":"2026-09-22T18:58:45.335Z","line":"[scanner] frame: '9990000018' (10 bytes)"}
+{"t":1790103525335,"iso":"2026-09-22T18:58:45.335Z","line":"[scan] code=9990000018"}
+{"t":1790103526635,"iso":"2026-09-22T18:58:46.635Z","line":"[scanner] frame: '9990000020' (10 bytes)"}
+{"t":1790103526635,"iso":"2026-09-22T18:58:46.635Z","line":"[scan] code=9990000020"}
+{"t":1790103527419,"iso":"2026-09-22T18:58:47.419Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790103527427,"iso":"2026-09-22T18:58:47.427Z","line":"[upl] OK 01a0ca7c-1b5e-7668-8648-71812eb5cae7 in 1926ms"}
+{"t":1790103529264,"iso":"2026-09-22T18:58:49.264Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790103529273,"iso":"2026-09-22T18:58:49.273Z","line":"[upl] OK 01a0ca7c-2073-7388-8aeb-194387e58fcf in 1842ms"}
+{"t":1790103532176,"iso":"2026-09-22T18:58:52.176Z","line":"[scanner] frame: '9990000020' (10 bytes)"}
+{"t":1790103532176,"iso":"2026-09-22T18:58:52.176Z","line":"[scan] code=9990000020"}
+{"t":1790103532182,"iso":"2026-09-22T18:58:52.182Z","line":"[scan] duplicate — ignored"}
+{"t":1790103538836,"iso":"2026-09-22T18:58:58.836Z","line":"[scanner] frame: '9990000022' (10 bytes)"}
+{"t":1790103538836,"iso":"2026-09-22T18:58:58.836Z","line":"[scan] code=9990000022"}
+{"t":1790103541247,"iso":"2026-09-22T18:59:01.247Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790103541256,"iso":"2026-09-22T18:59:01.256Z","line":"[upl] OK 01a0ca7c-501b-7cc3-873c-a8afd9110a51 in 2253ms"}
+{"t":1790103569796,"iso":"2026-09-22T18:59:29.796Z","line":"\u001b[0;33m[123517][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 200 - BEACON_TIMEOUT\u001b[0m"}
+{"t":1790103569811,"iso":"2026-09-22T18:59:29.811Z","line":"\u001b[0;31m[123521][E][ssl_client.cpp:129] start_ssl_client(): socket error on fd 48, errno: 113, \"Software caused connection abort\"\u001b[0m"}
+{"t":1790103569828,"iso":"2026-09-22T18:59:29.828Z","line":"\u001b[0;31m[123549][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790103569837,"iso":"2026-09-22T18:59:29.837Z","line":"\u001b[0;33m[123557][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790103569842,"iso":"2026-09-22T18:59:29.842Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790103569845,"iso":"2026-09-22T18:59:29.845Z","line":"[hb] heartbeat failed: -1 (fail=1) body="}
+{"t":1790103569857,"iso":"2026-09-22T18:59:29.857Z","line":"\u001b[0;31m[123571][E][ssl_client.cpp:99] start_ssl_client(): connect on fd 48, errno: 118, \"Host is unreachable\"\u001b[0m"}
+{"t":1790103569863,"iso":"2026-09-22T18:59:29.863Z","line":"\u001b[0;31m[123584][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790103569872,"iso":"2026-09-22T18:59:29.872Z","line":"\u001b[0;33m[123592][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790103569877,"iso":"2026-09-22T18:59:29.877Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790103569881,"iso":"2026-09-22T18:59:29.881Z","line":"[kpis] pull failed: -1"}
+{"t":1790103570373,"iso":"2026-09-22T18:59:30.373Z","line":"[wifi] disconnected"}
+{"t":1790103570379,"iso":"2026-09-22T18:59:30.379Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790103572809,"iso":"2026-09-22T18:59:32.809Z","line":"\u001b[0;33m[126527][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103575242,"iso":"2026-09-22T18:59:35.242Z","line":"\u001b[0;33m[128961][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103577676,"iso":"2026-09-22T18:59:37.676Z","line":"\u001b[0;33m[131394][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103580108,"iso":"2026-09-22T18:59:40.108Z","line":"\u001b[0;33m[133827][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103580389,"iso":"2026-09-22T18:59:40.389Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790103582819,"iso":"2026-09-22T18:59:42.819Z","line":"\u001b[0;33m[136538][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103585252,"iso":"2026-09-22T18:59:45.252Z","line":"\u001b[0;33m[138971][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103587685,"iso":"2026-09-22T18:59:47.685Z","line":"\u001b[0;33m[141404][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103590118,"iso":"2026-09-22T18:59:50.118Z","line":"\u001b[0;33m[143837][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103592551,"iso":"2026-09-22T18:59:52.551Z","line":"\u001b[0;33m[146269][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103594984,"iso":"2026-09-22T18:59:54.984Z","line":"\u001b[0;33m[148702][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103597416,"iso":"2026-09-22T18:59:57.416Z","line":"\u001b[0;33m[151135][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103599849,"iso":"2026-09-22T18:59:59.849Z","line":"\u001b[0;33m[153568][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103600401,"iso":"2026-09-22T19:00:00.401Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790103602832,"iso":"2026-09-22T19:00:02.832Z","line":"\u001b[0;33m[156550][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103605265,"iso":"2026-09-22T19:00:05.265Z","line":"\u001b[0;33m[158984][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103607698,"iso":"2026-09-22T19:00:07.698Z","line":"\u001b[0;33m[161416][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103610131,"iso":"2026-09-22T19:00:10.131Z","line":"\u001b[0;33m[163850][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103612564,"iso":"2026-09-22T19:00:12.564Z","line":"\u001b[0;33m[166282][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103614996,"iso":"2026-09-22T19:00:14.996Z","line":"\u001b[0;33m[168716][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103617430,"iso":"2026-09-22T19:00:17.430Z","line":"\u001b[0;33m[171148][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103619863,"iso":"2026-09-22T19:00:19.863Z","line":"\u001b[0;33m[173582][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103622294,"iso":"2026-09-22T19:00:22.294Z","line":"\u001b[0;33m[176014][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103624728,"iso":"2026-09-22T19:00:24.728Z","line":"\u001b[0;33m[178447][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103627162,"iso":"2026-09-22T19:00:27.162Z","line":"\u001b[0;33m[180880][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103629594,"iso":"2026-09-22T19:00:29.594Z","line":"\u001b[0;33m[183313][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103632027,"iso":"2026-09-22T19:00:32.027Z","line":"\u001b[0;33m[185746][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103634460,"iso":"2026-09-22T19:00:34.460Z","line":"\u001b[0;33m[188178][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103636892,"iso":"2026-09-22T19:00:36.892Z","line":"\u001b[0;33m[190611][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 201 - NO_AP_FOUND\u001b[0m"}
+{"t":1790103640417,"iso":"2026-09-22T19:00:40.417Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790103640426,"iso":"2026-09-22T19:00:40.426Z","line":"\u001b[0;33m[194145][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790103642425,"iso":"2026-09-22T19:00:42.425Z","line":"\u001b[0;33m[196144][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790103645439,"iso":"2026-09-22T19:00:45.439Z","line":"[wifi] connected — IP=192.168.18.247 RSSI=-56"}

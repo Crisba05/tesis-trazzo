@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "scenario": "B",
+    "rep": 2,
+    "date": "2026-09-22",
+    "reconstructed_from": [
+      "scenario_B_serial_2026-09-22-20-48-46.ndjson",
+      "scenario_B_serial_2026-09-22-20-51-05.ndjson"
+    ],
+    "note": "Mismo patron que rep1: el boton de reset entro a DOWNLOAD_BOOT antes de arrancar normal. La cola sobrevivio integra de todas formas."
+  },
+  "timeline": {
+    "offline_scans_before_reset": 10,
+    "stuck_in_download_mode_at": "2026-09-22T20:50:41.321Z",
+    "normal_boot_recovered": "2026-09-22T20:51:10.381Z",
+    "cache_reloaded": "2026-09-22T20:51:19.404Z (297 records, intacto)",
+    "wifi_reconnect": "2026-09-22T20:52:41.091Z",
+    "sync_pending_seen": "2026-09-22T20:52:48.781Z (pending=10 — TODOS sobrevivieron)",
+    "sync_batch_http_200": "2026-09-22T20:52:51.130Z",
+    "sync_ok": "2026-09-22T20:52:51.150Z"
+  },
+  "metrics": {
+    "generated_offline_before_reset": 10,
+    "pending_after_reboot": 10,
+    "recovered": 10,
+    "lost": 0
+  },
+  "anomalies": [
+    {
+      "when": "2026-09-22T20:50:41Z",
+      "desc": "1 ciclo de arranque atascado en DOWNLOAD_BOOT (mismo boton equivocado que rep1). Sin impacto en los datos.",
+      "impact": "ninguno en los datos"
+    }
+  ]
+}

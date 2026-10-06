@@ -1,0 +1,38 @@
+{"t":1790109895902,"iso":"2026-09-22T20:44:55.902Z","line":"[ntp] syncing..."}
+{"t":1790109898936,"iso":"2026-09-22T20:44:58.936Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790109904713,"iso":"2026-09-22T20:45:04.713Z","line":"[TRAZZO][WARN] NTP not synced �� deferring cache pull"}
+{"t":1790109904718,"iso":"2026-09-22T20:45:04.718Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790109904727,"iso":"2026-09-22T20:45:04.727Z","line":"[prov] credentials loaded — device=IOT-E6B3F57E backend=https://api.example.org"}
+{"t":1790109904731,"iso":"2026-09-22T20:45:04.731Z","line":"[TRAZZO] provisioned"}
+{"t":1790109905124,"iso":"2026-09-22T20:45:05.124Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790109905175,"iso":"2026-09-22T20:45:05.175Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790109905175,"iso":"2026-09-22T20:45:05.175Z","line":""}
+{"t":1790109905186,"iso":"2026-09-22T20:45:05.186Z","line":"──────���────────────────────��──────────���───"}
+{"t":1790109905192,"iso":"2026-09-22T20:45:05.192Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790109905204,"iso":"2026-09-22T20:45:05.204Z","line":"──────��──────────���────────────────────��───"}
+{"t":1790109905369,"iso":"2026-09-22T20:45:05.369Z","line":"[tasks] all 6 tasks started"}
+{"t":1790109906196,"iso":"2026-09-22T20:45:06.196Z","line":"[ntp] syncing..."}
+{"t":1790109909202,"iso":"2026-09-22T20:45:09.202Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790109915809,"iso":"2026-09-22T20:45:15.809Z","line":"\u001b[0;33m[ 29949][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790109916198,"iso":"2026-09-22T20:45:16.198Z","line":"[wifi] disconnected"}
+{"t":1790109916201,"iso":"2026-09-22T20:45:16.201Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790109916212,"iso":"2026-09-22T20:45:16.212Z","line":"\u001b[0;33m[ 30351][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790109919219,"iso":"2026-09-22T20:45:19.219Z","line":"[wifi] connected — IP=192.168.18.247 RSSI=-38"}
+{"t":1790109919222,"iso":"2026-09-22T20:45:19.222Z","line":"[ntp] syncing..."}
+{"t":1790109922222,"iso":"2026-09-22T20:45:22.222Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790109929218,"iso":"2026-09-22T20:45:29.218Z","line":"[ntp] syncing..."}
+{"t":1790109929221,"iso":"2026-09-22T20:45:29.221Z","line":"[ntp] synced: 2026-09-22 15:45:29 (Lima)"}
+{"t":1790109929226,"iso":"2026-09-22T20:45:29.226Z","line":"[sync] 10 records pending"}
+{"t":1790109931831,"iso":"2026-09-22T20:45:31.831Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (3428 bytes)"}
+{"t":1790109931848,"iso":"2026-09-22T20:45:31.848Z","line":"[offline] log cleared"}
+{"t":1790109931854,"iso":"2026-09-22T20:45:31.854Z","line":"[sync] batch sync OK — log cleared"}
+{"t":1790109948293,"iso":"2026-09-22T20:45:48.293Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790109948298,"iso":"2026-09-22T20:45:48.298Z","line":"[hb] heartbeat OK"}
+{"t":1790109950033,"iso":"2026-09-22T20:45:50.033Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790109950041,"iso":"2026-09-22T20:45:50.041Z","line":"[kpis] E=0 L=10 SR=287 (total=297)"}
+{"t":1790110010554,"iso":"2026-09-22T20:46:50.554Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790110010559,"iso":"2026-09-22T20:46:50.559Z","line":"[hb] heartbeat OK"}
+{"t":1790110012391,"iso":"2026-09-22T20:46:52.391Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790110012398,"iso":"2026-09-22T20:46:52.398Z","line":"[kpis] E=0 L=10 SR=287 (total=297)"}
+{"t":1790110072910,"iso":"2026-09-22T20:47:52.910Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790110072915,"iso":"2026-09-22T20:47:52.915Z","line":"[hb] heartbeat OK"}

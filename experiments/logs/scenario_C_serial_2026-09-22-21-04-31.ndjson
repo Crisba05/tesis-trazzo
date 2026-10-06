@@ -1,0 +1,70 @@
+{"t":1790111096537,"iso":"2026-09-22T21:04:56.537Z","line":"[scanner] frame: '9990000057' (10 bytes)"}
+{"t":1790111096537,"iso":"2026-09-22T21:04:56.537Z","line":"[scan] code=9990000057"}
+{"t":1790111096545,"iso":"2026-09-22T21:04:56.545Z","line":"[scan] lookup code=9990000057 found=1 cacheSize=297"}
+{"t":1790111100538,"iso":"2026-09-22T21:05:00.538Z","line":"[scanner] frame: '9990000052' (10 bytes)"}
+{"t":1790111100538,"iso":"2026-09-22T21:05:00.538Z","line":"[scan] code=9990000052"}
+{"t":1790111100546,"iso":"2026-09-22T21:05:00.546Z","line":"[scan] lookup code=9990000052 found=1 cacheSize=297"}
+{"t":1790111102998,"iso":"2026-09-22T21:05:02.998Z","line":"[scanner] frame: '9990000063' (10 bytes)"}
+{"t":1790111102999,"iso":"2026-09-22T21:05:02.999Z","line":"[scan] code=9990000063"}
+{"t":1790111103007,"iso":"2026-09-22T21:05:03.007Z","line":"[scan] lookup code=9990000063 found=1 cacheSize=297"}
+{"t":1790111106239,"iso":"2026-09-22T21:05:06.239Z","line":"[scanner] frame: '9990000051' (10 bytes)"}
+{"t":1790111106239,"iso":"2026-09-22T21:05:06.239Z","line":"[scan] code=9990000051"}
+{"t":1790111106248,"iso":"2026-09-22T21:05:06.248Z","line":"[scan] lookup code=9990000051 found=1 cacheSize=297"}
+{"t":1790111110481,"iso":"2026-09-22T21:05:10.481Z","line":"[scanner] frame: '9990000050' (10 bytes)"}
+{"t":1790111110481,"iso":"2026-09-22T21:05:10.481Z","line":"[scan] code=9990000050"}
+{"t":1790111110489,"iso":"2026-09-22T21:05:10.489Z","line":"[scan] lookup code=9990000050 found=1 cacheSize=297"}
+{"t":1790111110749,"iso":"2026-09-22T21:05:10.749Z","line":"\u001b[0;31m[ 57706][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111110755,"iso":"2026-09-22T21:05:10.755Z","line":"\u001b[0;33m[ 57716][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111110761,"iso":"2026-09-22T21:05:10.761Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790111110767,"iso":"2026-09-22T21:05:10.767Z","line":"[upl] fail -1 dur=14062ms — saving offline"}
+{"t":1790111110794,"iso":"2026-09-22T21:05:10.794Z","line":"[offline] appended scanId=01a0caef-a20f-7d53-8857-75fdc8b2eda0 pending=1"}
+{"t":1790111110907,"iso":"2026-09-22T21:05:10.907Z","line":"[sync] 1 records pending"}
+{"t":1790111118298,"iso":"2026-09-22T21:05:18.298Z","line":"\u001b[0;33m[ 65256][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 4 - ASSOC_EXPIRE\u001b[0m"}
+{"t":1790111118825,"iso":"2026-09-22T21:05:18.825Z","line":"\u001b[0;31m[ 65782]\u001b[0;31m[ 65783][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111118834,"iso":"2026-09-22T21:05:18.834Z","line":"\u001b[0;33m[ 65793][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111118839,"iso":"2026-09-22T21:05:18.839Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790111118845,"iso":"2026-09-22T21:05:18.845Z","line":"[sync] batch failed: -1 — backoff 65581ms (jittered)"}
+{"t":1790111118851,"iso":"2026-09-22T21:05:18.851Z","line":"[E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111118859,"iso":"2026-09-22T21:05:18.859Z","line":"\u001b[0;33m[ 65819][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111118865,"iso":"2026-09-22T21:05:18.865Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790111118870,"iso":"2026-09-22T21:05:18.870Z","line":"[upl] fail -1 dur=8073ms — saving offline"}
+{"t":1790111118898,"iso":"2026-09-22T21:05:18.898Z","line":"[offline] appended scanId=01a0caef-b1b0-706d-a470-e2182eb4fcc4 pending=2"}
+{"t":1790111118907,"iso":"2026-09-22T21:05:18.907Z","line":"\u001b[0;31m[ 65863][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111118915,"iso":"2026-09-22T21:05:18.915Z","line":"\u001b[0;33m[ 65874][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111118918,"iso":"2026-09-22T21:05:18.918Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790111118925,"iso":"2026-09-22T21:05:18.925Z","line":"[upl] fail -1 dur=24ms — saving offline"}
+{"t":1790111118972,"iso":"2026-09-22T21:05:18.972Z","line":"[offline] appended scanId=01a0caef-bb4d-7656-8451-534dfa18b776 pending=3"}
+{"t":1790111118981,"iso":"2026-09-22T21:05:18.981Z","line":"\u001b[0;31m[ 65938][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111118989,"iso":"2026-09-22T21:05:18.989Z","line":"\u001b[0;33m[ 65948][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111118992,"iso":"2026-09-22T21:05:18.992Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790111118999,"iso":"2026-09-22T21:05:18.999Z","line":"[upl] fail -1 dur=23ms — saving offline"}
+{"t":1790111119043,"iso":"2026-09-22T21:05:19.043Z","line":"[offline] appended scanId=01a0caef-c7f5-7959-88dc-a853c0da548c pending=4"}
+{"t":1790111119052,"iso":"2026-09-22T21:05:19.052Z","line":"\u001b[0;31m[ 66010][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111119061,"iso":"2026-09-22T21:05:19.061Z","line":"\u001b[0;33m[ 66020][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111119063,"iso":"2026-09-22T21:05:19.063Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790111119071,"iso":"2026-09-22T21:05:19.071Z","line":"[upl] fail -1 dur=23ms — saving offline"}
+{"t":1790111119119,"iso":"2026-09-22T21:05:19.119Z","line":"[offline] appended scanId=01a0caef-d887-7e12-bcb6-300a0b18825c pending=5"}
+{"t":1790111119336,"iso":"2026-09-22T21:05:19.336Z","line":"[wifi] disconnected"}
+{"t":1790111119340,"iso":"2026-09-22T21:05:19.340Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790111119351,"iso":"2026-09-22T21:05:19.351Z","line":"\u001b[0;33m[ 66309][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790111129358,"iso":"2026-09-22T21:05:29.358Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790111129367,"iso":"2026-09-22T21:05:29.367Z","line":"\u001b[0;33m[ 76325][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790111130372,"iso":"2026-09-22T21:05:30.372Z","line":"[wifi] connected — IP=192.168.18.101 RSSI=-26"}
+{"t":1790111130375,"iso":"2026-09-22T21:05:30.375Z","line":"[ntp] syncing..."}
+{"t":1790111130380,"iso":"2026-09-22T21:05:30.380Z","line":"[ntp] synced: 2026-09-22 16:05:31 (Lima)"}
+{"t":1790111144450,"iso":"2026-09-22T21:05:44.450Z","line":"\u001b[0;31m[ 91409][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111144459,"iso":"2026-09-22T21:05:44.459Z","line":"\u001b[0;33m[ 91419][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111144464,"iso":"2026-09-22T21:05:44.464Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790111144470,"iso":"2026-09-22T21:05:44.470Z","line":"[hb] heartbeat failed: -1 (fail=1) body="}
+{"t":1790111158517,"iso":"2026-09-22T21:05:58.517Z","line":"\u001b[0;31m[105465][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111158525,"iso":"2026-09-22T21:05:58.525Z","line":"\u001b[0;33m[105475][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111158527,"iso":"2026-09-22T21:05:58.527Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790111158548,"iso":"2026-09-22T21:05:58.548Z","line":"[kpis] pull failed: -1"}
+{"t":1790111184578,"iso":"2026-09-22T21:06:24.578Z","line":"[sync] 5 records pending"}
+{"t":1790111198644,"iso":"2026-09-22T21:06:38.644Z","line":"\u001b[0;31m[145601][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790111198649,"iso":"2026-09-22T21:06:38.649Z","line":"\u001b[0;33m[145611][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790111198655,"iso":"2026-09-22T21:06:38.655Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790111198663,"iso":"2026-09-22T21:06:38.663Z","line":"[sync] batch failed: -1 — backoff 126061ms (jittered)"}
+{"t":1790111201341,"iso":"2026-09-22T21:06:41.341Z","line":"[scanner] frame: '999�' (4 bytes)"}
+{"t":1790111201345,"iso":"2026-09-22T21:06:41.345Z","line":"[scan] code=999�"}
+{"t":1790111201346,"iso":"2026-09-22T21:06:41.346Z","line":"[scan] INVALID doc number '999�' — dropped locally"}

@@ -1,0 +1,33 @@
+{"t":1790111230954,"iso":"2026-09-22T21:07:10.954Z","line":"[TRAZZO][WARN] NTP not synced �� deferring cache pull"}
+{"t":1790111230960,"iso":"2026-09-22T21:07:10.960Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790111230969,"iso":"2026-09-22T21:07:10.969Z","line":"[prov] credentials loaded — device=IOT-E6B3F57E backend=https://api.example.org"}
+{"t":1790111230970,"iso":"2026-09-22T21:07:10.970Z","line":"[TRAZZO] provisioned"}
+{"t":1790111231357,"iso":"2026-09-22T21:07:11.357Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790111231405,"iso":"2026-09-22T21:07:11.405Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790111231405,"iso":"2026-09-22T21:07:11.405Z","line":""}
+{"t":1790111231416,"iso":"2026-09-22T21:07:11.416Z","line":"──────���────────────────────��──────────���───"}
+{"t":1790111231422,"iso":"2026-09-22T21:07:11.422Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790111231437,"iso":"2026-09-22T21:07:11.437Z","line":"──────��──────────���────────────────────��───"}
+{"t":1790111231441,"iso":"2026-09-22T21:07:11.441Z","line":"[tasks] all 6 tasks started"}
+{"t":1790111233425,"iso":"2026-09-22T21:07:13.425Z","line":"[ntp] syncing..."}
+{"t":1790111236433,"iso":"2026-09-22T21:07:16.433Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111243431,"iso":"2026-09-22T21:07:23.431Z","line":"[ntp] syncing..."}
+{"t":1790111246443,"iso":"2026-09-22T21:07:26.443Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111253441,"iso":"2026-09-22T21:07:33.441Z","line":"[ntp] syncing..."}
+{"t":1790111256454,"iso":"2026-09-22T21:07:36.454Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111263452,"iso":"2026-09-22T21:07:43.452Z","line":"[ntp] syncing..."}
+{"t":1790111266460,"iso":"2026-09-22T21:07:46.460Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111273458,"iso":"2026-09-22T21:07:53.458Z","line":"[ntp] syncing..."}
+{"t":1790111276469,"iso":"2026-09-22T21:07:56.469Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111283467,"iso":"2026-09-22T21:08:03.467Z","line":"[ntp] syncing..."}
+{"t":1790111286477,"iso":"2026-09-22T21:08:06.477Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111293475,"iso":"2026-09-22T21:08:13.475Z","line":"[ntp] syncing..."}
+{"t":1790111296481,"iso":"2026-09-22T21:08:16.481Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111303476,"iso":"2026-09-22T21:08:23.476Z","line":"[ntp] syncing..."}
+{"t":1790111306489,"iso":"2026-09-22T21:08:26.489Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111313490,"iso":"2026-09-22T21:08:33.490Z","line":"[ntp] syncing..."}
+{"t":1790111316500,"iso":"2026-09-22T21:08:36.500Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790111323087,"iso":"2026-09-22T21:08:43.087Z","line":"[scanner] frame: '9990000056' (10 bytes)"}
+{"t":1790111323087,"iso":"2026-09-22T21:08:43.087Z","line":"[scan] code=9990000056"}
+{"t":1790111323095,"iso":"2026-09-22T21:08:43.095Z","line":"[scan] lookup code=9990000056 found=1 cacheSize=297"}
+{"t":1790111323499,"iso":"2026-09-22T21:08:43.499Z","line":"[ntp] syncing..."}

@@ -1,0 +1,254 @@
+{"t":1790104034049,"iso":"2026-09-22T19:07:14.049Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790104034055,"iso":"2026-09-22T19:07:14.055Z","line":"[hb] heartbeat OK"}
+{"t":1790104035970,"iso":"2026-09-22T19:07:15.970Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790104035977,"iso":"2026-09-22T19:07:15.977Z","line":"[kpis] E=0 L=20 SR=277 (total=297)"}
+{"t":1790104049586,"iso":"2026-09-22T19:07:29.586Z","line":"[scanner] frame: '9990000060' (10 bytes)"}
+{"t":1790104049587,"iso":"2026-09-22T19:07:29.587Z","line":"[scan] code=9990000060"}
+{"t":1790104051745,"iso":"2026-09-22T19:07:31.745Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790104051753,"iso":"2026-09-22T19:07:31.753Z","line":"[upl] OK 01a0ca84-1b88-71e7-97cf-7ecdd39fdc01 in 2001ms"}
+{"t":1790104057327,"iso":"2026-09-22T19:07:37.327Z","line":"[scanner] frame: '9990000058' (10 bytes)"}
+{"t":1790104057327,"iso":"2026-09-22T19:07:37.327Z","line":"[scan] code=9990000058"}
+{"t":1790104059529,"iso":"2026-09-22T19:07:39.529Z","line":"[http] POST /api/iot-attendance/scan -> 200 (275 bytes)"}
+{"t":1790104059537,"iso":"2026-09-22T19:07:39.537Z","line":"[upl] OK 01a0ca84-3a28-7f0c-a162-8962664a2a87 in 1945ms"}
+{"t":1790104060928,"iso":"2026-09-22T19:07:40.928Z","line":"[scanner] frame: '9990000058' (10 bytes)"}
+{"t":1790104060928,"iso":"2026-09-22T19:07:40.928Z","line":"[scan] code=9990000058"}
+{"t":1790104060935,"iso":"2026-09-22T19:07:40.935Z","line":"[scan] duplicate — ignored"}
+{"t":1790104064809,"iso":"2026-09-22T19:07:44.809Z","line":"[scanner] frame: '9990000058' (10 bytes)"}
+{"t":1790104064809,"iso":"2026-09-22T19:07:44.809Z","line":"[scan] code=9990000058"}
+{"t":1790104064815,"iso":"2026-09-22T19:07:44.815Z","line":"[scan] duplicate — ignored"}
+{"t":1790104071770,"iso":"2026-09-22T19:07:51.770Z","line":"[scanner] frame: '9990000056' (10 bytes)"}
+{"t":1790104071770,"iso":"2026-09-22T19:07:51.770Z","line":"[scan] code=9990000056"}
+{"t":1790104073966,"iso":"2026-09-22T19:07:53.966Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790104073974,"iso":"2026-09-22T19:07:53.974Z","line":"[upl] OK 01a0ca84-722f-76c3-a591-6cc92146234c in 2039ms"}
+{"t":1790104076511,"iso":"2026-09-22T19:07:56.511Z","line":"[scanner] frame: '9990000054' (10 bytes)"}
+{"t":1790104076511,"iso":"2026-09-22T19:07:56.511Z","line":"[scan] code=9990000054"}
+{"t":1790104078677,"iso":"2026-09-22T19:07:58.677Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790104078685,"iso":"2026-09-22T19:07:58.685Z","line":"[upl] OK 01a0ca84-84b3-78d5-bdf9-bbf70e74aa58 in 2009ms"}
+{"t":1790104080631,"iso":"2026-09-22T19:08:00.631Z","line":"[scanner] frame: '9990000051' (10 bytes)"}
+{"t":1790104080631,"iso":"2026-09-22T19:08:00.631Z","line":"[scan] code=9990000051"}
+{"t":1790104083279,"iso":"2026-09-22T19:08:03.279Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790104083287,"iso":"2026-09-22T19:08:03.287Z","line":"[upl] OK 01a0ca84-94cd-7ffb-826a-424ef0c10d99 in 2488ms"}
+{"t":1790104090813,"iso":"2026-09-22T19:08:10.813Z","line":"[scanner] frame: '9990000053' (10 bytes)"}
+{"t":1790104090813,"iso":"2026-09-22T19:08:10.813Z","line":"[scan] code=9990000053"}
+{"t":1790104093009,"iso":"2026-09-22T19:08:13.009Z","line":"[http] POST /api/iot-attendance/scan -> 200 (339 bytes)"}
+{"t":1790104093017,"iso":"2026-09-22T19:08:13.017Z","line":"[upl] OK 01a0ca84-bc93-71ea-bc83-c76e0e51b6a0 in 2038ms"}
+{"t":1790104097003,"iso":"2026-09-22T19:08:17.003Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790104097009,"iso":"2026-09-22T19:08:17.009Z","line":"[hb] heartbeat OK"}
+{"t":1790104099570,"iso":"2026-09-22T19:08:19.570Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790104099577,"iso":"2026-09-22T19:08:19.577Z","line":"[kpis] E=0 L=25 SR=272 (total=297)"}
+{"t":1790104131800,"iso":"2026-09-22T19:08:51.800Z","line":"\u001b[0;33m[685520][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790104132074,"iso":"2026-09-22T19:08:52.074Z","line":"[wifi] disconnected"}
+{"t":1790104132077,"iso":"2026-09-22T19:08:52.077Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790104132089,"iso":"2026-09-22T19:08:52.089Z","line":"\u001b[0;33m[685809][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790104141913,"iso":"2026-09-22T19:09:01.913Z","line":"[scanner] frame: '9990000052' (10 bytes)"}
+{"t":1790104141914,"iso":"2026-09-22T19:09:01.914Z","line":"[scan] code=9990000052"}
+{"t":1790104141999,"iso":"2026-09-22T19:09:01.999Z","line":"[upl] no WiFi/creds — offline 01a0ca85-83de-77c4-b5e5-a7b55951b190"}
+{"t":1790104142021,"iso":"2026-09-22T19:09:02.021Z","line":"[offline] appended scanId=01a0ca85-83de-77c4-b5e5-a7b55951b190 pending=1"}
+{"t":1790104142096,"iso":"2026-09-22T19:09:02.096Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790104142105,"iso":"2026-09-22T19:09:02.105Z","line":"\u001b[0;33m[695826][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790104143112,"iso":"2026-09-22T19:09:03.112Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-43"}
+{"t":1790104143114,"iso":"2026-09-22T19:09:03.114Z","line":"[ntp] syncing..."}
+{"t":1790104143117,"iso":"2026-09-22T19:09:03.117Z","line":"[ntp] synced: 2026-09-22 14:09:03 (Lima)"}
+{"t":1790104143120,"iso":"2026-09-22T19:09:03.120Z","line":"[sync] 1 records pending"}
+{"t":1790104147157,"iso":"2026-09-22T19:09:07.157Z","line":"\u001b[0;32m[700874][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790104147166,"iso":"2026-09-22T19:09:07.166Z","line":"\u001b[0;31m[700888][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790104147172,"iso":"2026-09-22T19:09:07.172Z","line":"\u001b[0;33m[700895][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104147177,"iso":"2026-09-22T19:09:07.177Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790104147185,"iso":"2026-09-22T19:09:07.185Z","line":"[sync] batch failed: -1 — backoff 53611ms (jittered)"}
+{"t":1790104147294,"iso":"2026-09-22T19:09:07.294Z","line":"[scanner] frame: '9990000050' (10 bytes)"}
+{"t":1790104147295,"iso":"2026-09-22T19:09:07.295Z","line":"[scan] code=9990000050"}
+{"t":1790104151755,"iso":"2026-09-22T19:09:11.755Z","line":"[scanner] frame: '9990000050' (10 bytes)"}
+{"t":1790104151755,"iso":"2026-09-22T19:09:11.755Z","line":"[scan] code=9990000050"}
+{"t":1790104151762,"iso":"2026-09-22T19:09:11.762Z","line":"[scan] duplicate — ignored"}
+{"t":1790104154969,"iso":"2026-09-22T19:09:14.969Z","line":"[scanner] frame: '9990000050' (10 bytes)"}
+{"t":1790104154977,"iso":"2026-09-22T19:09:14.977Z","line":"[scan] code=9990000050"}
+{"t":1790104154984,"iso":"2026-09-22T19:09:14.984Z","line":"[scan] duplicate — ignored"}
+{"t":1790104160877,"iso":"2026-09-22T19:09:20.877Z","line":"[scanner] frame: '9990000061' (10 bytes)"}
+{"t":1790104160877,"iso":"2026-09-22T19:09:20.877Z","line":"[scan] code=9990000061"}
+{"t":1790104161281,"iso":"2026-09-22T19:09:21.281Z","line":"\u001b[0;31m[715001][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104161287,"iso":"2026-09-22T19:09:21.287Z","line":"\u001b[0;33m[715011][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104161293,"iso":"2026-09-22T19:09:21.293Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104161300,"iso":"2026-09-22T19:09:21.300Z","line":"[upl] fail -1 dur=13835ms — saving offline"}
+{"t":1790104161324,"iso":"2026-09-22T19:09:21.324Z","line":"[offline] appended scanId=01a0ca85-9935-74de-962a-41010a6baabe pending=2"}
+{"t":1790104169438,"iso":"2026-09-22T19:09:29.438Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790104169438,"iso":"2026-09-22T19:09:29.438Z","line":"[scan] code=9990000059"}
+{"t":1790104173058,"iso":"2026-09-22T19:09:33.058Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790104173058,"iso":"2026-09-22T19:09:33.058Z","line":"[scan] code=9990000059"}
+{"t":1790104173064,"iso":"2026-09-22T19:09:33.064Z","line":"[scan] duplicate — ignored"}
+{"t":1790104175322,"iso":"2026-09-22T19:09:35.322Z","line":"\u001b[0;31m[729042][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104175327,"iso":"2026-09-22T19:09:35.327Z","line":"\u001b[0;33m[729052][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104175333,"iso":"2026-09-22T19:09:35.333Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790104175340,"iso":"2026-09-22T19:09:35.340Z","line":"[hb] heartbeat failed: -1 (fail=1) body="}
+{"t":1790104177638,"iso":"2026-09-22T19:09:37.638Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790104177638,"iso":"2026-09-22T19:09:37.638Z","line":"[scan] code=9990000059"}
+{"t":1790104177645,"iso":"2026-09-22T19:09:37.645Z","line":"[scan] duplicate — ignored"}
+{"t":1790104180299,"iso":"2026-09-22T19:09:40.299Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790104180299,"iso":"2026-09-22T19:09:40.299Z","line":"[scan] code=9990000059"}
+{"t":1790104185160,"iso":"2026-09-22T19:09:45.160Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790104185160,"iso":"2026-09-22T19:09:45.160Z","line":"[scan] code=9990000059"}
+{"t":1790104185166,"iso":"2026-09-22T19:09:45.166Z","line":"[scan] duplicate — ignored"}
+{"t":1790104186000,"iso":"2026-09-22T19:09:46.000Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790104186000,"iso":"2026-09-22T19:09:46.000Z","line":"[scan] code=9990000059"}
+{"t":1790104186007,"iso":"2026-09-22T19:09:46.007Z","line":"[scan] duplicate — ignored"}
+{"t":1790104187041,"iso":"2026-09-22T19:09:47.041Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790104187041,"iso":"2026-09-22T19:09:47.041Z","line":"[scan] code=9990000059"}
+{"t":1790104187047,"iso":"2026-09-22T19:09:47.047Z","line":"[scan] duplicate — ignored"}
+{"t":1790104189363,"iso":"2026-09-22T19:09:49.363Z","line":"\u001b[0;31m[743083][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104189368,"iso":"2026-09-22T19:09:49.368Z","line":"\u001b[0;33m[743093][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104189374,"iso":"2026-09-22T19:09:49.374Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790104189377,"iso":"2026-09-22T19:09:49.377Z","line":"[kpis] pull failed: -1"}
+{"t":1790104189386,"iso":"2026-09-22T19:09:49.386Z","line":"\u001b[0;31m[743102][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104189394,"iso":"2026-09-22T19:09:49.394Z","line":"\u001b[0;33m[743118][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104189399,"iso":"2026-09-22T19:09:49.399Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104189410,"iso":"2026-09-22T19:09:49.410Z","line":"[upl] fail -1 dur=28079ms — saving offline"}
+{"t":1790104189442,"iso":"2026-09-22T19:09:49.442Z","line":"[offline] appended scanId=01a0ca85-ce43-76cd-8f27-8f56d13fce09 pending=3"}
+{"t":1790104200896,"iso":"2026-09-22T19:10:00.896Z","line":"[sync] 3 records pending"}
+{"t":1790104202061,"iso":"2026-09-22T19:10:02.061Z","line":"[scanner] frame: '9990000057' (10 bytes)"}
+{"t":1790104202061,"iso":"2026-09-22T19:10:02.061Z","line":"[scan] code=9990000057"}
+{"t":1790104203405,"iso":"2026-09-22T19:10:03.405Z","line":"\u001b[0;31m[757121][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104203410,"iso":"2026-09-22T19:10:03.410Z","line":"\u001b[0;33m[757134][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104203416,"iso":"2026-09-22T19:10:03.416Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104203423,"iso":"2026-09-22T19:10:03.423Z","line":"[upl] fail -1 dur=13979ms — saving offline"}
+{"t":1790104203460,"iso":"2026-09-22T19:10:03.460Z","line":"[offline] appended scanId=01a0ca85-efb4-7016-935f-c330c46bc221 pending=4"}
+{"t":1790104214901,"iso":"2026-09-22T19:10:14.901Z","line":"[scanner] frame: '9990000055' (10 bytes)"}
+{"t":1790104214901,"iso":"2026-09-22T19:10:14.901Z","line":"[scan] code=9990000055"}
+{"t":1790104217438,"iso":"2026-09-22T19:10:17.438Z","line":"\u001b[0;31m[771158][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104217443,"iso":"2026-09-22T19:10:17.443Z","line":"\u001b[0;33m[771168][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104217449,"iso":"2026-09-22T19:10:17.449Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790104217458,"iso":"2026-09-22T19:10:17.458Z","line":"[sync] batch failed: -1 — backoff 127548ms (jittered)"}
+{"t":1790104222721,"iso":"2026-09-22T19:10:22.721Z","line":"[scanner] frame: '9990000055' (10 bytes)"}
+{"t":1790104222721,"iso":"2026-09-22T19:10:22.721Z","line":"[scan] code=9990000055"}
+{"t":1790104222727,"iso":"2026-09-22T19:10:22.727Z","line":"[scan] duplicate — ignored"}
+{"t":1790104228822,"iso":"2026-09-22T19:10:28.822Z","line":"[scanner] frame: '9990000063' (10 bytes)"}
+{"t":1790104228822,"iso":"2026-09-22T19:10:28.822Z","line":"[scan] code=9990000063"}
+{"t":1790104231490,"iso":"2026-09-22T19:10:31.490Z","line":"\u001b[0;31m[785210][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104231495,"iso":"2026-09-22T19:10:31.495Z","line":"\u001b[0;33m[785220][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104231501,"iso":"2026-09-22T19:10:31.501Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104231507,"iso":"2026-09-22T19:10:31.507Z","line":"[upl] fail -1 dur=28046ms — saving offline"}
+{"t":1790104231547,"iso":"2026-09-22T19:10:31.547Z","line":"[offline] appended scanId=01a0ca86-1a21-72c1-b56b-1659741ef1ba pending=5"}
+{"t":1790104241622,"iso":"2026-09-22T19:10:41.622Z","line":"[scanner] frame: '9990000062' (10 bytes)"}
+{"t":1790104241622,"iso":"2026-09-22T19:10:41.622Z","line":"[scan] code=9990000062"}
+{"t":1790104245531,"iso":"2026-09-22T19:10:45.531Z","line":"\u001b[0;31m[799246][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104245536,"iso":"2026-09-22T19:10:45.536Z","line":"\u001b[0;33m[799261][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104245542,"iso":"2026-09-22T19:10:45.542Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104245548,"iso":"2026-09-22T19:10:45.548Z","line":"[upl] fail -1 dur=13998ms — saving offline"}
+{"t":1790104245593,"iso":"2026-09-22T19:10:45.593Z","line":"[offline] appended scanId=01a0ca86-6f23-74b2-ad43-97574e8e9cce pending=6"}
+{"t":1790104259571,"iso":"2026-09-22T19:10:59.571Z","line":"\u001b[0;31m[813292][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104259577,"iso":"2026-09-22T19:10:59.577Z","line":"\u001b[0;33m[813302][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104259583,"iso":"2026-09-22T19:10:59.583Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790104259590,"iso":"2026-09-22T19:10:59.590Z","line":"[hb] heartbeat failed: -1 (fail=2) body="}
+{"t":1790104262975,"iso":"2026-09-22T19:11:02.975Z","line":"\u001b[0;33m[816696][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790104263579,"iso":"2026-09-22T19:11:03.579Z","line":"\u001b[0;31m[817298][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104263585,"iso":"2026-09-22T19:11:03.585Z","line":"\u001b[0;33m[817309][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104263591,"iso":"2026-09-22T19:11:03.591Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790104263593,"iso":"2026-09-22T19:11:03.593Z","line":"[kpis] pull failed: -1"}
+{"t":1790104263602,"iso":"2026-09-22T19:11:03.602Z","line":"\u001b[0;31m[817319][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104263610,"iso":"2026-09-22T19:11:03.610Z","line":"\u001b[0;33m[817334][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104263616,"iso":"2026-09-22T19:11:03.616Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104263622,"iso":"2026-09-22T19:11:03.622Z","line":"[upl] fail -1 dur=18025ms — saving offline"}
+{"t":1790104263664,"iso":"2026-09-22T19:11:03.664Z","line":"[offline] appended scanId=01a0ca86-a14b-7d02-8f7e-8a6cac0d8b96 pending=7"}
+{"t":1790104263673,"iso":"2026-09-22T19:11:03.673Z","line":"\u001b[0;31m[817394][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104263682,"iso":"2026-09-22T19:11:03.682Z","line":"\u001b[0;33m[817404][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104263684,"iso":"2026-09-22T19:11:03.684Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104263691,"iso":"2026-09-22T19:11:03.691Z","line":"[upl] fail -1 dur=23ms — saving offline"}
+{"t":1790104263733,"iso":"2026-09-22T19:11:03.733Z","line":"[offline] appended scanId=01a0ca86-d7ac-799a-b238-dda288079be3 pending=8"}
+{"t":1790104263742,"iso":"2026-09-22T19:11:03.742Z","line":"\u001b[0;31m[817462][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790104263750,"iso":"2026-09-22T19:11:03.750Z","line":"\u001b[0;33m[817472][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790104263753,"iso":"2026-09-22T19:11:03.753Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790104263760,"iso":"2026-09-22T19:11:03.760Z","line":"[upl] fail -1 dur=23ms — saving offline"}
+{"t":1790104263810,"iso":"2026-09-22T19:11:03.810Z","line":"[offline] appended scanId=01a0ca87-0a10-74ca-89a3-155e79aa40d9 pending=9"}
+{"t":1790104264088,"iso":"2026-09-22T19:11:04.088Z","line":"[wifi] disconnected"}
+{"t":1790104264092,"iso":"2026-09-22T19:11:04.092Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790104264103,"iso":"2026-09-22T19:11:04.103Z","line":"\u001b[0;33m[817824][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790104266110,"iso":"2026-09-22T19:11:06.110Z","line":"[wifi] connected — IP=192.168.18.247 RSSI=-43"}
+{"t":1790104266112,"iso":"2026-09-22T19:11:06.112Z","line":"[ntp] syncing..."}
+{"t":1790104266117,"iso":"2026-09-22T19:11:06.117Z","line":"[ntp] synced: 2026-09-22 14:11:06 (Lima)"}
+{"t":1790104321873,"iso":"2026-09-22T19:12:01.873Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (264 bytes)"}
+{"t":1790104321879,"iso":"2026-09-22T19:12:01.879Z","line":"[hb] recovered (was fail=2) — back to normal interval"}
+{"t":1790104321881,"iso":"2026-09-22T19:12:01.881Z","line":"[hb] heartbeat OK"}
+{"t":1790104321884,"iso":"2026-09-22T19:12:01.884Z","line":"[hb] remote command received: sync_now"}
+{"t":1790104321889,"iso":"2026-09-22T19:12:01.889Z","line":"[sync] 9 records pending"}
+{"t":1790104325172,"iso":"2026-09-22T19:12:05.172Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (3023 bytes)"}
+{"t":1790104325195,"iso":"2026-09-22T19:12:05.195Z","line":"[offline] log cleared"}
+{"t":1790104325198,"iso":"2026-09-22T19:12:05.198Z","line":"[sync] batch sync OK — log cleared"}
+{"t":1790104325204,"iso":"2026-09-22T19:12:05.204Z","line":"[cache] refreshing from backend..."}
+{"t":1790104328022,"iso":"2026-09-22T19:12:08.022Z","line":"[http] GET /api/iot-roster/students -> 200 (24662 bytes)"}
+{"t":1790104328073,"iso":"2026-09-22T19:12:08.073Z","line":"[cache:students] page +100 records (total=100, heap=85588)"}
+{"t":1790104330390,"iso":"2026-09-22T19:12:10.390Z","line":"[http] GET /api/iot-roster/students?cursor=623f7566-c710-47ba-95d1-608d0bf604dd -> 200 (24662 bytes)"}
+{"t":1790104330443,"iso":"2026-09-22T19:12:10.443Z","line":"[cache:students] page +100 records (total=200, heap=85236)"}
+{"t":1790104332925,"iso":"2026-09-22T19:12:12.925Z","line":"[http] GET /api/iot-roster/students?cursor=b48c8a0e-78df-4e8f-bd6a-af892168fdc0 -> 200 (23890 bytes)"}
+{"t":1790104332968,"iso":"2026-09-22T19:12:12.968Z","line":"[cache:students] page +97 records (total=297, heap=86500)"}
+{"t":1790104332973,"iso":"2026-09-22T19:12:12.973Z","line":"[cache:students] pulled 3 pages, 297 records total"}
+{"t":1790104333301,"iso":"2026-09-22T19:12:13.301Z","line":"[cache:students] saved 49014 bytes (MsgPack)"}
+{"t":1790104336725,"iso":"2026-09-22T19:12:16.725Z","line":"[http] GET /api/iot-roster/schedules -> 200 (366 bytes)"}
+{"t":1790104336870,"iso":"2026-09-22T19:12:16.870Z","line":"[cache:sched] wrote 281 bytes (MsgPack)"}
+{"t":1790104338878,"iso":"2026-09-22T19:12:18.878Z","line":"[http] GET /api/iot-roster/config -> 200 (305 bytes)"}
+{"t":1790104338885,"iso":"2026-09-22T19:12:18.885Z","line":"[cfg] operating window: -1..-1 min, daysMask=0x1F"}
+{"t":1790104340724,"iso":"2026-09-22T19:12:20.724Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790104340730,"iso":"2026-09-22T19:12:20.730Z","line":"[kpis] E=0 L=32 SR=265 (total=297)"}
+{"t":1790104340734,"iso":"2026-09-22T19:12:20.734Z","line":"[cache] refreshing from backend..."}
+{"t":1790104342891,"iso":"2026-09-22T19:12:22.891Z","line":"[http] GET /api/iot-roster/students -> 200 (24662 bytes)"}
+{"t":1790104342947,"iso":"2026-09-22T19:12:22.947Z","line":"[cache:students] page +100 records (total=100, heap=86532)"}
+{"t":1790104349116,"iso":"2026-09-22T19:12:29.116Z","line":"E (911175) task_wdt: Task watchdog got triggered. The following tasks did not reset the watchdog in time:"}
+{"t":1790104349119,"iso":"2026-09-22T19:12:29.119Z","line":"E (911175) task_wdt:  - net (CPU 0)"}
+{"t":1790104349122,"iso":"2026-09-22T19:12:29.122Z","line":"E (911175) task_wdt:  - wdt (CPU 1)"}
+{"t":1790104349128,"iso":"2026-09-22T19:12:29.128Z","line":"E (911175) task_wdt: Tasks currently running:"}
+{"t":1790104349130,"iso":"2026-09-22T19:12:29.130Z","line":"E (911175) task_wdt: CPU 0: IDLE0"}
+{"t":1790104349133,"iso":"2026-09-22T19:12:29.133Z","line":"E (911175) task_wdt: CPU 1: IDLE1"}
+{"t":1790104349136,"iso":"2026-09-22T19:12:29.136Z","line":"E (911175) task_wdt: Aborting."}
+{"t":1790104349136,"iso":"2026-09-22T19:12:29.136Z","line":""}
+{"t":1790104349139,"iso":"2026-09-22T19:12:29.139Z","line":"abort() was called at PC 0x400fe268 on core 0"}
+{"t":1790104349139,"iso":"2026-09-22T19:12:29.139Z","line":""}
+{"t":1790104349139,"iso":"2026-09-22T19:12:29.139Z","line":""}
+{"t":1790104349144,"iso":"2026-09-22T19:12:29.144Z","line":"Backtrace: 0x40083d05:0x3ffbed3c |<-CORRUPTED"}
+{"t":1790104349144,"iso":"2026-09-22T19:12:29.144Z","line":""}
+{"t":1790104349144,"iso":"2026-09-22T19:12:29.144Z","line":""}
+{"t":1790104349145,"iso":"2026-09-22T19:12:29.145Z","line":""}
+{"t":1790104349145,"iso":"2026-09-22T19:12:29.145Z","line":""}
+{"t":1790104349151,"iso":"2026-09-22T19:12:29.151Z","line":"ELF file SHA256: 51e939682f604b0a"}
+{"t":1790104349151,"iso":"2026-09-22T19:12:29.151Z","line":""}
+{"t":1790104349219,"iso":"2026-09-22T19:12:29.219Z","line":"Rebooting..."}
+{"t":1790104349222,"iso":"2026-09-22T19:12:29.222Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790104349222,"iso":"2026-09-22T19:12:29.222Z","line":""}
+{"t":1790104349227,"iso":"2026-09-22T19:12:29.227Z","line":"rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)"}
+{"t":1790104349228,"iso":"2026-09-22T19:12:29.228Z","line":"configsip: 0, SPIWP:0xee"}
+{"t":1790104349236,"iso":"2026-09-22T19:12:29.236Z","line":"clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00"}
+{"t":1790104349236,"iso":"2026-09-22T19:12:29.236Z","line":"mode:DIO, clock div:2"}
+{"t":1790104349239,"iso":"2026-09-22T19:12:29.239Z","line":"load:0x3fff0030,len:1184"}
+{"t":1790104349241,"iso":"2026-09-22T19:12:29.241Z","line":"load:0x40078000,len:13232"}
+{"t":1790104349248,"iso":"2026-09-22T19:12:29.248Z","line":"load:0x40080400,len:3028"}
+{"t":1790104349248,"iso":"2026-09-22T19:12:29.248Z","line":"entry 0x400805e4"}
+{"t":1790104349887,"iso":"2026-09-22T19:12:29.887Z","line":""}
+{"t":1790104349889,"iso":"2026-09-22T19:12:29.889Z","line":"[TRAZZO] booting fw=2.0.0-dev heap=287476"}
+{"t":1790104349892,"iso":"2026-09-22T19:12:29.892Z","line":"[TRAZZO] reset reason: TASK_WDT (6)"}
+{"t":1790104349895,"iso":"2026-09-22T19:12:29.895Z","line":"[scanner] GM65 on Serial2 @ 9600"}
+{"t":1790104349904,"iso":"2026-09-22T19:12:29.904Z","line":"\u001b[0;32m[   172][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=21 scl=22 freq=100000\u001b[0m"}
+{"t":1790104349909,"iso":"2026-09-22T19:12:29.909Z","line":"[i2c] scanning bus..."}
+{"t":1790104349915,"iso":"2026-09-22T19:12:29.915Z","line":"[i2c] device @ 0x27"}
+{"t":1790104349925,"iso":"2026-09-22T19:12:29.925Z","line":"[i2c] scan done: 1 device(s)"}
+{"t":1790104349931,"iso":"2026-09-22T19:12:29.931Z","line":"[tft] init ILI9341 320x240 landscape..."}
+{"t":1790104350272,"iso":"2026-09-22T19:12:30.272Z","line":"[tft] init OK — w=320 h=240"}
+{"t":1790104350278,"iso":"2026-09-22T19:12:30.278Z","line":"[tft] begin() done — splash drawn"}
+{"t":1790104350403,"iso":"2026-09-22T19:12:30.403Z","line":"\u001b[0;33m[   678][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790104351635,"iso":"2026-09-22T19:12:31.635Z","line":"[fs] LittleFS ready — 81920/917504 bytes used"}
+{"t":1790104351638,"iso":"2026-09-22T19:12:31.638Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790104351795,"iso":"2026-09-22T19:12:31.795Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790104351800,"iso":"2026-09-22T19:12:31.800Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790104354411,"iso":"2026-09-22T19:12:34.411Z","line":"[wifi] connected — IP=192.168.18.247 RSSI=-42"}
+{"t":1790104354512,"iso":"2026-09-22T19:12:34.512Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.247"}
+{"t":1790104359765,"iso":"2026-09-22T19:12:39.765Z","line":"[ntp] syncing..."}
+{"t":1790104359770,"iso":"2026-09-22T19:12:39.770Z","line":"[ntp] synced: 2026-09-22 14:12:36 (Lima)"}
+{"t":1790104359970,"iso":"2026-09-22T19:12:39.970Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790104359975,"iso":"2026-09-22T19:12:39.975Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790104359988,"iso":"2026-09-22T19:12:39.988Z","line":"[prov] credentials loaded — device=IOT-E6B3F57E backend=https://api.example.org"}
+{"t":1790104359988,"iso":"2026-09-22T19:12:39.988Z","line":"[TRAZZO] provisioned"}
+{"t":1790104360360,"iso":"2026-09-22T19:12:40.360Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790104360401,"iso":"2026-09-22T19:12:40.401Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790104360407,"iso":"2026-09-22T19:12:40.407Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790104360407,"iso":"2026-09-22T19:12:40.407Z","line":""}
+{"t":1790104360418,"iso":"2026-09-22T19:12:40.418Z","line":"────────────────��──────────���──────────────"}
+{"t":1790104360424,"iso":"2026-09-22T19:12:40.424Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790104360435,"iso":"2026-09-22T19:12:40.435Z","line":"──────���────────────────────��──────────���───"}
+{"t":1790104360440,"iso":"2026-09-22T19:12:40.440Z","line":"[tasks] all 6 tasks started"}
+{"t":1790104360452,"iso":"2026-09-22T19:12:40.452Z","line":"\u001b[0;31m[ 10725][E][vfs_api.cpp:105] open(): /littlefs/offline/pending.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790104360466,"iso":"2026-09-22T19:12:40.466Z","line":"\u001b[0;31m[ 10727][E][vfs_api.cpp:105] open(): /littlefs/offline/pending.ndjson does not exist, no permits for creation\u001b[0m"}

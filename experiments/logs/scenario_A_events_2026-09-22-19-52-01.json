@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "tool": "serial_capture",
+    "scenario": "A",
+    "port": "COM4",
+    "baud": 115200,
+    "generatedAt": "2026-09-22T19:59:52.677Z",
+    "note": "Timestamps = host clock (ms). outages[] derivado de WIFI_DOWN→WIFI_UP→SYNC_OK."
+  },
+  "summary": {
+    "total_events": 33,
+    "boots": 0,
+    "resets": [],
+    "lfs_failures": 0,
+    "offline_drops": 0,
+    "lookups_not_found": [],
+    "outages": [
+      {
+        "outage_start": "2026-09-22T19:57:54.707Z",
+        "outage_s": 3.5,
+        "sync_latency_s": 106.61,
+        "offline_appended": 0,
+        "max_queue_depth": 0,
+        "drops": 0
+      }
+    ]
+  },
+  "events": [
+    {
+      "t": 1790106726170,
+      "iso": "2026-09-22T19:52:06.170Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000060",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000060 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106728194,
+      "iso": "2026-09-22T19:52:08.194Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790106731871,
+      "iso": "2026-09-22T19:52:11.871Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000059",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000059 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106734750,
+      "iso": "2026-09-22T19:52:14.750Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790106738571,
+      "iso": "2026-09-22T19:52:18.571Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000063",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000063 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106740788,
+      "iso": "2026-09-22T19:52:20.788Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790106742192,
+      "iso": "2026-09-22T19:52:22.192Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000061",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000061 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106744377,
+      "iso": "2026-09-22T19:52:24.377Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan",
+      "status": 200,
+      "bytes": 345,
+      "raw": "[http] POST /api/iot-attendance/scan -> 200 (345 bytes)"
+    },
+    {
+      "t": 1790106749699,
+      "iso": "2026-09-22T19:52:29.699Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790106751545,
+      "iso": "2026-09-22T19:52:31.545Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790106765273,
+      "iso": "2026-09-22T19:52:45.273Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000053",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000053 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106769496,
+      "iso": "2026-09-22T19:52:49.496Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0caad-8b96-71bd-9b60-40366a1ab008",
+      "pending": 1,
+      "raw": "[offline] appended scanId=01a0caad-8b96-71bd-9b60-40366a1ab008 pending=1"
+    },
+    {
+      "t": 1790106769551,
+      "iso": "2026-09-22T19:52:49.551Z",
+      "type": "SYNC_PENDING",
+      "pending": 1,
+      "raw": "[sync] 1 records pending"
+    },
+    {
+      "t": 1790106772814,
+      "iso": "2026-09-22T19:52:52.814Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000051",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000051 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106775954,
+      "iso": "2026-09-22T19:52:55.954Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000057",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000057 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106777039,
+      "iso": "2026-09-22T19:52:57.039Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0caad-a90b-7648-8cbf-d8cc939b37e0",
+      "pending": 2,
+      "raw": "[offline] appended scanId=01a0caad-a90b-7648-8cbf-d8cc939b37e0 pending=2"
+    },
+    {
+      "t": 1790106781121,
+      "iso": "2026-09-22T19:53:01.121Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0caad-b54f-74e8-8420-449d69a58962",
+      "pending": 3,
+      "raw": "[offline] appended scanId=01a0caad-b54f-74e8-8420-449d69a58962 pending=3"
+    },
+    {
+      "t": 1790106781610,
+      "iso": "2026-09-22T19:53:01.610Z",
+      "type": "WIFI_DOWN",
+      "raw": "[wifi] disconnected"
+    },
+    {
+      "t": 1790106781756,
+      "iso": "2026-09-22T19:53:01.756Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000050",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000050 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106781872,
+      "iso": "2026-09-22T19:53:01.872Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0caad-cba8-7a4b-9ea3-0152ca69c587",
+      "pending": 4,
+      "raw": "[offline] appended scanId=01a0caad-cba8-7a4b-9ea3-0152ca69c587 pending=4"
+    },
+    {
+      "t": 1790106783631,
+      "iso": "2026-09-22T19:53:03.631Z",
+      "type": "WIFI_UP",
+      "ip": "192.168.18.101",
+      "rssi": -43,
+      "raw": "[wifi] connected — IP=192.168.18.101 RSSI=-43"
+    },
+    {
+      "t": 1790106783638,
+      "iso": "2026-09-22T19:53:03.638Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 14:53:04 (Lima)"
+    },
+    {
+      "t": 1790106787879,
+      "iso": "2026-09-22T19:53:07.879Z",
+      "type": "LOOKUP_FOUND",
+      "code": "9990000052",
+      "cacheSize": 297,
+      "raw": "[scan] lookup code=9990000052 found=1 cacheSize=297"
+    },
+    {
+      "t": 1790106792119,
+      "iso": "2026-09-22T19:53:12.119Z",
+      "type": "OFFLINE_APPEND",
+      "scanId": "01a0caad-e3e3-7eda-99e0-bf582b24b99a",
+      "pending": 5,
+      "raw": "[offline] appended scanId=01a0caad-e3e3-7eda-99e0-bf582b24b99a pending=5"
+    },
+    {
+      "t": 1790106826220,
+      "iso": "2026-09-22T19:53:46.220Z",
+      "type": "SYNC_PENDING",
+      "pending": 5,
+      "raw": "[sync] 5 records pending"
+    },
+    {
+      "t": 1790106940473,
+      "iso": "2026-09-22T19:55:40.473Z",
+      "type": "SYNC_PENDING",
+      "pending": 5,
+      "raw": "[sync] 5 records pending"
+    },
+    {
+      "t": 1790107074707,
+      "iso": "2026-09-22T19:57:54.707Z",
+      "type": "WIFI_DOWN",
+      "raw": "[wifi] disconnected"
+    },
+    {
+      "t": 1790107078226,
+      "iso": "2026-09-22T19:57:58.226Z",
+      "type": "WIFI_UP",
+      "ip": "192.168.18.247",
+      "rssi": -49,
+      "raw": "[wifi] connected — IP=192.168.18.247 RSSI=-49"
+    },
+    {
+      "t": 1790107078233,
+      "iso": "2026-09-22T19:57:58.233Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 14:57:59 (Lima)"
+    },
+    {
+      "t": 1790107182229,
+      "iso": "2026-09-22T19:59:42.229Z",
+      "type": "SYNC_PENDING",
+      "pending": 5,
+      "raw": "[sync] 5 records pending"
+    },
+    {
+      "t": 1790107184815,
+      "iso": "2026-09-22T19:59:44.815Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan/batch",
+      "status": 200,
+      "bytes": 1757,
+      "raw": "[http] POST /api/iot-attendance/scan/batch -> 200 (1757 bytes)"
+    },
+    {
+      "t": 1790107184834,
+      "iso": "2026-09-22T19:59:44.834Z",
+      "type": "OFFLINE_CLEARED",
+      "raw": "[offline] log cleared"
+    },
+    {
+      "t": 1790107184840,
+      "iso": "2026-09-22T19:59:44.840Z",
+      "type": "SYNC_OK",
+      "raw": "[sync] batch sync OK — log cleared"
+    }
+  ]
+}

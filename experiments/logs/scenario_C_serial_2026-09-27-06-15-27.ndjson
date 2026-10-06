@@ -1,0 +1,40 @@
+{"t":1790489728036,"iso":"2026-09-27T06:15:28.036Z","line":"[fs] LittleFS ready — 122880/917504 bytes used"}
+{"t":1790489728150,"iso":"2026-09-27T06:15:28.150Z","line":"[boot] seq=18 build=Sep 26 2026 19:31:19"}
+{"t":1790489728252,"iso":"2026-09-27T06:15:28.252Z","line":"[boot] pending file: bytes=1163 lines=6 valid=6 tailBytes=0"}
+{"t":1790489728320,"iso":"2026-09-27T06:15:28.320Z","line":"[boot] fs used=122880 total=917504"}
+{"t":1790489728360,"iso":"2026-09-27T06:15:28.360Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790489728545,"iso":"2026-09-27T06:15:28.545Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790489728592,"iso":"2026-09-27T06:15:28.592Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790489731207,"iso":"2026-09-27T06:15:31.207Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790489731216,"iso":"2026-09-27T06:15:31.216Z","line":"\u001b[0;33m[  5077][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790489733924,"iso":"2026-09-27T06:15:33.924Z","line":"[wifi] connected — IP=192.168.18.241 RSSI=-45"}
+{"t":1790489734103,"iso":"2026-09-27T06:15:34.103Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.241"}
+{"t":1790489736162,"iso":"2026-09-27T06:15:36.162Z","line":"[ntp] syncing..."}
+{"t":1790489739165,"iso":"2026-09-27T06:15:39.165Z","line":"[ntp] sync failed, will retry in 10s"}
+{"t":1790489746161,"iso":"2026-09-27T06:15:46.161Z","line":"[ntp] syncing..."}
+{"t":1790489746167,"iso":"2026-09-27T06:15:46.167Z","line":"[ntp] synced: 2026-09-27 01:15:47 (Lima)"}
+{"t":1790489746395,"iso":"2026-09-27T06:15:46.395Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790489746429,"iso":"2026-09-27T06:15:46.429Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790489746461,"iso":"2026-09-27T06:15:46.461Z","line":"[prov] credentials loaded — device=IOT-62B9A0E0 backend=https://api.example.org"}
+{"t":1790489746466,"iso":"2026-09-27T06:15:46.466Z","line":"[TRAZZO] provisioned"}
+{"t":1790489746506,"iso":"2026-09-27T06:15:46.506Z","line":"\u001b[0;31m[ 20365][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790489746874,"iso":"2026-09-27T06:15:46.874Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790489746959,"iso":"2026-09-27T06:15:46.959Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790489746998,"iso":"2026-09-27T06:15:46.998Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790489747030,"iso":"2026-09-27T06:15:47.030Z","line":""}
+{"t":1790489747041,"iso":"2026-09-27T06:15:47.041Z","line":"────────────────────��──────────���──────────"}
+{"t":1790489747075,"iso":"2026-09-27T06:15:47.075Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790489747118,"iso":"2026-09-27T06:15:47.118Z","line":"──────────��──────────���────────────────────"}
+{"t":1790489747172,"iso":"2026-09-27T06:15:47.172Z","line":"[tasks] all 6 tasks started"}
+{"t":1790489756236,"iso":"2026-09-27T06:15:56.236Z","line":"[sync] 6 records pending"}
+{"t":1790489758666,"iso":"2026-09-27T06:15:58.666Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (863 bytes)"}
+{"t":1790489758747,"iso":"2026-09-27T06:15:58.747Z","line":"[offline] log cleared"}
+{"t":1790489758804,"iso":"2026-09-27T06:15:58.804Z","line":"[sync] batch sync OK — log cleared"}
+{"t":1790489788460,"iso":"2026-09-27T06:16:28.460Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790489788465,"iso":"2026-09-27T06:16:28.465Z","line":"[hb] heartbeat OK"}
+{"t":1790489790808,"iso":"2026-09-27T06:16:30.808Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"}
+{"t":1790489790815,"iso":"2026-09-27T06:16:30.815Z","line":"[kpis] E=0 L=0 SR=297 (total=297)"}
+{"t":1790489851020,"iso":"2026-09-27T06:17:31.020Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790489851025,"iso":"2026-09-27T06:17:31.025Z","line":"[hb] heartbeat OK"}
+{"t":1790489852886,"iso":"2026-09-27T06:17:32.886Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"}
+{"t":1790489852894,"iso":"2026-09-27T06:17:32.894Z","line":"[kpis] E=0 L=0 SR=297 (total=297)"}

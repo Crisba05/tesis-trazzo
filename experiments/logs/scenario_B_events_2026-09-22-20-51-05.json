@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "tool": "serial_capture",
+    "scenario": "B",
+    "port": "COM4",
+    "baud": 115200,
+    "generatedAt": "2026-09-22T20:52:58.821Z",
+    "note": "Timestamps = host clock (ms). outages[] derivado de WIFI_DOWN→WIFI_UP→SYNC_OK."
+  },
+  "summary": {
+    "total_events": 9,
+    "boots": 0,
+    "resets": [],
+    "lfs_failures": 0,
+    "offline_drops": 0,
+    "lookups_not_found": [],
+    "outages": [
+      {
+        "outage_start": "2026-09-22T20:52:38.072Z",
+        "outage_s": 3,
+        "sync_latency_s": 10.06,
+        "offline_appended": 0,
+        "max_queue_depth": 0,
+        "drops": 0
+      }
+    ]
+  },
+  "events": [
+    {
+      "t": 1790110358072,
+      "iso": "2026-09-22T20:52:38.072Z",
+      "type": "WIFI_DOWN",
+      "raw": "[wifi] disconnected"
+    },
+    {
+      "t": 1790110361091,
+      "iso": "2026-09-22T20:52:41.091Z",
+      "type": "WIFI_UP",
+      "ip": "192.168.18.247",
+      "rssi": -64,
+      "raw": "[wifi] connected — IP=192.168.18.247 RSSI=-64"
+    },
+    {
+      "t": 1790110363501,
+      "iso": "2026-09-22T20:52:43.501Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 15:52:44 (Lima)"
+    },
+    {
+      "t": 1790110366601,
+      "iso": "2026-09-22T20:52:46.601Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790110368771,
+      "iso": "2026-09-22T20:52:48.771Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 82,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"
+    },
+    {
+      "t": 1790110368781,
+      "iso": "2026-09-22T20:52:48.781Z",
+      "type": "SYNC_PENDING",
+      "pending": 10,
+      "raw": "[sync] 10 records pending"
+    },
+    {
+      "t": 1790110371130,
+      "iso": "2026-09-22T20:52:51.130Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan/batch",
+      "status": 200,
+      "bytes": 3428,
+      "raw": "[http] POST /api/iot-attendance/scan/batch -> 200 (3428 bytes)"
+    },
+    {
+      "t": 1790110371144,
+      "iso": "2026-09-22T20:52:51.144Z",
+      "type": "OFFLINE_CLEARED",
+      "raw": "[offline] log cleared"
+    },
+    {
+      "t": 1790110371150,
+      "iso": "2026-09-22T20:52:51.150Z",
+      "type": "SYNC_OK",
+      "raw": "[sync] batch sync OK — log cleared"
+    }
+  ]
+}

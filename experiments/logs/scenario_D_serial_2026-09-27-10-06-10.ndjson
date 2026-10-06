@@ -1,0 +1,66 @@
+{"t":1790503570897,"iso":"2026-09-27T10:06:10.897Z","line":"[boot] fs used=262144 total=917504"}
+{"t":1790503570922,"iso":"2026-09-27T10:06:10.922Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790503570998,"iso":"2026-09-27T10:06:10.998Z","line":"[clock] restored from NVS: 2026-09-27 05:05:19 (approximate — pending NTP)"}
+{"t":1790503571128,"iso":"2026-09-27T10:06:11.128Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790503571164,"iso":"2026-09-27T10:06:11.164Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790503572979,"iso":"2026-09-27T10:06:12.979Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790503572990,"iso":"2026-09-27T10:06:12.990Z","line":"\u001b[0;33m[  5046][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790503573899,"iso":"2026-09-27T10:06:13.899Z","line":"[wifi] connected — IP=192.168.18.241 RSSI=-52"}
+{"t":1790503574036,"iso":"2026-09-27T10:06:14.036Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.241"}
+{"t":1790503578105,"iso":"2026-09-27T10:06:18.105Z","line":"[ntp] syncing..."}
+{"t":1790503578110,"iso":"2026-09-27T10:06:18.110Z","line":"[ntp] synced: 2026-09-27 05:06:18 (Lima)"}
+{"t":1790503578351,"iso":"2026-09-27T10:06:18.351Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790503578398,"iso":"2026-09-27T10:06:18.398Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790503578437,"iso":"2026-09-27T10:06:18.437Z","line":"[prov] credentials loaded — device=IOT-5343DD30 backend=https://api.example.org"}
+{"t":1790503578443,"iso":"2026-09-27T10:06:18.443Z","line":"[TRAZZO] provisioned"}
+{"t":1790503578493,"iso":"2026-09-27T10:06:18.493Z","line":"\u001b[0;31m[ 10546][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790503578882,"iso":"2026-09-27T10:06:18.882Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790503578963,"iso":"2026-09-27T10:06:18.963Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790503579012,"iso":"2026-09-27T10:06:19.012Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790503579054,"iso":"2026-09-27T10:06:19.054Z","line":""}
+{"t":1790503579066,"iso":"2026-09-27T10:06:19.066Z","line":"────────────────────��──────────���──────────"}
+{"t":1790503579113,"iso":"2026-09-27T10:06:19.113Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790503579234,"iso":"2026-09-27T10:06:19.234Z","line":"──────────��──────────���────────────────────"}
+{"t":1790503579262,"iso":"2026-09-27T10:06:19.262Z","line":"[tasks] all 6 tasks started"}
+{"t":1790503579976,"iso":"2026-09-27T10:06:19.976Z","line":"\u001b[0;31m[ 12029][E][vfs_api.cpp:105] open(): /littlefs/offline/sent.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790503597981,"iso":"2026-09-27T10:06:37.981Z","line":"[sync] 146 records pending"}
+{"t":1790503598047,"iso":"2026-09-27T10:06:38.047Z","line":"\u001b[0;31m[ 30103][E][vfs_api.cpp:105] open(): /littlefs/offline/sent.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790503598428,"iso":"2026-09-27T10:06:38.428Z","line":"\u001b[0;31m[ 30485][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():264]: (-32512) SSL - Memory allocation failed\u001b[0m"}
+{"t":1790503598439,"iso":"2026-09-27T10:06:38.439Z","line":"\u001b[0;31m[ 30496][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -32512\u001b[0m"}
+{"t":1790503598449,"iso":"2026-09-27T10:06:38.449Z","line":"\u001b[0;33m[ 30508][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790503598458,"iso":"2026-09-27T10:06:38.458Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790503598494,"iso":"2026-09-27T10:06:38.494Z","line":"[sync] batch failed: -1 — backoff 51084ms (jittered)"}
+{"t":1790503630286,"iso":"2026-09-27T10:07:10.286Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790503630291,"iso":"2026-09-27T10:07:10.291Z","line":"[hb] heartbeat OK"}
+{"t":1790503632343,"iso":"2026-09-27T10:07:12.343Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (84 bytes)"}
+{"t":1790503632350,"iso":"2026-09-27T10:07:12.350Z","line":"[kpis] E=146 L=0 SR=151 (total=297)"}
+{"t":1790503649850,"iso":"2026-09-27T10:07:29.850Z","line":"[sync] 146 records pending"}
+{"t":1790503649923,"iso":"2026-09-27T10:07:29.923Z","line":"\u001b[0;31m[ 81974][E][vfs_api.cpp:105] open(): /littlefs/offline/sent.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790503650166,"iso":"2026-09-27T10:07:30.166Z","line":"\u001b[0;31m[ 82222][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():264]: (-32512) SSL - Memory allocation failed\u001b[0m"}
+{"t":1790503650180,"iso":"2026-09-27T10:07:30.180Z","line":"\u001b[0;31m[ 82233][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -32512\u001b[0m"}
+{"t":1790503650187,"iso":"2026-09-27T10:07:30.187Z","line":"\u001b[0;33m[ 82245][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790503650194,"iso":"2026-09-27T10:07:30.194Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790503650244,"iso":"2026-09-27T10:07:30.244Z","line":"[sync] batch failed: -1 — backoff 109517ms (jittered)"}
+{"t":1790503693166,"iso":"2026-09-27T10:08:13.166Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790503693172,"iso":"2026-09-27T10:08:13.172Z","line":"[hb] heartbeat OK"}
+{"t":1790503695210,"iso":"2026-09-27T10:08:15.210Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (84 bytes)"}
+{"t":1790503695218,"iso":"2026-09-27T10:08:15.218Z","line":"[kpis] E=146 L=0 SR=151 (total=297)"}
+{"t":1790503755634,"iso":"2026-09-27T10:09:15.634Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790503755639,"iso":"2026-09-27T10:09:15.639Z","line":"[hb] heartbeat OK"}
+{"t":1790503757777,"iso":"2026-09-27T10:09:17.777Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (84 bytes)"}
+{"t":1790503757784,"iso":"2026-09-27T10:09:17.784Z","line":"[kpis] E=146 L=0 SR=151 (total=297)"}
+{"t":1790503760287,"iso":"2026-09-27T10:09:20.287Z","line":"[sync] 146 records pending"}
+{"t":1790503760366,"iso":"2026-09-27T10:09:20.366Z","line":"\u001b[0;31m[192420][E][vfs_api.cpp:105] open(): /littlefs/offline/sent.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790503760733,"iso":"2026-09-27T10:09:20.733Z","line":"\u001b[0;31m[192790][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():264]: (-32512) SSL - Memory allocation failed\u001b[0m"}
+{"t":1790503760744,"iso":"2026-09-27T10:09:20.744Z","line":"\u001b[0;31m[192801][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -32512\u001b[0m"}
+{"t":1790503760753,"iso":"2026-09-27T10:09:20.753Z","line":"\u001b[0;33m[192813][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790503760762,"iso":"2026-09-27T10:09:20.762Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790503760818,"iso":"2026-09-27T10:09:20.818Z","line":"[sync] batch failed: -1 — backoff 230132ms (jittered)"}
+{"t":1790503818300,"iso":"2026-09-27T10:10:18.300Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790503818305,"iso":"2026-09-27T10:10:18.305Z","line":"[hb] heartbeat OK"}
+{"t":1790503820450,"iso":"2026-09-27T10:10:20.450Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (84 bytes)"}
+{"t":1790503820457,"iso":"2026-09-27T10:10:20.457Z","line":"[kpis] E=146 L=0 SR=151 (total=297)"}
+{"t":1790503881191,"iso":"2026-09-27T10:11:21.191Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790503881191,"iso":"2026-09-27T10:11:21.191Z","line":"[hb] heartbeat OK"}
+{"t":1790503883399,"iso":"2026-09-27T10:11:23.399Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (84 bytes)"}
+{"t":1790503883399,"iso":"2026-09-27T10:11:23.399Z","line":"[kpis] E=146 L=0 SR=151 (total=297)"}

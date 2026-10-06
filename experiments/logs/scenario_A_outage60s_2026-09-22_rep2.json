@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "scenario": "A",
+    "target_outage_s": 60,
+    "rep": 2,
+    "date": "2026-09-22",
+    "reconstructed_from": ["scenario_A_serial_2026-09-22-19-18-05.ndjson"],
+    "note": "Patron 'router rebooted', no un simple toggle de WiFi: la asociacion L2 vuelve rapido (2 ciclos disconnected/connected, IPs .100 y .247) pero el internet real (SSL/DNS al backend) tarda ~70s en recuperarse. Duracion real medida desde el primer fallo de subida hasta el sync completo, no desde el ultimo flicker de wifi."
+  },
+  "timeline": {
+    "online_scans": ["9990000062(inactivo,found=0,registrado igual)", "9990000055", "9990000057", "9990000059", "9990000063"],
+    "first_upload_failure": "2026-09-22T19:19:42.721Z",
+    "offline_scans_during_degradation": ["9990000061", "9990000050", "9990000053", "9990000051", "(5to, pending=5)"],
+    "wifi_flicker_1": { "down": "2026-09-22T19:19:45.779Z", "up": "2026-09-22T19:19:46.801Z", "ip": "192.168.18.100" },
+    "wifi_flicker_2": { "down": "2026-09-22T19:20:45.885Z", "up": "2026-09-22T19:20:48.407Z", "ip": "192.168.18.247" },
+    "sync_pending_seen": "2026-09-22T19:20:51.408Z",
+    "sync_batch_http_200": "2026-09-22T19:20:54.377Z",
+    "sync_ok": "2026-09-22T19:20:54.400Z"
+  },
+  "metrics": {
+    "degraded_period_s": 71.7,
+    "generated_online": 5,
+    "generated_offline": 5,
+    "max_queue_depth": 5,
+    "recovered": 5,
+    "lost": 0,
+    "watchdog_reset": false
+  },
+  "anomalies": [
+    {
+      "when": "2026-09-22T19:18:44Z",
+      "desc": "documentNumber 9990000062 escaneado — alumno inactivo (conocido de la prueba optica previa), found=0 en cache local (comportamiento correcto), pero backend igual proceso el evento (respuesta 275 bytes vs 339 de un exito normal).",
+      "impact": "ninguno — filtro de cache funcionando como se espera"
+    }
+  ]
+}

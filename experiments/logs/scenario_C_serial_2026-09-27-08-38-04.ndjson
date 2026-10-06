@@ -1,0 +1,557 @@
+{"t":1790498288431,"iso":"2026-09-27T08:38:08.431Z","line":"[ntp] syncing..."}
+{"t":1790498288437,"iso":"2026-09-27T08:38:08.437Z","line":"[ntp] synced: 2026-09-27 03:38:08 (Lima)"}
+{"t":1790498288675,"iso":"2026-09-27T08:38:08.675Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498288717,"iso":"2026-09-27T08:38:08.717Z","line":"[TRAZZO] NOT provisioned — double-press to pair"}
+{"t":1790498288769,"iso":"2026-09-27T08:38:08.769Z","line":"\u001b[0;31m[ 20404][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498288780,"iso":"2026-09-27T08:38:08.780Z","line":"\u001b[0;31m[ 20418][E][vfs_api.cpp:105] open(): /littlefs/cache/students.bin does not exist, no permits for creation\u001b[0m"}
+{"t":1790498288785,"iso":"2026-09-27T08:38:08.785Z","line":"[cache:students] no cache file"}
+{"t":1790498288841,"iso":"2026-09-27T08:38:08.841Z","line":"\u001b[0;31m[ 20476][E][vfs_api.cpp:105] open(): /littlefs/cache/schedules.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498288852,"iso":"2026-09-27T08:38:08.852Z","line":"\u001b[0;31m[ 20490][E][vfs_api.cpp:105] open(): /littlefs/cache/schedules.bin does not exist, no permits for creation\u001b[0m"}
+{"t":1790498288857,"iso":"2026-09-27T08:38:08.857Z","line":"[cache:sched] no cache file"}
+{"t":1790498288924,"iso":"2026-09-27T08:38:08.924Z","line":""}
+{"t":1790498288936,"iso":"2026-09-27T08:38:08.936Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498288953,"iso":"2026-09-27T08:38:08.953Z","line":"TRAZZO IoT — Fase B.9 (UNPAIRED) students=0 schedules=0"}
+{"t":1790498288981,"iso":"2026-09-27T08:38:08.981Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498289014,"iso":"2026-09-27T08:38:09.014Z","line":"\u001b[0;31m[ 20652][E][vfs_api.cpp:105] open(): /littlefs/offline/pending.ndjson does not exist, no permits for creation\u001b[0m"}
+{"t":1790498289020,"iso":"2026-09-27T08:38:09.020Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498299964,"iso":"2026-09-27T08:38:19.964Z","line":"[btn] LONG (4340ms)"}
+{"t":1790498300005,"iso":"2026-09-27T08:38:20.005Z","line":"[btn] LONG — claim/pair"}
+{"t":1790498300102,"iso":"2026-09-27T08:38:20.102Z","line":"[http] base=https://api.example.org tenant=demo"}
+{"t":1790498300131,"iso":"2026-09-27T08:38:20.131Z","line":"[prov] pairing code: 42524"}
+{"t":1790498300138,"iso":"2026-09-27T08:38:20.138Z","line":"[prov] hwSerial: espxx:xx:xx:xx:xx:xx:b8"}
+{"t":1790498302174,"iso":"2026-09-27T08:38:22.174Z","line":"[http] POST /api/iot-provisioning/claim -> 200 (104 bytes)"}
+{"t":1790498302215,"iso":"2026-09-27T08:38:22.215Z","line":"[prov] claim OK — polling for admin pairing..."}
+{"t":1790498309239,"iso":"2026-09-27T08:38:29.239Z","line":"[http] GET /api/iot-provisioning/poll?code=42524 -> 200 (93 bytes)"}
+{"t":1790498309282,"iso":"2026-09-27T08:38:29.282Z","line":"[prov] poll: PENDING (7s elapsed, rotation 1/3)"}
+{"t":1790498316102,"iso":"2026-09-27T08:38:36.102Z","line":"[http] GET /api/iot-provisioning/poll?code=42524 -> 200 (224 bytes)"}
+{"t":1790498316153,"iso":"2026-09-27T08:38:36.153Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498316198,"iso":"2026-09-27T08:38:36.198Z","line":"[prov] saved deviceId=IOT-73A63ACD tenantAtPair=tesis-demo"}
+{"t":1790498316201,"iso":"2026-09-27T08:38:36.201Z","line":"[prov] PAIRED! deviceId=IOT-73A63ACD"}
+{"t":1790498316504,"iso":"2026-09-27T08:38:36.504Z","line":"[cache] refreshing from backend..."}
+{"t":1790498319391,"iso":"2026-09-27T08:38:39.391Z","line":"[http] GET /api/iot-roster/students -> 200 (24662 bytes)"}
+{"t":1790498319490,"iso":"2026-09-27T08:38:39.490Z","line":"[cache:students] page +100 records (total=100, heap=89052)"}
+{"t":1790498321851,"iso":"2026-09-27T08:38:41.851Z","line":"[http] GET /api/iot-roster/students?cursor=623f7566-c710-47ba-95d1-608d0bf604dd -> 200 (24662 bytes)"}
+{"t":1790498321955,"iso":"2026-09-27T08:38:41.955Z","line":"[cache:students] page +100 records (total=200, heap=88728)"}
+{"t":1790498324282,"iso":"2026-09-27T08:38:44.282Z","line":"[http] GET /api/iot-roster/students?cursor=b48c8a0e-78df-4e8f-bd6a-af892168fdc0 -> 200 (23890 bytes)"}
+{"t":1790498324418,"iso":"2026-09-27T08:38:44.418Z","line":"[cache:students] page +97 records (total=297, heap=89996)"}
+{"t":1790498324453,"iso":"2026-09-27T08:38:44.453Z","line":"[cache:students] pulled 3 pages, 297 records total"}
+{"t":1790498324778,"iso":"2026-09-27T08:38:44.778Z","line":"[cache:students] saved 49014 bytes (MsgPack)"}
+{"t":1790498326863,"iso":"2026-09-27T08:38:46.863Z","line":"[http] GET /api/iot-roster/schedules -> 200 (364 bytes)"}
+{"t":1790498326928,"iso":"2026-09-27T08:38:46.928Z","line":"[cache:sched] wrote 281 bytes (MsgPack)"}
+{"t":1790498329043,"iso":"2026-09-27T08:38:49.043Z","line":"[http] GET /api/iot-roster/config -> 200 (302 bytes)"}
+{"t":1790498329095,"iso":"2026-09-27T08:38:49.095Z","line":"[cfg] operating window: -1..-1 min, daysMask=0x1F"}
+{"t":1790498331770,"iso":"2026-09-27T08:38:51.770Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790498331776,"iso":"2026-09-27T08:38:51.776Z","line":"[hb] heartbeat OK"}
+{"t":1790498333920,"iso":"2026-09-27T08:38:53.920Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"}
+{"t":1790498333928,"iso":"2026-09-27T08:38:53.928Z","line":"[kpis] E=0 L=0 SR=297 (total=297)"}
+{"t":1790498363692,"iso":"2026-09-27T08:39:23.692Z","line":"[scanner] frame: '9990000057' (10 bytes)"}
+{"t":1790498363693,"iso":"2026-09-27T08:39:23.693Z","line":"[scan] code=9990000057"}
+{"t":1790498363738,"iso":"2026-09-27T08:39:23.738Z","line":"[scan] lookup code=9990000057 found=1 cacheSize=297"}
+{"t":1790498367883,"iso":"2026-09-27T08:39:27.883Z","line":"\u001b[0;32m[ 99521][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790498367892,"iso":"2026-09-27T08:39:27.892Z","line":"\u001b[0;31m[ 99533][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790498367898,"iso":"2026-09-27T08:39:27.898Z","line":"\u001b[0;33m[ 99540][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498367906,"iso":"2026-09-27T08:39:27.906Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498367954,"iso":"2026-09-27T08:39:27.954Z","line":"[upl] fail -1 dur=4088ms — saving offline"}
+{"t":1790498368023,"iso":"2026-09-27T08:39:28.023Z","line":"[offline] appended scanId=01a0e204-d9c6-7194-a4b5-69ad250a3e3c pending=1"}
+{"t":1790498368203,"iso":"2026-09-27T08:39:28.203Z","line":"\u001b[0;33m[ 99843][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790498368428,"iso":"2026-09-27T08:39:28.428Z","line":"[wifi] disconnected"}
+{"t":1790498368487,"iso":"2026-09-27T08:39:28.487Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498368496,"iso":"2026-09-27T08:39:28.496Z","line":"\u001b[0;33m[100135][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790498370505,"iso":"2026-09-27T08:39:30.505Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-36"}
+{"t":1790498370556,"iso":"2026-09-27T08:39:30.556Z","line":"[ntp] syncing..."}
+{"t":1790498370562,"iso":"2026-09-27T08:39:30.562Z","line":"[ntp] synced: 2026-09-27 03:39:30 (Lima)"}
+{"t":1790498370617,"iso":"2026-09-27T08:39:30.617Z","line":"[sync] 1 records pending"}
+{"t":1790498374064,"iso":"2026-09-27T08:39:34.064Z","line":"[scanner] frame: '9990000051' (10 bytes)"}
+{"t":1790498374064,"iso":"2026-09-27T08:39:34.064Z","line":"[scan] code=9990000051"}
+{"t":1790498374103,"iso":"2026-09-27T08:39:34.103Z","line":"[scan] lookup code=9990000051 found=1 cacheSize=297"}
+{"t":1790498374745,"iso":"2026-09-27T08:39:34.745Z","line":"\u001b[0;32m[106381][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790498374754,"iso":"2026-09-27T08:39:34.754Z","line":"\u001b[0;31m[106395][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790498374763,"iso":"2026-09-27T08:39:34.763Z","line":"\u001b[0;33m[106404][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498374769,"iso":"2026-09-27T08:39:34.769Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790498374814,"iso":"2026-09-27T08:39:34.814Z","line":"[sync] batch failed: -1 — backoff 54490ms (jittered)"}
+{"t":1790498378240,"iso":"2026-09-27T08:39:38.240Z","line":"\u001b[0;32m[109878][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 49\u001b[0m"}
+{"t":1790498378249,"iso":"2026-09-27T08:39:38.249Z","line":"\u001b[0;31m[109889][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790498378255,"iso":"2026-09-27T08:39:38.255Z","line":"\u001b[0;33m[109897][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498378262,"iso":"2026-09-27T08:39:38.262Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498378288,"iso":"2026-09-27T08:39:38.288Z","line":"[upl] fail -1 dur=4069ms — saving offline"}
+{"t":1790498378352,"iso":"2026-09-27T08:39:38.352Z","line":"[offline] appended scanId=01a0e205-023b-79f2-98f2-da612e948d74 pending=2"}
+{"t":1790498395860,"iso":"2026-09-27T08:39:55.860Z","line":"\u001b[0;32m[127498][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790498395869,"iso":"2026-09-27T08:39:55.869Z","line":"\u001b[0;31m[127510][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790498395875,"iso":"2026-09-27T08:39:55.875Z","line":"\u001b[0;33m[127517][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498395880,"iso":"2026-09-27T08:39:55.880Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790498395886,"iso":"2026-09-27T08:39:55.886Z","line":"[hb] heartbeat failed: -1 (fail=1) body="}
+{"t":1790498399931,"iso":"2026-09-27T08:39:59.931Z","line":"\u001b[0;32m[131569][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790498399940,"iso":"2026-09-27T08:39:59.940Z","line":"\u001b[0;31m[131581][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790498399946,"iso":"2026-09-27T08:39:59.946Z","line":"\u001b[0;33m[131588][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498399951,"iso":"2026-09-27T08:39:59.951Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790498399956,"iso":"2026-09-27T08:39:59.956Z","line":"[kpis] pull failed: -1"}
+{"t":1790498404048,"iso":"2026-09-27T08:40:04.048Z","line":"[scanner] frame: '9990000059' (10 bytes)"}
+{"t":1790498404048,"iso":"2026-09-27T08:40:04.048Z","line":"[scan] code=9990000059"}
+{"t":1790498404083,"iso":"2026-09-27T08:40:04.083Z","line":"[scan] lookup code=9990000059 found=1 cacheSize=297"}
+{"t":1790498412850,"iso":"2026-09-27T08:40:12.850Z","line":"[scanner] frame: '9990000050' (10 bytes)"}
+{"t":1790498412850,"iso":"2026-09-27T08:40:12.850Z","line":"[scan] code=9990000050"}
+{"t":1790498412890,"iso":"2026-09-27T08:40:12.890Z","line":"[scan] lookup code=9990000050 found=1 cacheSize=297"}
+{"t":1790498417826,"iso":"2026-09-27T08:40:17.826Z","line":"\u001b[0;31m[149465][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498417832,"iso":"2026-09-27T08:40:17.832Z","line":"\u001b[0;33m[149475][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498417840,"iso":"2026-09-27T08:40:17.840Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498417885,"iso":"2026-09-27T08:40:17.885Z","line":"[upl] fail -1 dur=13685ms — saving offline"}
+{"t":1790498417957,"iso":"2026-09-27T08:40:17.957Z","line":"[offline] appended scanId=01a0e205-7755-71a3-ae7d-9fd739f02cb3 pending=3"}
+{"t":1790498418194,"iso":"2026-09-27T08:40:18.194Z","line":"[scanner] frame: '9990000050' (10 bytes)"}
+{"t":1790498418195,"iso":"2026-09-27T08:40:18.195Z","line":"[scan] code=9990000050"}
+{"t":1790498418269,"iso":"2026-09-27T08:40:18.269Z","line":"[scan] duplicate — ignored"}
+{"t":1790498429455,"iso":"2026-09-27T08:40:29.455Z","line":"[sync] 3 records pending"}
+{"t":1790498431896,"iso":"2026-09-27T08:40:31.896Z","line":"\u001b[0;31m[163528][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498431902,"iso":"2026-09-27T08:40:31.902Z","line":"\u001b[0;33m[163545][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498431911,"iso":"2026-09-27T08:40:31.911Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498431939,"iso":"2026-09-27T08:40:31.939Z","line":"[upl] fail -1 dur=13935ms — saving offline"}
+{"t":1790498432009,"iso":"2026-09-27T08:40:32.009Z","line":"[offline] appended scanId=01a0e205-99c1-7fc8-b0a4-aa5398c25017 pending=4"}
+{"t":1790498444538,"iso":"2026-09-27T08:40:44.538Z","line":"[scanner] frame: '9990000063' (10 bytes)"}
+{"t":1790498444538,"iso":"2026-09-27T08:40:44.538Z","line":"[scan] code=9990000063"}
+{"t":1790498444571,"iso":"2026-09-27T08:40:44.571Z","line":"[scan] lookup code=9990000063 found=1 cacheSize=297"}
+{"t":1790498445949,"iso":"2026-09-27T08:40:45.949Z","line":"\u001b[0;31m[177588][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498445955,"iso":"2026-09-27T08:40:45.955Z","line":"\u001b[0;33m[177598][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498445964,"iso":"2026-09-27T08:40:45.964Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790498446004,"iso":"2026-09-27T08:40:46.004Z","line":"[sync] batch failed: -1 — backoff 103219ms (jittered)"}
+{"t":1790498460017,"iso":"2026-09-27T08:41:00.017Z","line":"\u001b[0;31m[191649][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498460022,"iso":"2026-09-27T08:41:00.022Z","line":"\u001b[0;33m[191665][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498460031,"iso":"2026-09-27T08:41:00.031Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498460075,"iso":"2026-09-27T08:41:00.075Z","line":"[upl] fail -1 dur=15385ms — saving offline"}
+{"t":1790498460158,"iso":"2026-09-27T08:41:00.158Z","line":"[offline] appended scanId=01a0e206-157e-761e-8be8-c9de02fe1779 pending=5"}
+{"t":1790498474073,"iso":"2026-09-27T08:41:14.073Z","line":"\u001b[0;31m[205712][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498474079,"iso":"2026-09-27T08:41:14.079Z","line":"\u001b[0;33m[205722][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498474085,"iso":"2026-09-27T08:41:14.085Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790498474092,"iso":"2026-09-27T08:41:14.092Z","line":"[hb] heartbeat failed: -1 (fail=2) body="}
+{"t":1790498488128,"iso":"2026-09-27T08:41:28.128Z","line":"\u001b[0;31m[219768][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498488134,"iso":"2026-09-27T08:41:28.134Z","line":"\u001b[0;33m[219777][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498488140,"iso":"2026-09-27T08:41:28.140Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790498488145,"iso":"2026-09-27T08:41:28.145Z","line":"[kpis] pull failed: -1"}
+{"t":1790498513042,"iso":"2026-09-27T08:41:53.042Z","line":"[scanner] frame: '9990000062' (10 bytes)"}
+{"t":1790498513043,"iso":"2026-09-27T08:41:53.043Z","line":"[scan] code=9990000062"}
+{"t":1790498513091,"iso":"2026-09-27T08:41:53.091Z","line":"[scan] lookup code=9990000062 found=0 cacheSize=297"}
+{"t":1790498527247,"iso":"2026-09-27T08:42:07.247Z","line":"\u001b[0;31m[258887][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498527252,"iso":"2026-09-27T08:42:07.252Z","line":"\u001b[0;33m[258896][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498527261,"iso":"2026-09-27T08:42:07.261Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498527344,"iso":"2026-09-27T08:42:07.344Z","line":"[upl] fail -1 dur=13942ms — saving offline"}
+{"t":1790498527409,"iso":"2026-09-27T08:42:07.409Z","line":"[offline] appended scanId=01a0e207-21e6-740f-9d4b-51a9185f0eb5 pending=6"}
+{"t":1790498548325,"iso":"2026-09-27T08:42:28.325Z","line":"\u001b[0;31m[279964][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498548330,"iso":"2026-09-27T08:42:28.330Z","line":"\u001b[0;33m[279974][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498548336,"iso":"2026-09-27T08:42:28.336Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790498548342,"iso":"2026-09-27T08:42:28.342Z","line":"[hb] heartbeat failed: -1 (fail=3) body="}
+{"t":1790498548369,"iso":"2026-09-27T08:42:28.369Z","line":"[hb] degraded mode — interval = 300s"}
+{"t":1790498549403,"iso":"2026-09-27T08:42:29.403Z","line":"[sync] 6 records pending"}
+{"t":1790498554703,"iso":"2026-09-27T08:42:34.703Z","line":"[scanner] frame: '9990000058' (10 bytes)"}
+{"t":1790498554703,"iso":"2026-09-27T08:42:34.703Z","line":"[scan] code=9990000058"}
+{"t":1790498554743,"iso":"2026-09-27T08:42:34.743Z","line":"[scan] lookup code=9990000058 found=0 cacheSize=297"}
+{"t":1790498563379,"iso":"2026-09-27T08:42:43.379Z","line":"\u001b[0;31m[295020][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498563385,"iso":"2026-09-27T08:42:43.385Z","line":"\u001b[0;33m[295029][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498563394,"iso":"2026-09-27T08:42:43.394Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790498563438,"iso":"2026-09-27T08:42:43.438Z","line":"[sync] batch failed: -1 — backoff 234534ms (jittered)"}
+{"t":1790498573665,"iso":"2026-09-27T08:42:53.665Z","line":"[scanner] frame: '9990000052' (10 bytes)"}
+{"t":1790498573665,"iso":"2026-09-27T08:42:53.665Z","line":"[scan] code=9990000052"}
+{"t":1790498573715,"iso":"2026-09-27T08:42:53.715Z","line":"[scan] lookup code=9990000052 found=1 cacheSize=297"}
+{"t":1790498575329,"iso":"2026-09-27T08:42:55.329Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790498575329,"iso":"2026-09-27T08:42:55.329Z","line":""}
+{"t":1790498575337,"iso":"2026-09-27T08:42:55.337Z","line":"rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))"}
+{"t":1790498575341,"iso":"2026-09-27T08:42:55.341Z","line":"waiting for download"}
+{"t":1790498580944,"iso":"2026-09-27T08:43:00.944Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498582984,"iso":"2026-09-27T08:43:02.984Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790498583204,"iso":"2026-09-27T08:43:03.204Z","line":""}
+{"t":1790498583207,"iso":"2026-09-27T08:43:03.207Z","line":"[TRAZZO] booting fw=2.0.0-dev heap=286312"}
+{"t":1790498583209,"iso":"2026-09-27T08:43:03.209Z","line":"[TRAZZO] reset reason: POWERON (1)"}
+{"t":1790498583212,"iso":"2026-09-27T08:43:03.212Z","line":"[scanner] GM65 on Serial2 @ 9600"}
+{"t":1790498583221,"iso":"2026-09-27T08:43:03.221Z","line":"\u001b[0;32m[   147][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=21 scl=22 freq=100000\u001b[0m"}
+{"t":1790498583227,"iso":"2026-09-27T08:43:03.227Z","line":"[i2c] scanning bus..."}
+{"t":1790498583248,"iso":"2026-09-27T08:43:03.248Z","line":"[i2c] NO DEVICES FOUND — check SDA/SCL wiring + pull-ups + power"}
+{"t":1790498583252,"iso":"2026-09-27T08:43:03.252Z","line":"[tft] init ILI9341 320x240 landscape..."}
+{"t":1790498583590,"iso":"2026-09-27T08:43:03.590Z","line":"[tft] init OK — w=320 h=240"}
+{"t":1790498583596,"iso":"2026-09-27T08:43:03.596Z","line":"[tft] begin() done — splash drawn"}
+{"t":1790498583721,"iso":"2026-09-27T08:43:03.721Z","line":"\u001b[0;33m[   653][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790498584939,"iso":"2026-09-27T08:43:04.939Z","line":"[fs] LittleFS ready — 94208/917504 bytes used"}
+{"t":1790498585080,"iso":"2026-09-27T08:43:05.080Z","line":"[boot] seq=3 build=Sep 26 2026 20:22:14"}
+{"t":1790498585194,"iso":"2026-09-27T08:43:05.194Z","line":"[boot] pending file: bytes=1238 lines=6 valid=6 tailBytes=0"}
+{"t":1790498585275,"iso":"2026-09-27T08:43:05.275Z","line":"[boot] fs used=94208 total=917504"}
+{"t":1790498585355,"iso":"2026-09-27T08:43:05.355Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790498585431,"iso":"2026-09-27T08:43:05.431Z","line":"[clock] restored from NVS: 2026-09-27 03:42:50 (approximate — pending NTP)"}
+{"t":1790498585563,"iso":"2026-09-27T08:43:05.563Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790498585599,"iso":"2026-09-27T08:43:05.599Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498586818,"iso":"2026-09-27T08:43:06.818Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-36"}
+{"t":1790498586955,"iso":"2026-09-27T08:43:06.955Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.100"}
+{"t":1790498593226,"iso":"2026-09-27T08:43:13.226Z","line":"[ntp] syncing..."}
+{"t":1790498593232,"iso":"2026-09-27T08:43:13.232Z","line":"[ntp] synced: 2026-09-27 03:42:57 (Lima)"}
+{"t":1790498593477,"iso":"2026-09-27T08:43:13.477Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498593527,"iso":"2026-09-27T08:43:13.527Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498593572,"iso":"2026-09-27T08:43:13.572Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790498593577,"iso":"2026-09-27T08:43:13.577Z","line":"[TRAZZO] provisioned"}
+{"t":1790498593634,"iso":"2026-09-27T08:43:13.634Z","line":"\u001b[0;31m[ 10563][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498593966,"iso":"2026-09-27T08:43:13.966Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790498594058,"iso":"2026-09-27T08:43:14.058Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790498594112,"iso":"2026-09-27T08:43:14.112Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790498594156,"iso":"2026-09-27T08:43:14.156Z","line":""}
+{"t":1790498594168,"iso":"2026-09-27T08:43:14.168Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498594221,"iso":"2026-09-27T08:43:14.221Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790498594261,"iso":"2026-09-27T08:43:14.261Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498594300,"iso":"2026-09-27T08:43:14.300Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498613366,"iso":"2026-09-27T08:43:33.366Z","line":"[sync] 6 records pending"}
+{"t":1790498626548,"iso":"2026-09-27T08:43:46.548Z","line":"\u001b[0;31m[ 43478][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498626553,"iso":"2026-09-27T08:43:46.553Z","line":"\u001b[0;33m[ 43488][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498626560,"iso":"2026-09-27T08:43:46.560Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790498626584,"iso":"2026-09-27T08:43:46.584Z","line":"[sync] batch failed: -1 — backoff 53201ms (jittered)"}
+{"t":1790498631787,"iso":"2026-09-27T08:43:51.787Z","line":"[scanner] frame: '9990000052' (10 bytes)"}
+{"t":1790498631787,"iso":"2026-09-27T08:43:51.787Z","line":"[scan] code=9990000052"}
+{"t":1790498631816,"iso":"2026-09-27T08:43:51.816Z","line":"[scan] lookup code=9990000052 found=1 cacheSize=297"}
+{"t":1790498633093,"iso":"2026-09-27T08:43:53.093Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790498633093,"iso":"2026-09-27T08:43:53.093Z","line":""}
+{"t":1790498633101,"iso":"2026-09-27T08:43:53.101Z","line":"rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))"}
+{"t":1790498633105,"iso":"2026-09-27T08:43:53.105Z","line":"waiting for download"}
+{"t":1790498640737,"iso":"2026-09-27T08:44:00.737Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498642765,"iso":"2026-09-27T08:44:02.765Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498643796,"iso":"2026-09-27T08:44:03.796Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790498644837,"iso":"2026-09-27T08:44:04.837Z","line":"[fs] LittleFS ready — 98304/917504 bytes used"}
+{"t":1790498644936,"iso":"2026-09-27T08:44:04.936Z","line":"[boot] seq=4 build=Sep 26 2026 20:22:14"}
+{"t":1790498645036,"iso":"2026-09-27T08:44:05.036Z","line":"[boot] pending file: bytes=1238 lines=6 valid=6 tailBytes=0"}
+{"t":1790498645100,"iso":"2026-09-27T08:44:05.100Z","line":"[boot] fs used=98304 total=917504"}
+{"t":1790498645133,"iso":"2026-09-27T08:44:05.133Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790498645216,"iso":"2026-09-27T08:44:05.216Z","line":"[clock] restored from NVS: 2026-09-27 03:42:57 (approximate — pending NTP)"}
+{"t":1790498645355,"iso":"2026-09-27T08:44:05.355Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790498645397,"iso":"2026-09-27T08:44:05.397Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498646317,"iso":"2026-09-27T08:44:06.317Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-42"}
+{"t":1790498646461,"iso":"2026-09-27T08:44:06.461Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.100"}
+{"t":1790498653136,"iso":"2026-09-27T08:44:13.136Z","line":"[ntp] syncing..."}
+{"t":1790498653140,"iso":"2026-09-27T08:44:13.140Z","line":"[ntp] synced: 2026-09-27 03:43:04 (Lima)"}
+{"t":1790498653417,"iso":"2026-09-27T08:44:13.417Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498653450,"iso":"2026-09-27T08:44:13.450Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498653476,"iso":"2026-09-27T08:44:13.476Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790498653481,"iso":"2026-09-27T08:44:13.481Z","line":"[TRAZZO] provisioned"}
+{"t":1790498653519,"iso":"2026-09-27T08:44:13.519Z","line":"\u001b[0;31m[ 10545][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498653851,"iso":"2026-09-27T08:44:13.851Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790498653925,"iso":"2026-09-27T08:44:13.925Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790498653961,"iso":"2026-09-27T08:44:13.961Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790498653988,"iso":"2026-09-27T08:44:13.988Z","line":""}
+{"t":1790498654001,"iso":"2026-09-27T08:44:14.001Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498654030,"iso":"2026-09-27T08:44:14.030Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790498654068,"iso":"2026-09-27T08:44:14.068Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498654107,"iso":"2026-09-27T08:44:14.107Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498673175,"iso":"2026-09-27T08:44:33.175Z","line":"[sync] 6 records pending"}
+{"t":1790498687071,"iso":"2026-09-27T08:44:47.071Z","line":"\u001b[0;31m[ 44100][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498687077,"iso":"2026-09-27T08:44:47.077Z","line":"\u001b[0;33m[ 44110][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498687086,"iso":"2026-09-27T08:44:47.086Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790498687133,"iso":"2026-09-27T08:44:47.133Z","line":"[sync] batch failed: -1 — backoff 57875ms (jittered)"}
+{"t":1790498717236,"iso":"2026-09-27T08:45:17.236Z","line":"\u001b[0;31m[ 74265][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498717241,"iso":"2026-09-27T08:45:17.241Z","line":"\u001b[0;33m[ 74275][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498717247,"iso":"2026-09-27T08:45:17.247Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790498717254,"iso":"2026-09-27T08:45:17.254Z","line":"[hb] heartbeat failed: -1 (fail=1) body="}
+{"t":1790498731346,"iso":"2026-09-27T08:45:31.346Z","line":"\u001b[0;31m[ 88375][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498731351,"iso":"2026-09-27T08:45:31.351Z","line":"\u001b[0;33m[ 88385][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498731357,"iso":"2026-09-27T08:45:31.357Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790498731363,"iso":"2026-09-27T08:45:31.363Z","line":"[kpis] pull failed: -1"}
+{"t":1790498738152,"iso":"2026-09-27T08:45:38.152Z","line":"[scanner] frame: '999000' (6 bytes)"}
+{"t":1790498738202,"iso":"2026-09-27T08:45:38.202Z","line":"[scan] code=999000"}
+{"t":1790498738284,"iso":"2026-09-27T08:45:38.284Z","line":"[scan] lookup code=999000 found=0 cacheSize=297"}
+{"t":1790498740013,"iso":"2026-09-27T08:45:40.013Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790498740013,"iso":"2026-09-27T08:45:40.013Z","line":""}
+{"t":1790498740021,"iso":"2026-09-27T08:45:40.021Z","line":"rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))"}
+{"t":1790498740024,"iso":"2026-09-27T08:45:40.024Z","line":"waiting for download"}
+{"t":1790498745687,"iso":"2026-09-27T08:45:45.687Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498747729,"iso":"2026-09-27T08:45:47.729Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790498747788,"iso":"2026-09-27T08:45:47.788Z","line":"[tft] init OK — w=320 h=240"}
+{"t":1790498747794,"iso":"2026-09-27T08:45:47.794Z","line":"[tft] begin() done — splash drawn"}
+{"t":1790498747920,"iso":"2026-09-27T08:45:47.920Z","line":"\u001b[0;33m[   649][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790498749131,"iso":"2026-09-27T08:45:49.131Z","line":"[fs] LittleFS ready — 98304/917504 bytes used"}
+{"t":1790498749225,"iso":"2026-09-27T08:45:49.225Z","line":"[boot] seq=5 build=Sep 26 2026 20:22:14"}
+{"t":1790498749327,"iso":"2026-09-27T08:45:49.327Z","line":"[boot] pending file: bytes=1238 lines=6 valid=6 tailBytes=0"}
+{"t":1790498749389,"iso":"2026-09-27T08:45:49.389Z","line":"[boot] fs used=98304 total=917504"}
+{"t":1790498749429,"iso":"2026-09-27T08:45:49.429Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790498749519,"iso":"2026-09-27T08:45:49.519Z","line":"[clock] restored from NVS: 2026-09-27 03:43:54 (approximate — pending NTP)"}
+{"t":1790498749664,"iso":"2026-09-27T08:45:49.664Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790498749714,"iso":"2026-09-27T08:45:49.714Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498751030,"iso":"2026-09-27T08:45:51.030Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-38"}
+{"t":1790498751180,"iso":"2026-09-27T08:45:51.180Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.100"}
+{"t":1790498757461,"iso":"2026-09-27T08:45:57.461Z","line":"[ntp] syncing..."}
+{"t":1790498757467,"iso":"2026-09-27T08:45:57.467Z","line":"[ntp] synced: 2026-09-27 03:44:01 (Lima)"}
+{"t":1790498757722,"iso":"2026-09-27T08:45:57.722Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498757781,"iso":"2026-09-27T08:45:57.781Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498757839,"iso":"2026-09-27T08:45:57.839Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790498757845,"iso":"2026-09-27T08:45:57.845Z","line":"[TRAZZO] provisioned"}
+{"t":1790498757910,"iso":"2026-09-27T08:45:57.910Z","line":"\u001b[0;31m[ 10636][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498758243,"iso":"2026-09-27T08:45:58.243Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790498758376,"iso":"2026-09-27T08:45:58.376Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790498758419,"iso":"2026-09-27T08:45:58.419Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790498758451,"iso":"2026-09-27T08:45:58.451Z","line":""}
+{"t":1790498758464,"iso":"2026-09-27T08:45:58.464Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498758501,"iso":"2026-09-27T08:45:58.501Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790498758545,"iso":"2026-09-27T08:45:58.545Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498758596,"iso":"2026-09-27T08:45:58.596Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498764302,"iso":"2026-09-27T08:46:04.302Z","line":"[scanner] frame: '9990000055' (10 bytes)"}
+{"t":1790498764302,"iso":"2026-09-27T08:46:04.302Z","line":"[scan] code=9990000055"}
+{"t":1790498764338,"iso":"2026-09-27T08:46:04.338Z","line":"[scan] lookup code=9990000055 found=1 cacheSize=297"}
+{"t":1790498765215,"iso":"2026-09-27T08:46:05.215Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790498765215,"iso":"2026-09-27T08:46:05.215Z","line":""}
+{"t":1790498765223,"iso":"2026-09-27T08:46:05.223Z","line":"rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))"}
+{"t":1790498765227,"iso":"2026-09-27T08:46:05.227Z","line":"waiting for download"}
+{"t":1790498770936,"iso":"2026-09-27T08:46:10.936Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498772974,"iso":"2026-09-27T08:46:12.974Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790498773059,"iso":"2026-09-27T08:46:13.059Z","line":"[tft] init OK — w=320 h=240"}
+{"t":1790498773065,"iso":"2026-09-27T08:46:13.065Z","line":"[tft] begin() done — splash drawn"}
+{"t":1790498773189,"iso":"2026-09-27T08:46:13.189Z","line":"\u001b[0;33m[   649][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790498774407,"iso":"2026-09-27T08:46:14.407Z","line":"[fs] LittleFS ready — 102400/917504 bytes used"}
+{"t":1790498774520,"iso":"2026-09-27T08:46:14.520Z","line":"[boot] seq=6 build=Sep 26 2026 20:22:14"}
+{"t":1790498774624,"iso":"2026-09-27T08:46:14.624Z","line":"[boot] pending file: bytes=1238 lines=6 valid=6 tailBytes=0"}
+{"t":1790498774690,"iso":"2026-09-27T08:46:14.690Z","line":"[boot] fs used=102400 total=917504"}
+{"t":1790498774731,"iso":"2026-09-27T08:46:14.731Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790498774818,"iso":"2026-09-27T08:46:14.818Z","line":"[clock] restored from NVS: 2026-09-27 03:44:02 (approximate — pending NTP)"}
+{"t":1790498774964,"iso":"2026-09-27T08:46:14.964Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790498775040,"iso":"2026-09-27T08:46:15.040Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498776053,"iso":"2026-09-27T08:46:16.053Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-38"}
+{"t":1790498776180,"iso":"2026-09-27T08:46:16.180Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.100"}
+{"t":1790498782636,"iso":"2026-09-27T08:46:22.636Z","line":"[ntp] syncing..."}
+{"t":1790498782642,"iso":"2026-09-27T08:46:22.642Z","line":"[ntp] synced: 2026-09-27 03:44:09 (Lima)"}
+{"t":1790498782875,"iso":"2026-09-27T08:46:22.875Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498782911,"iso":"2026-09-27T08:46:22.911Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498782945,"iso":"2026-09-27T08:46:22.945Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790498782951,"iso":"2026-09-27T08:46:22.951Z","line":"[TRAZZO] provisioned"}
+{"t":1790498782990,"iso":"2026-09-27T08:46:22.990Z","line":"\u001b[0;31m[ 10445][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498783323,"iso":"2026-09-27T08:46:23.323Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790498783401,"iso":"2026-09-27T08:46:23.401Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790498783438,"iso":"2026-09-27T08:46:23.438Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790498783467,"iso":"2026-09-27T08:46:23.467Z","line":""}
+{"t":1790498783480,"iso":"2026-09-27T08:46:23.480Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498783513,"iso":"2026-09-27T08:46:23.513Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790498783556,"iso":"2026-09-27T08:46:23.556Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498783595,"iso":"2026-09-27T08:46:23.595Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498802665,"iso":"2026-09-27T08:46:42.665Z","line":"[sync] 6 records pending"}
+{"t":1790498816176,"iso":"2026-09-27T08:46:56.176Z","line":"\u001b[0;31m[ 43634][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498816181,"iso":"2026-09-27T08:46:56.181Z","line":"\u001b[0;33m[ 43643][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498816191,"iso":"2026-09-27T08:46:56.191Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790498816250,"iso":"2026-09-27T08:46:56.250Z","line":"[sync] batch failed: -1 — backoff 71677ms (jittered)"}
+{"t":1790498830064,"iso":"2026-09-27T08:47:10.064Z","line":"[scanner] frame: '9990000055' (10 bytes)"}
+{"t":1790498830064,"iso":"2026-09-27T08:47:10.064Z","line":"[scan] code=9990000055"}
+{"t":1790498830099,"iso":"2026-09-27T08:47:10.099Z","line":"[scan] lookup code=9990000055 found=1 cacheSize=297"}
+{"t":1790498844252,"iso":"2026-09-27T08:47:24.252Z","line":"\u001b[0;31m[ 71708][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498844257,"iso":"2026-09-27T08:47:24.257Z","line":"\u001b[0;33m[ 71720][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498844266,"iso":"2026-09-27T08:47:24.266Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498844303,"iso":"2026-09-27T08:47:24.303Z","line":"[upl] fail -1 dur=14089ms — saving offline"}
+{"t":1790498844391,"iso":"2026-09-27T08:47:24.391Z","line":"[offline] appended scanId=01a0e209-f0b6-70bd-88de-527fa12e6082 pending=7"}
+{"t":1790498852697,"iso":"2026-09-27T08:47:32.697Z","line":"[scanner] frame: '99900000' (8 bytes)"}
+{"t":1790498852734,"iso":"2026-09-27T08:47:32.734Z","line":"[scan] code=99900000"}
+{"t":1790498852779,"iso":"2026-09-27T08:47:32.779Z","line":"[scan] lookup code=99900000 found=0 cacheSize=297"}
+{"t":1790498858283,"iso":"2026-09-27T08:47:38.283Z","line":"\u001b[0;31m[ 85740][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498858288,"iso":"2026-09-27T08:47:38.288Z","line":"\u001b[0;33m[ 85751][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498858294,"iso":"2026-09-27T08:47:38.294Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790498858300,"iso":"2026-09-27T08:47:38.300Z","line":"[hb] heartbeat failed: -1 (fail=1) body="}
+{"t":1790498862495,"iso":"2026-09-27T08:47:42.495Z","line":"[scanner] frame: '9990000053' (10 bytes)"}
+{"t":1790498862495,"iso":"2026-09-27T08:47:42.495Z","line":"[scan] code=9990000053"}
+{"t":1790498862543,"iso":"2026-09-27T08:47:42.543Z","line":"[scan] lookup code=9990000053 found=1 cacheSize=297"}
+{"t":1790498872375,"iso":"2026-09-27T08:47:52.375Z","line":"\u001b[0;31m[ 99834][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498872381,"iso":"2026-09-27T08:47:52.381Z","line":"\u001b[0;33m[ 99844][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498872389,"iso":"2026-09-27T08:47:52.389Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790498872446,"iso":"2026-09-27T08:47:52.446Z","line":"[upl] fail -1 dur=19363ms — saving offline"}
+{"t":1790498872549,"iso":"2026-09-27T08:47:52.549Z","line":"[offline] appended scanId=01a0e20a-4a0c-7f48-8def-5935d38463a5 pending=8"}
+{"t":1790498873825,"iso":"2026-09-27T08:47:53.825Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790498873825,"iso":"2026-09-27T08:47:53.825Z","line":""}
+{"t":1790498873833,"iso":"2026-09-27T08:47:53.833Z","line":"rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))"}
+{"t":1790498873837,"iso":"2026-09-27T08:47:53.837Z","line":"waiting for download"}
+{"t":1790498879253,"iso":"2026-09-27T08:47:59.253Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498881296,"iso":"2026-09-27T08:48:01.296Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790498881446,"iso":"2026-09-27T08:48:01.446Z","line":""}
+{"t":1790498881448,"iso":"2026-09-27T08:48:01.448Z","line":"[TRAZZO] booting fw=2.0.0-dev heap=286168"}
+{"t":1790498881451,"iso":"2026-09-27T08:48:01.451Z","line":"[TRAZZO] reset reason: POWERON (1)"}
+{"t":1790498881454,"iso":"2026-09-27T08:48:01.454Z","line":"[scanner] GM65 on Serial2 @ 9600"}
+{"t":1790498881463,"iso":"2026-09-27T08:48:01.463Z","line":"\u001b[0;32m[   143][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=21 scl=22 freq=100000\u001b[0m"}
+{"t":1790498881468,"iso":"2026-09-27T08:48:01.468Z","line":"[i2c] scanning bus..."}
+{"t":1790498881489,"iso":"2026-09-27T08:48:01.489Z","line":"[i2c] NO DEVICES FOUND — check SDA/SCL wiring + pull-ups + power"}
+{"t":1790498881492,"iso":"2026-09-27T08:48:01.492Z","line":"[tft] init ILI9341 320x240 landscape..."}
+{"t":1790498881831,"iso":"2026-09-27T08:48:01.831Z","line":"[tft] init OK — w=320 h=240"}
+{"t":1790498881838,"iso":"2026-09-27T08:48:01.838Z","line":"[tft] begin() done — splash drawn"}
+{"t":1790498881962,"iso":"2026-09-27T08:48:01.962Z","line":"\u001b[0;33m[   649][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790498883186,"iso":"2026-09-27T08:48:03.186Z","line":"[fs] LittleFS ready — 102400/917504 bytes used"}
+{"t":1790498883382,"iso":"2026-09-27T08:48:03.382Z","line":"[boot] seq=7 build=Sep 26 2026 20:22:14"}
+{"t":1790498883492,"iso":"2026-09-27T08:48:03.492Z","line":"[boot] pending file: bytes=1614 lines=8 valid=8 tailBytes=0"}
+{"t":1790498883554,"iso":"2026-09-27T08:48:03.554Z","line":"[boot] fs used=102400 total=917504"}
+{"t":1790498883591,"iso":"2026-09-27T08:48:03.591Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790498883677,"iso":"2026-09-27T08:48:03.677Z","line":"[clock] restored from NVS: 2026-09-27 03:45:00 (approximate — pending NTP)"}
+{"t":1790498883819,"iso":"2026-09-27T08:48:03.819Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790498883864,"iso":"2026-09-27T08:48:03.864Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498884881,"iso":"2026-09-27T08:48:04.881Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-40"}
+{"t":1790498885029,"iso":"2026-09-27T08:48:05.029Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.100"}
+{"t":1790498891305,"iso":"2026-09-27T08:48:11.305Z","line":"[ntp] syncing..."}
+{"t":1790498891311,"iso":"2026-09-27T08:48:11.311Z","line":"[ntp] synced: 2026-09-27 03:45:07 (Lima)"}
+{"t":1790498891565,"iso":"2026-09-27T08:48:11.565Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498891621,"iso":"2026-09-27T08:48:11.621Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498891675,"iso":"2026-09-27T08:48:11.675Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790498891680,"iso":"2026-09-27T08:48:11.680Z","line":"[TRAZZO] provisioned"}
+{"t":1790498891742,"iso":"2026-09-27T08:48:11.742Z","line":"\u001b[0;31m[ 10425][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498892075,"iso":"2026-09-27T08:48:12.075Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790498892177,"iso":"2026-09-27T08:48:12.177Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790498892237,"iso":"2026-09-27T08:48:12.237Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790498892297,"iso":"2026-09-27T08:48:12.297Z","line":""}
+{"t":1790498892309,"iso":"2026-09-27T08:48:12.309Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498892376,"iso":"2026-09-27T08:48:12.376Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790498892403,"iso":"2026-09-27T08:48:12.403Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498892424,"iso":"2026-09-27T08:48:12.424Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498907094,"iso":"2026-09-27T08:48:27.094Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498909136,"iso":"2026-09-27T08:48:29.136Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790498909224,"iso":"2026-09-27T08:48:29.224Z","line":""}
+{"t":1790498909227,"iso":"2026-09-27T08:48:29.227Z","line":"[TRAZZO] booting fw=2.0.0-dev heap=286168"}
+{"t":1790498909229,"iso":"2026-09-27T08:48:29.229Z","line":"[TRAZZO] reset reason: POWERON (1)"}
+{"t":1790498909232,"iso":"2026-09-27T08:48:29.232Z","line":"[scanner] GM65 on Serial2 @ 9600"}
+{"t":1790498909241,"iso":"2026-09-27T08:48:29.241Z","line":"\u001b[0;32m[   143][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=21 scl=22 freq=100000\u001b[0m"}
+{"t":1790498909246,"iso":"2026-09-27T08:48:29.246Z","line":"[i2c] scanning bus..."}
+{"t":1790498909268,"iso":"2026-09-27T08:48:29.268Z","line":"[i2c] NO DEVICES FOUND — check SDA/SCL wiring + pull-ups + power"}
+{"t":1790498909272,"iso":"2026-09-27T08:48:29.272Z","line":"[tft] init ILI9341 320x240 landscape..."}
+{"t":1790498909607,"iso":"2026-09-27T08:48:29.607Z","line":"[tft] init OK — w=320 h=240"}
+{"t":1790498909616,"iso":"2026-09-27T08:48:29.616Z","line":"[tft] begin() done — splash drawn"}
+{"t":1790498909740,"iso":"2026-09-27T08:48:29.740Z","line":"\u001b[0;33m[   649][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790498910955,"iso":"2026-09-27T08:48:30.955Z","line":"[fs] LittleFS ready — 106496/917504 bytes used"}
+{"t":1790498911043,"iso":"2026-09-27T08:48:31.043Z","line":"[boot] seq=8 build=Sep 26 2026 20:22:14"}
+{"t":1790498911150,"iso":"2026-09-27T08:48:31.150Z","line":"[boot] pending file: bytes=1614 lines=8 valid=8 tailBytes=0"}
+{"t":1790498911212,"iso":"2026-09-27T08:48:31.212Z","line":"[boot] fs used=106496 total=917504"}
+{"t":1790498911245,"iso":"2026-09-27T08:48:31.245Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790498911327,"iso":"2026-09-27T08:48:31.327Z","line":"[clock] restored from NVS: 2026-09-27 03:45:07 (approximate — pending NTP)"}
+{"t":1790498911465,"iso":"2026-09-27T08:48:31.465Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790498911508,"iso":"2026-09-27T08:48:31.508Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498912424,"iso":"2026-09-27T08:48:32.424Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-50"}
+{"t":1790498912565,"iso":"2026-09-27T08:48:32.565Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.100"}
+{"t":1790498919242,"iso":"2026-09-27T08:48:39.242Z","line":"[ntp] syncing..."}
+{"t":1790498919247,"iso":"2026-09-27T08:48:39.247Z","line":"[ntp] synced: 2026-09-27 03:45:14 (Lima)"}
+{"t":1790498919492,"iso":"2026-09-27T08:48:39.492Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498919548,"iso":"2026-09-27T08:48:39.548Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498919627,"iso":"2026-09-27T08:48:39.627Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790498919632,"iso":"2026-09-27T08:48:39.632Z","line":"[TRAZZO] provisioned"}
+{"t":1790498919666,"iso":"2026-09-27T08:48:39.666Z","line":"\u001b[0;31m[ 10571][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498919999,"iso":"2026-09-27T08:48:39.999Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790498920072,"iso":"2026-09-27T08:48:40.072Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790498920106,"iso":"2026-09-27T08:48:40.106Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790498920133,"iso":"2026-09-27T08:48:40.133Z","line":""}
+{"t":1790498920145,"iso":"2026-09-27T08:48:40.145Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498920175,"iso":"2026-09-27T08:48:40.175Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790498920214,"iso":"2026-09-27T08:48:40.214Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498920251,"iso":"2026-09-27T08:48:40.251Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498939372,"iso":"2026-09-27T08:48:59.372Z","line":"[sync] 8 records pending"}
+{"t":1790498943638,"iso":"2026-09-27T08:49:03.638Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790498945674,"iso":"2026-09-27T08:49:05.674Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790498945779,"iso":"2026-09-27T08:49:05.779Z","line":""}
+{"t":1790498945781,"iso":"2026-09-27T08:49:05.781Z","line":"[TRAZZO] booting fw=2.0.0-dev heap=286168"}
+{"t":1790498945784,"iso":"2026-09-27T08:49:05.784Z","line":"[TRAZZO] reset reason: POWERON (1)"}
+{"t":1790498945787,"iso":"2026-09-27T08:49:05.787Z","line":"[scanner] GM65 on Serial2 @ 9600"}
+{"t":1790498945796,"iso":"2026-09-27T08:49:05.796Z","line":"\u001b[0;32m[   143][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=21 scl=22 freq=100000\u001b[0m"}
+{"t":1790498945801,"iso":"2026-09-27T08:49:05.801Z","line":"[i2c] scanning bus..."}
+{"t":1790498945822,"iso":"2026-09-27T08:49:05.822Z","line":"[i2c] NO DEVICES FOUND — check SDA/SCL wiring + pull-ups + power"}
+{"t":1790498945827,"iso":"2026-09-27T08:49:05.827Z","line":"[tft] init ILI9341 320x240 landscape..."}
+{"t":1790498946164,"iso":"2026-09-27T08:49:06.164Z","line":"[tft] init OK — w=320 h=240"}
+{"t":1790498946171,"iso":"2026-09-27T08:49:06.171Z","line":"[tft] begin() done — splash drawn"}
+{"t":1790498946295,"iso":"2026-09-27T08:49:06.295Z","line":"\u001b[0;33m[   649][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790498947514,"iso":"2026-09-27T08:49:07.514Z","line":"[fs] LittleFS ready — 106496/917504 bytes used"}
+{"t":1790498947645,"iso":"2026-09-27T08:49:07.645Z","line":"[boot] seq=9 build=Sep 26 2026 20:22:14"}
+{"t":1790498947768,"iso":"2026-09-27T08:49:07.768Z","line":"[boot] pending file: bytes=1614 lines=8 valid=8 tailBytes=0"}
+{"t":1790498947844,"iso":"2026-09-27T08:49:07.844Z","line":"[boot] fs used=106496 total=917504"}
+{"t":1790498947888,"iso":"2026-09-27T08:49:07.888Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790498947980,"iso":"2026-09-27T08:49:07.980Z","line":"[clock] restored from NVS: 2026-09-27 03:45:14 (approximate — pending NTP)"}
+{"t":1790498948160,"iso":"2026-09-27T08:49:08.160Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790498948188,"iso":"2026-09-27T08:49:08.188Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790498949307,"iso":"2026-09-27T08:49:09.307Z","line":"[wifi] connected — IP=192.168.18.100 RSSI=-44"}
+{"t":1790498949437,"iso":"2026-09-27T08:49:09.437Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.100"}
+{"t":1790498955701,"iso":"2026-09-27T08:49:15.701Z","line":"[ntp] syncing..."}
+{"t":1790498955707,"iso":"2026-09-27T08:49:15.707Z","line":"[ntp] synced: 2026-09-27 03:45:21 (Lima)"}
+{"t":1790498955942,"iso":"2026-09-27T08:49:15.942Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790498955985,"iso":"2026-09-27T08:49:15.985Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790498956023,"iso":"2026-09-27T08:49:16.023Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790498956028,"iso":"2026-09-27T08:49:16.028Z","line":"[TRAZZO] provisioned"}
+{"t":1790498956075,"iso":"2026-09-27T08:49:16.075Z","line":"\u001b[0;31m[ 10425][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790498956407,"iso":"2026-09-27T08:49:16.407Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790498956492,"iso":"2026-09-27T08:49:16.492Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790498956536,"iso":"2026-09-27T08:49:16.536Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790498956577,"iso":"2026-09-27T08:49:16.577Z","line":""}
+{"t":1790498956589,"iso":"2026-09-27T08:49:16.589Z","line":"────────────────────��──────────���──────────"}
+{"t":1790498956633,"iso":"2026-09-27T08:49:16.633Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790498956687,"iso":"2026-09-27T08:49:16.687Z","line":"──────────��──────────���────────────────────"}
+{"t":1790498956737,"iso":"2026-09-27T08:49:16.737Z","line":"[tasks] all 6 tasks started"}
+{"t":1790498975831,"iso":"2026-09-27T08:49:35.831Z","line":"[sync] 8 records pending"}
+{"t":1790498989728,"iso":"2026-09-27T08:49:49.728Z","line":"\u001b[0;31m[ 44081][E][WiFiGeneric.cpp:1583] hostByName(): DNS Failed for api.example.org\u001b[0m"}
+{"t":1790498989734,"iso":"2026-09-27T08:49:49.734Z","line":"\u001b[0;33m[ 44091][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790498989743,"iso":"2026-09-27T08:49:49.743Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790498989835,"iso":"2026-09-27T08:49:49.835Z","line":"[sync] batch failed: -1 — backoff 68667ms (jittered)"}
+{"t":1790499003293,"iso":"2026-09-27T08:50:03.293Z","line":"\u001b[0;33m[ 57646][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790499003365,"iso":"2026-09-27T08:50:03.365Z","line":"[wifi] disconnected"}
+{"t":1790499003408,"iso":"2026-09-27T08:50:03.408Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790499003418,"iso":"2026-09-27T08:50:03.418Z","line":"\u001b[0;33m[ 57771][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790499006430,"iso":"2026-09-27T08:50:06.430Z","line":"[wifi] connected — IP=192.168.18.241 RSSI=-51"}
+{"t":1790499006470,"iso":"2026-09-27T08:50:06.470Z","line":"[ntp] syncing..."}
+{"t":1790499006476,"iso":"2026-09-27T08:50:06.476Z","line":"[ntp] synced: 2026-09-27 03:46:12 (Lima)"}
+{"t":1790499009147,"iso":"2026-09-27T08:50:09.147Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790499009152,"iso":"2026-09-27T08:50:09.152Z","line":"[hb] heartbeat OK"}
+{"t":1790499010248,"iso":"2026-09-27T08:50:10.248Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790499010249,"iso":"2026-09-27T08:50:10.249Z","line":""}
+{"t":1790499010257,"iso":"2026-09-27T08:50:10.257Z","line":"rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))"}
+{"t":1790499010261,"iso":"2026-09-27T08:50:10.261Z","line":"waiting for download"}
+{"t":1790499014409,"iso":"2026-09-27T08:50:14.409Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790499018466,"iso":"2026-09-27T08:50:18.466Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790499018553,"iso":"2026-09-27T08:50:18.553Z","line":"\u001b[0;33m[   649][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\u001b[0m"}
+{"t":1790499019767,"iso":"2026-09-27T08:50:19.767Z","line":"[fs] LittleFS ready — 106496/917504 bytes used"}
+{"t":1790499019885,"iso":"2026-09-27T08:50:19.885Z","line":"[boot] seq=10 build=Sep 26 2026 20:22:14"}
+{"t":1790499019993,"iso":"2026-09-27T08:50:19.993Z","line":"[boot] pending file: bytes=1614 lines=8 valid=8 tailBytes=0"}
+{"t":1790499020054,"iso":"2026-09-27T08:50:20.054Z","line":"[boot] fs used=110592 total=917504"}
+{"t":1790499020086,"iso":"2026-09-27T08:50:20.086Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790499020168,"iso":"2026-09-27T08:50:20.168Z","line":"[clock] restored from NVS: 2026-09-27 03:46:12 (approximate — pending NTP)"}
+{"t":1790499020307,"iso":"2026-09-27T08:50:20.307Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790499020348,"iso":"2026-09-27T08:50:20.348Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790499022962,"iso":"2026-09-27T08:50:22.962Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790499022975,"iso":"2026-09-27T08:50:22.975Z","line":"\u001b[0;33m[  5069][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790499025483,"iso":"2026-09-27T08:50:25.483Z","line":"[wifi] connected — IP=192.168.18.241 RSSI=-50"}
+{"t":1790499025624,"iso":"2026-09-27T08:50:25.624Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.241"}
+{"t":1790499027900,"iso":"2026-09-27T08:50:27.900Z","line":"[ntp] syncing..."}
+{"t":1790499027906,"iso":"2026-09-27T08:50:27.906Z","line":"[ntp] synced: 2026-09-27 03:46:19 (Lima)"}
+{"t":1790499028154,"iso":"2026-09-27T08:50:28.154Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790499028236,"iso":"2026-09-27T08:50:28.236Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790499028263,"iso":"2026-09-27T08:50:28.263Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790499028268,"iso":"2026-09-27T08:50:28.268Z","line":"[TRAZZO] provisioned"}
+{"t":1790499028296,"iso":"2026-09-27T08:50:28.296Z","line":"\u001b[0;31m[ 10388][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790499028630,"iso":"2026-09-27T08:50:28.630Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790499028702,"iso":"2026-09-27T08:50:28.702Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790499028731,"iso":"2026-09-27T08:50:28.731Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790499028755,"iso":"2026-09-27T08:50:28.755Z","line":""}
+{"t":1790499028767,"iso":"2026-09-27T08:50:28.767Z","line":"────────────────────��──────────���──────────"}
+{"t":1790499028793,"iso":"2026-09-27T08:50:28.793Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790499028829,"iso":"2026-09-27T08:50:28.829Z","line":"──────────��──────────���────────────────────"}
+{"t":1790499028861,"iso":"2026-09-27T08:50:28.861Z","line":"[tasks] all 6 tasks started"}
+{"t":1790499047945,"iso":"2026-09-27T08:50:47.945Z","line":"[sync] 8 records pending"}
+{"t":1790499050396,"iso":"2026-09-27T08:50:50.396Z","line":"ets Jul 29 2019 12:21:46"}
+{"t":1790499050396,"iso":"2026-09-27T08:50:50.396Z","line":""}
+{"t":1790499050404,"iso":"2026-09-27T08:50:50.404Z","line":"rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))"}
+{"t":1790499050407,"iso":"2026-09-27T08:50:50.407Z","line":"waiting for download"}
+{"t":1790499057015,"iso":"2026-09-27T08:50:57.015Z","line":"<DEVICE_DISCONNECTED>"}
+{"t":1790499067138,"iso":"2026-09-27T08:51:07.138Z","line":"<DEVICE_RECONNECTED>"}
+{"t":1790499068329,"iso":"2026-09-27T08:51:08.329Z","line":"[fs] LittleFS ready — 110592/917504 bytes used"}
+{"t":1790499068463,"iso":"2026-09-27T08:51:08.463Z","line":"[boot] seq=11 build=Sep 26 2026 20:22:14"}
+{"t":1790499068586,"iso":"2026-09-27T08:51:08.586Z","line":"[boot] pending file: bytes=1614 lines=8 valid=8 tailBytes=0"}
+{"t":1790499068662,"iso":"2026-09-27T08:51:08.662Z","line":"[boot] fs used=110592 total=917504"}
+{"t":1790499068709,"iso":"2026-09-27T08:51:08.709Z","line":"[TRAZZO] WiFi creds in NVS? YES"}
+{"t":1790499068833,"iso":"2026-09-27T08:51:08.833Z","line":"[clock] restored from NVS: 2026-09-27 03:46:19 (approximate — pending NTP)"}
+{"t":1790499068964,"iso":"2026-09-27T08:51:08.964Z","line":"[wifi] NVS creds loaded: SSID=WIFI_LAB"}
+{"t":1790499068997,"iso":"2026-09-27T08:51:08.997Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790499071511,"iso":"2026-09-27T08:51:11.511Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790499071523,"iso":"2026-09-27T08:51:11.523Z","line":"\u001b[0;33m[  5063][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790499072331,"iso":"2026-09-27T08:51:12.331Z","line":"[wifi] connected — IP=192.168.18.241 RSSI=-52"}
+{"t":1790499072466,"iso":"2026-09-27T08:51:12.466Z","line":"[TRAZZO] WiFi OK — IP=192.168.18.241"}
+{"t":1790499076532,"iso":"2026-09-27T08:51:16.532Z","line":"[ntp] syncing..."}
+{"t":1790499076537,"iso":"2026-09-27T08:51:16.537Z","line":"[ntp] synced: 2026-09-27 03:51:16 (Lima)"}
+{"t":1790499076777,"iso":"2026-09-27T08:51:16.777Z","line":"[TRAZZO] NTP synced — caches will pull"}
+{"t":1790499076820,"iso":"2026-09-27T08:51:16.820Z","line":"[http] base=https://api.example.org tenant=tesis-demo"}
+{"t":1790499076862,"iso":"2026-09-27T08:51:16.862Z","line":"[prov] credentials loaded — device=IOT-73A63ACD backend=https://api.example.org"}
+{"t":1790499076867,"iso":"2026-09-27T08:51:16.867Z","line":"[TRAZZO] provisioned"}
+{"t":1790499076915,"iso":"2026-09-27T08:51:16.915Z","line":"\u001b[0;31m[ 10453][E][vfs_api.cpp:105] open(): /littlefs/cache/students.meta does not exist, no permits for creation\u001b[0m"}
+{"t":1790499077247,"iso":"2026-09-27T08:51:17.247Z","line":"[cache:students] loaded 297 records (MsgPack)"}
+{"t":1790499077336,"iso":"2026-09-27T08:51:17.336Z","line":"[cache:sched] loaded 1 schedules (MsgPack)"}
+{"t":1790499077380,"iso":"2026-09-27T08:51:17.380Z","line":"[TRAZZO] student cache has 297 records — skipping initial pull"}
+{"t":1790499077423,"iso":"2026-09-27T08:51:17.423Z","line":""}
+{"t":1790499077437,"iso":"2026-09-27T08:51:17.437Z","line":"────────────────────��──────────���──────────"}
+{"t":1790499077478,"iso":"2026-09-27T08:51:17.478Z","line":"TRAZZO IoT — Fase B.9 (PROVISIONED) students=297 schedules=1"}
+{"t":1790499077532,"iso":"2026-09-27T08:51:17.532Z","line":"──────────��──────────���────────────────────"}
+{"t":1790499077584,"iso":"2026-09-27T08:51:17.584Z","line":"[tasks] all 6 tasks started"}
+{"t":1790499096668,"iso":"2026-09-27T08:51:36.668Z","line":"[sync] 8 records pending"}
+{"t":1790499099582,"iso":"2026-09-27T08:51:39.582Z","line":"[http] POST /api/iot-attendance/scan/batch -> 200 (1315 bytes)"}
+{"t":1790499099624,"iso":"2026-09-27T08:51:39.624Z","line":"[sync] batch sync OK — 8 accepted"}
+{"t":1790499099696,"iso":"2026-09-27T08:51:39.696Z","line":"[offline] log cleared"}
+{"t":1790499128992,"iso":"2026-09-27T08:52:08.992Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790499128995,"iso":"2026-09-27T08:52:08.995Z","line":"[hb] heartbeat OK"}
+{"t":1790499131042,"iso":"2026-09-27T08:52:11.042Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"}
+{"t":1790499131051,"iso":"2026-09-27T08:52:11.051Z","line":"[kpis] E=6 L=0 SR=291 (total=297)"}

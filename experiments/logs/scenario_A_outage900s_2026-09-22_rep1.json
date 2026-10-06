@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "scenario": "A",
+    "target_outage_s": 900,
+    "rep": 1,
+    "date": "2026-09-22",
+    "reconstructed_from": ["scenario_A_serial_2026-09-22-20-00-53.ndjson"],
+    "note": "Duracion real (963s) es la mas cercana al objetivo nominal (900s) de toda la campana. El backoff exponencial toco por primera vez su tope documentado de 300000ms (5 min) antes de la reconexion final. outage medido desde el primer fallo de subida hasta SYNC_OK; el auto-detector del logger solo capturo el ultimo flicker de wifi (2.5s) porque reinicia sus contadores en cada WIFI_DOWN — la reconstruccion manual da la imagen completa."
+  },
+  "timeline": {
+    "online_scans": ["9990000055", "9990000052", "9990000050", "9990000057", "9990000051"],
+    "first_upload_failure": "2026-09-22T20:02:04.583Z",
+    "offline_scans_min5": true,
+    "backoff_cap_hit": { "at": "2026-09-22T20:08:30.255Z", "backoff_ms": 300000 },
+    "wifi_final_down": "2026-09-22T20:14:46.318Z",
+    "wifi_final_up": "2026-09-22T20:14:48.839Z",
+    "sync_pending_seen": "2026-09-22T20:13:30.664Z",
+    "sync_batch_http_200": "2026-09-22T20:18:07.767Z",
+    "sync_ok": "2026-09-22T20:18:07.789Z",
+    "post_sync_cache_refresh": "success (2 paginas, 200 records, sin error esta vez)"
+  },
+  "metrics": {
+    "degraded_period_s": 963.2,
+    "generated_online": 5,
+    "generated_offline": 5,
+    "max_queue_depth": 5,
+    "recovered": 5,
+    "lost": 0,
+    "watchdog_reset": false,
+    "max_backoff_observed_ms": 300000
+  },
+  "anomalies": []
+}

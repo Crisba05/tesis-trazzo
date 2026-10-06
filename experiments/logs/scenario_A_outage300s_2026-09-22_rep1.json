@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "scenario": "A",
+    "target_outage_s": 300,
+    "rep": 1,
+    "date": "2026-09-22",
+    "reconstructed_from": ["scenario_A_serial_2026-09-22-19-28-59.ndjson"],
+    "note": "Duracion real (379s) excede el objetivo nominal (300s) porque el backoff exponencial con jitter del propio firmware espacia los reintentos tras fallos sostenidos ([hb] degraded mode interval=300s; sync backoff 200764ms) — es el mecanismo de diseño, no una falla. outage medido desde el primer fallo de subida hasta SYNC_OK, no desde el ultimo flicker de wifi."
+  },
+  "timeline": {
+    "online_scans": ["9990000060", "9990000055", "9990000057", "9990000059", "9990000063"],
+    "first_upload_failure": "2026-09-22T19:30:49.839Z",
+    "offline_scans": ["9990000061", "9990000050", "9990000052", "9990000053", "9990000051"],
+    "wifi_flicker_1": { "down": "2026-09-22T19:30:56.223Z", "up": "2026-09-22T19:30:57.745Z", "ip": "192.168.18.101" },
+    "degraded_mode_entered": "2026-09-22T19:33:37.070Z",
+    "sync_backoff_scheduled": { "at": "2026-09-22T19:33:45.159Z", "backoff_ms": 200764 },
+    "wifi_flicker_2": { "down": "2026-09-22T19:36:10.398Z", "up": "2026-09-22T19:36:13.917Z", "ip": "192.168.18.247" },
+    "sync_pending_seen": "2026-09-22T19:37:05.919Z",
+    "sync_batch_http_200": "2026-09-22T19:37:09.027Z",
+    "sync_ok": "2026-09-22T19:37:09.051Z"
+  },
+  "metrics": {
+    "degraded_period_s": 379.2,
+    "generated_online": 5,
+    "generated_offline": 5,
+    "max_queue_depth": 5,
+    "recovered": 5,
+    "lost": 0,
+    "watchdog_reset": false
+  },
+  "anomalies": []
+}

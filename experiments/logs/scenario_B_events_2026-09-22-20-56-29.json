@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "tool": "serial_capture",
+    "scenario": "B",
+    "port": "COM4",
+    "baud": 115200,
+    "generatedAt": "2026-09-22T20:57:42.102Z",
+    "note": "Timestamps = host clock (ms). outages[] derivado de WIFI_DOWN→WIFI_UP→SYNC_OK."
+  },
+  "summary": {
+    "total_events": 7,
+    "boots": 0,
+    "resets": [],
+    "lfs_failures": 0,
+    "offline_drops": 0,
+    "lookups_not_found": [],
+    "outages": []
+  },
+  "events": [
+    {
+      "t": 1790110636970,
+      "iso": "2026-09-22T20:57:16.970Z",
+      "type": "NTP_SYNC",
+      "raw": "[ntp] synced: 2026-09-22 15:57:17 (Lima)"
+    },
+    {
+      "t": 1790110636975,
+      "iso": "2026-09-22T20:57:16.975Z",
+      "type": "SYNC_PENDING",
+      "pending": 10,
+      "raw": "[sync] 10 records pending"
+    },
+    {
+      "t": 1790110639417,
+      "iso": "2026-09-22T20:57:19.417Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-attendance/scan/batch",
+      "status": 200,
+      "bytes": 3428,
+      "raw": "[http] POST /api/iot-attendance/scan/batch -> 200 (3428 bytes)"
+    },
+    {
+      "t": 1790110639427,
+      "iso": "2026-09-22T20:57:19.427Z",
+      "type": "OFFLINE_CLEARED",
+      "raw": "[offline] log cleared"
+    },
+    {
+      "t": 1790110639433,
+      "iso": "2026-09-22T20:57:19.433Z",
+      "type": "SYNC_OK",
+      "raw": "[sync] batch sync OK — log cleared"
+    },
+    {
+      "t": 1790110648506,
+      "iso": "2026-09-22T20:57:28.506Z",
+      "type": "HTTP",
+      "method": "POST",
+      "url": "/api/iot-telemetry/heartbeat",
+      "status": 200,
+      "bytes": 142,
+      "raw": "[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"
+    },
+    {
+      "t": 1790110650453,
+      "iso": "2026-09-22T20:57:30.453Z",
+      "type": "HTTP",
+      "method": "GET",
+      "url": "/api/iot-roster/attendance-summary",
+      "status": 200,
+      "bytes": 83,
+      "raw": "[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"
+    }
+  ]
+}

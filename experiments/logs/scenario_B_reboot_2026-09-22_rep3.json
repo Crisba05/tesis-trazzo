@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "scenario": "B",
+    "rep": 3,
+    "date": "2026-09-22",
+    "reconstructed_from": [
+      "scenario_B_serial_2026-09-22-20-55-07.ndjson",
+      "scenario_B_serial_2026-09-22-20-56-29.ndjson"
+    ],
+    "note": "Sin caida en DOWNLOAD_BOOT esta vez — reinicio limpio."
+  },
+  "timeline": {
+    "offline_scans_before_reset": 10,
+    "cache_reloaded": "2026-09-22T20:56:44.870Z (297 records, intacto)",
+    "sync_pending_seen": "2026-09-22T20:57:16.975Z (pending=10 — TODOS sobrevivieron)",
+    "sync_batch_http_200": "2026-09-22T20:57:19.417Z",
+    "sync_ok": "2026-09-22T20:57:19.433Z"
+  },
+  "metrics": {
+    "generated_offline_before_reset": 10,
+    "pending_after_reboot": 10,
+    "recovered": 10,
+    "lost": 0
+  },
+  "anomalies": []
+}

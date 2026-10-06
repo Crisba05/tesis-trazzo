@@ -1,0 +1,16 @@
+{"t":1790103785190,"iso":"2026-09-22T19:03:05.190Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790103785196,"iso":"2026-09-22T19:03:05.196Z","line":"[hb] heartbeat OK"}
+{"t":1790103786934,"iso":"2026-09-22T19:03:06.934Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790103786941,"iso":"2026-09-22T19:03:06.941Z","line":"[kpis] E=0 L=20 SR=277 (total=297)"}
+{"t":1790103847247,"iso":"2026-09-22T19:04:07.247Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790103847251,"iso":"2026-09-22T19:04:07.251Z","line":"[hb] heartbeat OK"}
+{"t":1790103849030,"iso":"2026-09-22T19:04:09.030Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790103849037,"iso":"2026-09-22T19:04:09.037Z","line":"[kpis] E=0 L=20 SR=277 (total=297)"}
+{"t":1790103909818,"iso":"2026-09-22T19:05:09.818Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790103909823,"iso":"2026-09-22T19:05:09.823Z","line":"[hb] heartbeat OK"}
+{"t":1790103912370,"iso":"2026-09-22T19:05:12.370Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790103912377,"iso":"2026-09-22T19:05:12.377Z","line":"[kpis] E=0 L=20 SR=277 (total=297)"}
+{"t":1790103971868,"iso":"2026-09-22T19:06:11.868Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790103971872,"iso":"2026-09-22T19:06:11.872Z","line":"[hb] heartbeat OK"}
+{"t":1790103973637,"iso":"2026-09-22T19:06:13.637Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (83 bytes)"}
+{"t":1790103973644,"iso":"2026-09-22T19:06:13.644Z","line":"[kpis] E=0 L=20 SR=277 (total=297)"}

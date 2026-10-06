@@ -1,0 +1,72 @@
+{"t":1790110835901,"iso":"2026-09-22T21:00:35.901Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790110835906,"iso":"2026-09-22T21:00:35.906Z","line":"[hb] heartbeat OK"}
+{"t":1790110837747,"iso":"2026-09-22T21:00:37.747Z","line":"[http] GET /api/iot-roster/attendance-summary -> 200 (82 bytes)"}
+{"t":1790110837754,"iso":"2026-09-22T21:00:37.754Z","line":"[kpis] E=0 L=0 SR=297 (total=297)"}
+{"t":1790110857788,"iso":"2026-09-22T21:00:57.788Z","line":"[scanner] frame: '9990000057' (10 bytes)"}
+{"t":1790110857788,"iso":"2026-09-22T21:00:57.788Z","line":"[scan] code=9990000057"}
+{"t":1790110857796,"iso":"2026-09-22T21:00:57.796Z","line":"[scan] lookup code=9990000057 found=1 cacheSize=297"}
+{"t":1790110861970,"iso":"2026-09-22T21:01:01.970Z","line":"\u001b[0;32m[275659][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790110861979,"iso":"2026-09-22T21:01:01.979Z","line":"\u001b[0;31m[275670][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790110861986,"iso":"2026-09-22T21:01:01.986Z","line":"\u001b[0;33m[275677][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790110861991,"iso":"2026-09-22T21:01:01.991Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790110861997,"iso":"2026-09-22T21:01:01.997Z","line":"[upl] fail -1 dur=4040ms — saving offline"}
+{"t":1790110862020,"iso":"2026-09-22T21:01:02.020Z","line":"[offline] appended scanId=01a0caeb-fd58-71dd-868c-3f3e652f1d2c pending=1"}
+{"t":1790110862254,"iso":"2026-09-22T21:01:02.254Z","line":"[sync] 1 records pending"}
+{"t":1790110866296,"iso":"2026-09-22T21:01:06.296Z","line":"\u001b[0;32m[279985][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790110866305,"iso":"2026-09-22T21:01:06.305Z","line":"\u001b[0;31m[279996][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790110866311,"iso":"2026-09-22T21:01:06.311Z","line":"\u001b[0;33m[280004][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790110866317,"iso":"2026-09-22T21:01:06.317Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790110866324,"iso":"2026-09-22T21:01:06.324Z","line":"[sync] batch failed: -1 — backoff 54539ms (jittered)"}
+{"t":1790110866429,"iso":"2026-09-22T21:01:06.429Z","line":"[scanner] frame: '9990000063' (10 bytes)"}
+{"t":1790110866429,"iso":"2026-09-22T21:01:06.429Z","line":"[scan] code=9990000063"}
+{"t":1790110866437,"iso":"2026-09-22T21:01:06.437Z","line":"[scan] lookup code=9990000063 found=1 cacheSize=297"}
+{"t":1790110870750,"iso":"2026-09-22T21:01:10.750Z","line":"\u001b[0;32m[284439][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790110870759,"iso":"2026-09-22T21:01:10.759Z","line":"\u001b[0;31m[284450][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790110870765,"iso":"2026-09-22T21:01:10.765Z","line":"\u001b[0;33m[284458][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790110870770,"iso":"2026-09-22T21:01:10.770Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790110870776,"iso":"2026-09-22T21:01:10.776Z","line":"[upl] fail -1 dur=4039ms — saving offline"}
+{"t":1790110870807,"iso":"2026-09-22T21:01:10.807Z","line":"[offline] appended scanId=01a0caec-1fa5-7f51-9659-10b4e411f2f8 pending=2"}
+{"t":1790110873774,"iso":"2026-09-22T21:01:13.774Z","line":"\u001b[0;33m[287464][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 6 - NOT_AUTHED\u001b[0m"}
+{"t":1790110873814,"iso":"2026-09-22T21:01:13.814Z","line":"[wifi] disconnected"}
+{"t":1790110873820,"iso":"2026-09-22T21:01:13.820Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790110874697,"iso":"2026-09-22T21:01:14.697Z","line":"[scanner] frame: '9990000063' (10 bytes)"}
+{"t":1790110874697,"iso":"2026-09-22T21:01:14.697Z","line":"[scan] code=9990000063"}
+{"t":1790110874703,"iso":"2026-09-22T21:01:14.703Z","line":"[scan] duplicate — ignored"}
+{"t":1790110875338,"iso":"2026-09-22T21:01:15.338Z","line":"[wifi] connected — IP=192.168.18.102 RSSI=-35"}
+{"t":1790110875340,"iso":"2026-09-22T21:01:15.340Z","line":"[ntp] syncing..."}
+{"t":1790110875345,"iso":"2026-09-22T21:01:15.345Z","line":"[ntp] synced: 2026-09-22 16:01:15 (Lima)"}
+{"t":1790110882499,"iso":"2026-09-22T21:01:22.499Z","line":"[scanner] frame: '9990000052' (10 bytes)"}
+{"t":1790110882499,"iso":"2026-09-22T21:01:22.499Z","line":"[scan] code=9990000052"}
+{"t":1790110882506,"iso":"2026-09-22T21:01:22.506Z","line":"[scan] lookup code=9990000052 found=1 cacheSize=297"}
+{"t":1790110886818,"iso":"2026-09-22T21:01:26.818Z","line":"\u001b[0;32m[300508][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790110886826,"iso":"2026-09-22T21:01:26.826Z","line":"\u001b[0;31m[300519][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790110886835,"iso":"2026-09-22T21:01:26.835Z","line":"\u001b[0;33m[300527][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790110886841,"iso":"2026-09-22T21:01:26.841Z","line":"[http] POST /api/iot-attendance/scan -> -1 (0 bytes)"}
+{"t":1790110886845,"iso":"2026-09-22T21:01:26.845Z","line":"[upl] fail -1 dur=4037ms — saving offline"}
+{"t":1790110886894,"iso":"2026-09-22T21:01:26.894Z","line":"[offline] appended scanId=01a0caec-5e6b-70cb-b9df-966972cb2592 pending=3"}
+{"t":1790110900357,"iso":"2026-09-22T21:01:40.357Z","line":"\u001b[0;32m[314046][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790110900366,"iso":"2026-09-22T21:01:40.366Z","line":"\u001b[0;31m[314057][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790110900372,"iso":"2026-09-22T21:01:40.372Z","line":"\u001b[0;33m[314065][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790110900377,"iso":"2026-09-22T21:01:40.377Z","line":"[http] POST /api/iot-telemetry/heartbeat -> -1 (0 bytes)"}
+{"t":1790110900383,"iso":"2026-09-22T21:01:40.383Z","line":"[hb] heartbeat failed: -1 (fail=1) body="}
+{"t":1790110904397,"iso":"2026-09-22T21:01:44.397Z","line":"\u001b[0;32m[318086][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790110904406,"iso":"2026-09-22T21:01:44.406Z","line":"\u001b[0;31m[318097][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790110904411,"iso":"2026-09-22T21:01:44.411Z","line":"\u001b[0;33m[318105][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790110904417,"iso":"2026-09-22T21:01:44.417Z","line":"[http] GET /api/iot-roster/attendance-summary -> -1 (0 bytes)"}
+{"t":1790110904422,"iso":"2026-09-22T21:01:44.422Z","line":"[kpis] pull failed: -1"}
+{"t":1790110920918,"iso":"2026-09-22T21:02:00.918Z","line":"[sync] 3 records pending"}
+{"t":1790110924961,"iso":"2026-09-22T21:02:04.961Z","line":"\u001b[0;32m[338651][I][ssl_client.cpp:112] start_ssl_client(): select returned due to timeout 4000 ms for fd 48\u001b[0m"}
+{"t":1790110924970,"iso":"2026-09-22T21:02:04.970Z","line":"\u001b[0;31m[338662][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -1\u001b[0m"}
+{"t":1790110924976,"iso":"2026-09-22T21:02:04.976Z","line":"\u001b[0;33m[338670][W][HTTPClient.cpp:1483] returnError(): error(-1): connection refused\u001b[0m"}
+{"t":1790110924981,"iso":"2026-09-22T21:02:04.981Z","line":"[http] POST /api/iot-attendance/scan/batch -> -1 (0 bytes)"}
+{"t":1790110924990,"iso":"2026-09-22T21:02:04.990Z","line":"[sync] batch failed: -1 — backoff 121496ms (jittered)"}
+{"t":1790110937010,"iso":"2026-09-22T21:02:17.010Z","line":"\u001b[0;33m[350687][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 4 - ASSOC_EXPIRE\u001b[0m"}
+{"t":1790110937479,"iso":"2026-09-22T21:02:17.479Z","line":"[wifi] disconnected"}
+{"t":1790110937483,"iso":"2026-09-22T21:02:17.483Z","line":"[wifi] connecting to WIFI_LAB ..."}
+{"t":1790110937494,"iso":"2026-09-22T21:02:17.494Z","line":"\u001b[0;33m[351184][W][WiFiGeneric.cpp:1062] _eventCallback(): Reason: 8 - ASSOC_LEAVE\u001b[0m"}
+{"t":1790110940001,"iso":"2026-09-22T21:02:20.001Z","line":"[wifi] connected — IP=192.168.18.247 RSSI=-36"}
+{"t":1790110940003,"iso":"2026-09-22T21:02:20.003Z","line":"[ntp] syncing..."}
+{"t":1790110940008,"iso":"2026-09-22T21:02:20.008Z","line":"[ntp] synced: 2026-09-22 16:02:20 (Lima)"}
+{"t":1790110962568,"iso":"2026-09-22T21:02:42.568Z","line":"[http] POST /api/iot-telemetry/heartbeat -> 200 (142 bytes)"}
+{"t":1790110962574,"iso":"2026-09-22T21:02:42.574Z","line":"[hb] recovered (was fail=1) — back to normal interval"}
+{"t":1790110962578,"iso":"2026-09-22T21:02:42.578Z","line":"[hb] heartbeat OK"}

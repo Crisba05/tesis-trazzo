@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "scenario": "A",
+    "target_outage_s": 300,
+    "rep": 3,
+    "date": "2026-09-22",
+    "reconstructed_from": ["scenario_A_serial_2026-09-22-19-52-01.ndjson"],
+    "note": "Duracion real (415s) excede el objetivo nominal por el backoff exponencial con jitter (52s->110s->227s) tras entrar en modo degradado (3 heartbeats fallidos). outage medido desde el primer fallo de subida hasta SYNC_OK."
+  },
+  "timeline": {
+    "online_scans": ["9990000060", "9990000059", "9990000063", "9990000061"],
+    "first_upload_failure": "2026-09-22T19:52:49.469Z",
+    "offline_scans": ["9990000053", "9990000051", "9990000057", "9990000050", "9990000052"],
+    "wifi_flicker_1": { "down": "2026-09-22T19:53:01.610Z", "up": "2026-09-22T19:53:03.631Z", "ip": "192.168.18.101" },
+    "degraded_mode_entered": "2026-09-22T19:56:08.586Z",
+    "wifi_final_up": "2026-09-22T19:57:58.226Z",
+    "sync_pending_seen": "2026-09-22T19:59:42.229Z",
+    "sync_batch_http_200": "2026-09-22T19:59:44.815Z",
+    "sync_ok": "2026-09-22T19:59:44.840Z"
+  },
+  "metrics": {
+    "degraded_period_s": 415.4,
+    "generated_online": 4,
+    "generated_offline": 5,
+    "max_queue_depth": 5,
+    "recovered": 5,
+    "lost": 0,
+    "watchdog_reset": false
+  },
+  "anomalies": []
+}

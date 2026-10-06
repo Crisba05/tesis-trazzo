@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "scenario": "A",
+    "target_outage_s": 60,
+    "rep": 1,
+    "date": "2026-09-22",
+    "reconstructed_from": [
+      "scenario_A_serial_2026-09-22-18-42-48.ndjson",
+      "scenario_A_serial_2026-09-22-18-46-05.ndjson"
+    ],
+    "note": "La captura se cortó justo tras la reconexión y se reabrió ~33s después; el sync_latency_s es una estimación acotada por ambos archivos, no una medición continua de un solo proceso."
+  },
+  "timeline": {
+    "online_scans_before_outage": ["9990000001", "9990000003", "9990000005", "9990000007", "9990000009"],
+    "wifi_down": "2026-09-22T18:44:40.013Z",
+    "offline_scans_during_outage": ["9990000004", "9990000006", "9990000008", "9990000010", "9990000014"],
+    "wifi_up": "2026-09-22T18:45:32.552Z",
+    "sync_pending_seen": "2026-09-22T18:46:22.684Z",
+    "sync_batch_http_200": "2026-09-22T18:46:25.234Z",
+    "sync_ok": "2026-09-22T18:46:25.256Z"
+  },
+  "metrics": {
+    "outage_actual_s": 52.5,
+    "generated_online": 5,
+    "generated_offline": 5,
+    "max_queue_depth": 5,
+    "recovered": 5,
+    "lost": 0,
+    "sync_latency_s_estimate": 52.7
+  },
+  "anomalies": [
+    {
+      "when": "2026-09-22T18:43:59Z",
+      "desc": "2x 'SSL - Memory allocation failed' en heartbeat/kpis-pull (WiFiClientSecure), antes del corte de red. Auto-recuperado en la siguiente petición (scan POST 200 a los 2.4s). No afectó ningún escaneo.",
+      "impact": "ninguno observado"
+    }
+  ]
+}

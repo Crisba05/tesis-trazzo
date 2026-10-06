@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "scenario": "C",
+    "rep": 1,
+    "date": "2026-09-22",
+    "reconstructed_from": [
+      "scenario_C_serial_2026-09-22-20-59-42.ndjson",
+      "scenario_C_serial_2026-09-22-21-04-31.ndjson",
+      "scenario_C_serial_2026-09-22-21-07-09.ndjson",
+      "scenario_C_serial_2026-09-22-21-08-54.ndjson",
+      "scenario_C_serial_2026-09-22-21-09-49.ndjson",
+      "scenario_C_serial_2026-09-22-21-11-09.ndjson"
+    ],
+    "note": "Corrida mas exigente de lo planeado: 1 corte de energia durante la escritura + 3 reinicios adicionales intencionales en distintos instantes antes de la estabilizacion final. Verificado contra la base de datos (no solo el log serial) para confirmar recuperacion con certeza absoluta."
+  },
+  "timeline": {
+    "offline_scans_before_cut": ["9990000057", "9990000052", "9990000063", "9990000051", "9990000050"],
+    "power_cut_mid_scan": {
+      "at": "2026-09-22T21:06:41.341Z",
+      "evidence": "[scanner] frame: '999�' (4 bytes) — trama UART truncada a 4 de 10 bytes, correctamente descartada por isValidDocumentNumber (dropped locally, nunca escrita a pending.ndjson)"
+    },
+    "additional_reboots_intentional": [
+      "2026-09-22T21:07:09Z", "2026-09-22T21:08:54Z", "2026-09-22T21:09:49Z"
+    ],
+    "stable_recovery": "2026-09-22T21:11:09Z (heartbeat OK, roster query OK)",
+    "db_verification": {
+      "method": "consulta directa Prisma (solo lectura) contra tenant tesis-demo",
+      "result": "los 5 documentNumber pre-corte tienen fila de asistencia HOY con status=LATE source=IOT_OFFLINE"
+    }
+  },
+  "metrics": {
+    "generated_offline_before_cut": 5,
+    "recovered_confirmed_in_db": 5,
+    "lost": 0,
+    "lfs_corruption": false,
+    "littlefs_mount_result": "OK en los 4 arranques (ningun 'LittleFS init failed')",
+    "corrupted_frame_correctly_rejected": 1
+  },
+  "anomalies": [
+    {
+      "when": "2026-09-22T21:06:41Z",
+      "desc": "Trama del escaner GM65 truncada (4/10 bytes) por el corte de energia a mitad de transmision UART. Rechazada correctamente por el validador de documentNumber, no se persistio.",
+      "impact": "ninguno en integridad de datos — es evidencia positiva de manejo correcto del peor caso"
+    }
+  ]
+}
